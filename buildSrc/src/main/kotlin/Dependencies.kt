@@ -2,7 +2,7 @@ object Versions {
 
     val versionMajor = 0
     val versionMinor = 1
-    val versionPatch = 0
+    val versionPatch = 1
 
     val versionName = "$versionMajor.$versionMinor.$versionPatch"
 
@@ -12,7 +12,7 @@ object Versions {
     val swiftpackage = "2.0.3"
 
     // Kotlin
-    val kotlin = "1.5.31"
+    val kotlin = "1.5.30"
     val coroutines = "1.5.2"
     val kotlinxDatetime = "0.2.1"
     val serialization = "1.3.0"
