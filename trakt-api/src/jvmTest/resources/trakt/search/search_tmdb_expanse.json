@@ -1,0 +1,18 @@
+[
+  {
+    "type": "show",
+    "score": 1000,
+    "show": {
+      "title": "The Expanse",
+      "year": 2015,
+      "ids": {
+        "trakt": 77199,
+        "slug": "the-expanse",
+        "tvdb": 280619,
+        "imdb": "tt3230854",
+        "tmdb": 63639,
+        "tvrage": 41967
+      }
+    }
+  }
+]
