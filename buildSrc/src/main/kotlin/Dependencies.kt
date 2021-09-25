@@ -18,15 +18,15 @@ object Versions {
     val serialization = "1.3.0"
     val kotlinIo = "0.1.16"
 
+    // Data
+    val ktor = "1.6.3"
+
     // Testing
     val junitJupiter = "5.8.0-RC1"
     val truth = "1.1.3"
     val junit = "4.13.2"
     val mockito = "3.12.4"
     val mockitoKotlin = "3.2.0"
-
-    // Data
-    val ktor = "1.6.3"
 }
 
 object Plugins {

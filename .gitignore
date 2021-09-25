@@ -6,6 +6,7 @@
 /build
 /trakt-api/build
 /buildSrc/build
+/buildSrc/.gradle
 /captures
 .externalNativeBuild
 .cxx
