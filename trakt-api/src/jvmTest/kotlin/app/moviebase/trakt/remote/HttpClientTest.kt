@@ -5,6 +5,7 @@ import io.ktor.client.engine.mock.*
 import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
 import io.ktor.http.*
+import java.io.File
 
 fun mockHttpClient(
     responses: Map<String, String>
@@ -24,9 +25,8 @@ fun mockHttpClient(
             val url = request.url.toString().decodeURLPart()
 
             val fileName = jsonFiles[url] ?: error("Unhandled url $url")
-            val resource = Resource("./src/jvmTest/resources/trakt/$fileName")
-
-            val content = resource.readText()
+            val file = File("./src/jvmTest/resources/trakt/$fileName")
+            val content = file.readText()
             respond(content = content, headers = headers)
         }
     }

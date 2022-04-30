@@ -5,9 +5,24 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TraktShow(
-    val title: String,
+    val title: String?,
     val year: Int,
     val ids: TraktIds,
     val network: String? = null,
-    @SerialName("aired_episodes") val airedEpisodes: Int? = null
+    @SerialName("aired_episodes") val airedEpisodes: Int? = null,
+    val runtime: Int
 )
+
+data class TraktAirs(
+    @SerialName("day") val day: String,
+    @SerialName("time") val time: String,
+    @SerialName("timezone") val timezone: String
+)
+
+object TraktShowStatus {
+    const val STATUS_TEXT_RETURNING_SERIES = "returning series" // airing soon
+    const val STATUS_TEXT_IN_PRODUCTION = "in production" // airing soon
+    const val STATUS_TEXT_PLANNED = "planned" //(in development)
+    const val STATUS_TEXT_CANCELED = "canceled" //(in development)
+    const val STATUS_TEXT_ENDED = "ended"
+}

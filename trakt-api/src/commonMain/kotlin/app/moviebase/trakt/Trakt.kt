@@ -1,5 +1,6 @@
 package app.moviebase.trakt
 
+import app.moviebase.trakt.api.TraktCheckinApi
 import app.moviebase.trakt.api.TraktSeasonsApi
 import app.moviebase.trakt.api.TraktSearchApi
 import app.moviebase.trakt.api.TraktShowsApi
@@ -14,7 +15,8 @@ class Trakt(
 
     private val client: HttpClient = TraktHttpClientFactory.create(traktClientId, logLevel)
 
-    val movies = TraktShowsApi(client)
+    val shows = TraktShowsApi(client)
+    val checkin = TraktCheckinApi(client)
     val seasons = TraktSeasonsApi(client)
     val search = TraktSearchApi(client)
 }
