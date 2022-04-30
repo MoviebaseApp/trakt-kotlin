@@ -2,9 +2,9 @@ package app.moviebase.trakt.remote
 
 import io.ktor.client.*
 import io.ktor.client.engine.mock.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
+import io.ktor.client.plugins.contentnegotiation.*
 import io.ktor.http.*
+import io.ktor.serialization.kotlinx.json.*
 import java.io.File
 
 fun mockHttpClient(
@@ -16,8 +16,8 @@ fun mockHttpClient(
     }
     val headers = headersOf("Content-Type" to listOf(ContentType.Application.Json.toString()))
 
-    install(JsonFeature) {
-        serializer = KotlinxSerializer(buildJson())
+    install(ContentNegotiation) {
+        json(buildJson())
     }
 
     engine {

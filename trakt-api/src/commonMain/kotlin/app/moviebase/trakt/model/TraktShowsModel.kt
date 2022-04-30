@@ -10,7 +10,7 @@ data class TraktShow(
     val ids: TraktIds,
     val network: String? = null,
     @SerialName("aired_episodes") val airedEpisodes: Int? = null,
-    val runtime: Int
+    val runtime: Int? = null
 )
 
 data class TraktAirs(

@@ -1,23 +1,23 @@
 package app.moviebase.trakt.remote
 
 import io.ktor.client.*
-import io.ktor.client.features.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
-import io.ktor.client.features.logging.*
+import io.ktor.client.plugins.*
+import io.ktor.client.plugins.contentnegotiation.*
+import io.ktor.client.plugins.logging.*
+import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
 internal fun buildHttpClient(logLevel: TraktLogLevel = TraktLogLevel.NONE, interceptor: RequestInterceptor): HttpClient {
     val json = buildJson()
 
     val httpClient = HttpClient {
-        install(Logging) {
+        Logging {
             logger = Logger.DEFAULT
             level = logLevel.ktorLogLevel
         }
 
-        install(JsonFeature) {
-            serializer = KotlinxSerializer(json)
+        install(ContentNegotiation) {
+            json(json)
         }
 
         install(HttpTimeout) {

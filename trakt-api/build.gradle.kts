@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
     kotlin("multiplatform")
@@ -6,6 +7,7 @@ plugins {
     id("org.jetbrains.dokka")
     id("maven-publish")
     id("signing")
+    id("com.github.ben-manes.versions") version Versions.benManesVersions
 }
 
 group = "app.moviebase"
@@ -30,6 +32,7 @@ kotlin {
                 implementation(Libs.Data.ktorJson)
                 implementation(Libs.Data.ktorLogging)
                 implementation(Libs.Data.ktorSerialization)
+                implementation(Libs.Data.ktorContentNegotiation)
                 implementation(Libs.Data.ktorAuth)
             }
         }
@@ -59,12 +62,26 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
     kotlinOptions.freeCompilerArgs += "-Xjvm-default=all"
 }
+
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
     testLogging {
         events("failed")
         showStandardStreams = true
     }
+}
+
+tasks.withType<DependencyUpdatesTask> {
+    rejectVersionIf {
+        isNonStable(candidate.version)
+    }
+}
+
+fun isNonStable(version: String): Boolean {
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }
 
 val javadocJar by tasks.registering(Jar::class) {
