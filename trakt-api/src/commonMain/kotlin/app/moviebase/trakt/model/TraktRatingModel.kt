@@ -5,5 +5,5 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class TraktRating(
     val rating: Double,
-    val votes: Double
+    val votes: Int
 )

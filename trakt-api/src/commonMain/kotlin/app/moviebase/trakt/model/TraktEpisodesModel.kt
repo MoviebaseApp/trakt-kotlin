@@ -18,11 +18,11 @@ data class TraktEpisodeSummary(
 data class TraktEpisode(
     val season: Int,
     val number: Int,
-    val title: String,
+    val title: String? = null,
     val ids: TraktIds,
-    @SerialName("number_abs") val numberAbs: Int?,
+    @SerialName("number_abs") val numberAbs: Int? = null,
     @SerialName("first_aired") @Serializable(LocalDateTimeSerializer::class) val firstAired: LocalDateTime? = null,
-    val runtime: Int,
+    val runtime: Int? = null,
     val tmdbNumber: Int? = null
 )
 

@@ -19,7 +19,7 @@ class TraktSearchApiTest {
 
     @Test
     fun `it can search tmdb show`() = runBlocking {
-        val results = classToTest.search(TraktSearchType.TMDB, "63639", TraktMediaType.SHOW)
+        val results = classToTest.searchIdLookup(TraktSearchType.TMDB, "63639", TraktMediaType.SHOW)
 
 
         val showResult = results.first()

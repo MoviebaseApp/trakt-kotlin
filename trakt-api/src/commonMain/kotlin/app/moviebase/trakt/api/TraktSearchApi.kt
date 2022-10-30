@@ -10,7 +10,14 @@ import io.ktor.client.request.*
 
 class TraktSearchApi(private val client: HttpClient) {
 
-    suspend fun search(searchType: TraktSearchType, id: String, mediaType: TraktMediaType): List<TraktSearchResult> = client.get {
+    /**
+     * Lookup items by their Trakt, IMDB, TMDB, TVDB, or TVRage ID.
+     *
+     * URL example: /search/tmdb/:id?type=movie
+     *
+     * @see [Search - ID Lookup](https://trakt.docs.apiary.io/#reference/search/id-lookup)
+     */
+    suspend fun searchIdLookup(searchType: TraktSearchType, id: String, mediaType: TraktMediaType): List<TraktSearchResult> = client.get {
         endPointSearch(searchType.value, id)
         parameter("type", mediaType.value)
     }.body()

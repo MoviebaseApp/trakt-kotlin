@@ -4,6 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class TraktMovie(
-    val runtime: Int,
+    val runtime: Int? = null,
     val ids: TraktIds
 )
