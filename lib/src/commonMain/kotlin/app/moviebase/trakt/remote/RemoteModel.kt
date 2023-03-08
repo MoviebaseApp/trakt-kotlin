@@ -3,20 +3,13 @@ package app.moviebase.trakt.remote
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
-import io.ktor.client.plugins.logging.LogLevel
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
-internal fun buildHttpClient(logLevel: TraktLogLevel = TraktLogLevel.NONE, interceptor: RequestInterceptor): HttpClient {
+internal fun buildHttpClient(interceptor: RequestInterceptor): HttpClient {
     val json = buildJson()
 
     val httpClient = HttpClient {
-        logLevel
-//        logging {
-//            logger = Logger.DEFAULT
-//            level = logLevel.ktorLogLevel
-//        }
-
         install(ContentNegotiation) {
             json(json)
         }
@@ -30,15 +23,6 @@ internal fun buildHttpClient(logLevel: TraktLogLevel = TraktLogLevel.NONE, inter
     httpClient.interceptRequest(interceptor = interceptor)
     return httpClient
 }
-
-private val TraktLogLevel.ktorLogLevel
-    get() = when (this) {
-        TraktLogLevel.ALL -> LogLevel.ALL
-        TraktLogLevel.HEADERS -> LogLevel.HEADERS
-        TraktLogLevel.BODY -> LogLevel.BODY
-        TraktLogLevel.INFO -> LogLevel.INFO
-        TraktLogLevel.NONE -> LogLevel.NONE
-    }
 
 internal fun buildJson(): Json = Json {
     encodeDefaults = false

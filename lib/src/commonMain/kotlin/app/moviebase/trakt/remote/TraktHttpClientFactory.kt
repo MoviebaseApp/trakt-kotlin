@@ -6,7 +6,7 @@ import io.ktor.client.request.header
 
 internal object TraktHttpClientFactory {
 
-    fun create(traktClientId: String, logLevel: TraktLogLevel) = buildHttpClient(logLevel) {
+    fun create(traktClientId: String) = buildHttpClient {
         it.header(TraktHeader.API_KEY, traktClientId)
         it.header(TraktHeader.API_VERSION, TraktWebConfig.VERSION)
     }

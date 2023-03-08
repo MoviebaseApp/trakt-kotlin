@@ -7,15 +7,11 @@ import app.moviebase.trakt.api.TraktSearchApi
 import app.moviebase.trakt.api.TraktSeasonsApi
 import app.moviebase.trakt.api.TraktShowsApi
 import app.moviebase.trakt.remote.TraktHttpClientFactory
-import app.moviebase.trakt.remote.TraktLogLevel
 import io.ktor.client.HttpClient
 
-class Trakt(
-    traktClientId: String,
-    logLevel: TraktLogLevel = TraktLogLevel.NONE,
-) {
+class Trakt(traktClientId: String) {
 
-    private val client: HttpClient = TraktHttpClientFactory.create(traktClientId, logLevel)
+    private val client: HttpClient = TraktHttpClientFactory.create(traktClientId)
 
     val movies = TraktMoviesApi(client)
     val shows = TraktShowsApi(client)
