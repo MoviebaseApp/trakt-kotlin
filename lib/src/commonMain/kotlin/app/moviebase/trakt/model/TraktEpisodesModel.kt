@@ -11,7 +11,9 @@ data class TraktEpisodeSummary(
     @SerialName("number") val number: Int,
     @SerialName("title") val title: String,
     @SerialName("ids") val ids: TraktIds? = null,
-    @SerialName("first_aired") @Serializable(LocalDateTimeSerializer::class) val firstAired: LocalDateTime? = null // date time in UTC
+    @SerialName("first_aired")
+    @Serializable(LocalDateTimeSerializer::class)
+    val firstAired: LocalDateTime? = null, // date time in UTC
 )
 
 @Serializable
@@ -21,8 +23,9 @@ data class TraktEpisode(
     val title: String? = null,
     val ids: TraktIds,
     @SerialName("number_abs") val numberAbs: Int? = null,
-    @SerialName("first_aired") @Serializable(LocalDateTimeSerializer::class) val firstAired: LocalDateTime? = null,
+    @SerialName("first_aired")
+    @Serializable(LocalDateTimeSerializer::class)
+    val firstAired: LocalDateTime? = null,
     val runtime: Int? = null,
-    val tmdbNumber: Int? = null
+    val tmdbNumber: Int? = null,
 )
-

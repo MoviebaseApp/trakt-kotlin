@@ -1,3 +1,5 @@
+// ktlint-disable filename
+
 package app.moviebase.trakt.model
 
 import kotlinx.serialization.ExperimentalSerializationApi
@@ -10,7 +12,7 @@ import kotlinx.serialization.encoding.Encoder
 
 @Serializable
 data class TraktSeasonEpisodes(
-    val items: List<TraktEpisode>
+    val items: List<TraktEpisode>,
 ) {
 
     // use custom serializer because List cannot be used in client.get (JS inline method not allowed)
@@ -30,6 +32,5 @@ data class TraktSeasonEpisodes(
         }
 
         fun build(items: List<TraktEpisode>) = TraktSeasonEpisodes(items)
-
     }
 }

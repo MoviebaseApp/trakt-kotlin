@@ -10,19 +10,19 @@ data class TraktShow(
     val ids: TraktIds,
     val network: String? = null,
     @SerialName("aired_episodes") val airedEpisodes: Int? = null,
-    val runtime: Int? = null
+    val runtime: Int? = null,
 )
 
 data class TraktAirs(
     @SerialName("day") val day: String,
     @SerialName("time") val time: String,
-    @SerialName("timezone") val timezone: String
+    @SerialName("timezone") val timezone: String,
 )
 
 object TraktShowStatus {
     const val STATUS_TEXT_RETURNING_SERIES = "returning series" // airing soon
     const val STATUS_TEXT_IN_PRODUCTION = "in production" // airing soon
-    const val STATUS_TEXT_PLANNED = "planned" //(in development)
-    const val STATUS_TEXT_CANCELED = "canceled" //(in development)
+    const val STATUS_TEXT_PLANNED = "planned" // (in development)
+    const val STATUS_TEXT_CANCELED = "canceled" // (in development)
     const val STATUS_TEXT_ENDED = "ended"
 }

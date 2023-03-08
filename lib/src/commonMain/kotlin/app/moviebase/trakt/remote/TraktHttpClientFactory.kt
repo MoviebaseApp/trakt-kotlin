@@ -1,9 +1,8 @@
 package app.moviebase.trakt.remote
 
 import app.moviebase.trakt.TraktHeader
-import app.moviebase.trakt.TraktUrlParameter
 import app.moviebase.trakt.TraktWebConfig
-import io.ktor.client.request.*
+import io.ktor.client.request.header
 
 internal object TraktHttpClientFactory {
 

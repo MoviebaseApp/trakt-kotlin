@@ -4,9 +4,10 @@ import app.moviebase.trakt.model.TraktEpisodeSummary
 import app.moviebase.trakt.model.TraktRating
 import app.moviebase.trakt.remote.endPoint
 import app.moviebase.trakt.remote.parameterExtended
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
+import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.get
 
 class TraktEpisodesApi(private val client: HttpClient) {
 
@@ -27,12 +28,11 @@ class TraktEpisodesApi(private val client: HttpClient) {
         endPointEpisode(traktSlug, seasonNumber, episodeNumber, "ratings")
     }.body()
 
-
     private fun HttpRequestBuilder.endPointEpisode(
         traktSlug: String,
         seasonNumber: Int,
         episodeNumber: Int,
-        vararg paths: String
+        vararg paths: String,
     ) {
         endPoint(
             "shows",
@@ -41,7 +41,7 @@ class TraktEpisodesApi(private val client: HttpClient) {
             seasonNumber.toString(),
             "episodes",
             episodeNumber.toString(),
-            *paths
+            *paths,
         )
     }
 }

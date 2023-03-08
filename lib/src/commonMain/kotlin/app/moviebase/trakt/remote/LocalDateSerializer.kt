@@ -15,5 +15,4 @@ class LocalDateSerializer : KSerializer<LocalDate?> {
     override val descriptor: SerialDescriptor get() = delegate.descriptor
     override fun deserialize(decoder: Decoder): LocalDate? = delegate.deserialize(decoder)?.tryLocalDate()
     override fun serialize(encoder: Encoder, value: LocalDate?) = delegate.serialize(encoder, value?.toString())
-
 }

@@ -4,9 +4,10 @@ import app.moviebase.trakt.model.TraktEpisode
 import app.moviebase.trakt.model.TraktRating
 import app.moviebase.trakt.remote.endPoint
 import app.moviebase.trakt.remote.parameterExtended
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
+import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.get
 
 class TraktSeasonsApi(private val client: HttpClient) {
 

@@ -8,10 +8,10 @@ object TraktUrlBuilder {
     /**
      * Example: https://trakt.tv/users/andrewbloom
      */
-    fun buildUserPage(userId: String) = "${TraktWebConfig.WEBSITE_BASE_URL}/${TraktUrlParameter.USERS}/${userId}"
+    fun buildUserPage(userId: String) = "${TraktWebConfig.WEBSITE_BASE_URL}/${TraktUrlParameter.USERS}/$userId"
 
     /**
-     * Example: hhttps://trakt.tv/comments/283816
+     * Example: https://trakt.tv/comments/283816
      */
-    fun buildCommentPage(commentId: Int) = "${TraktWebConfig.WEBSITE_BASE_URL}/${TraktUrlParameter.COMMENTS}/${commentId}"
+    fun buildCommentPage(commentId: Int) = "${TraktWebConfig.WEBSITE_BASE_URL}/${TraktUrlParameter.COMMENTS}/$commentId"
 }

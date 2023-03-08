@@ -4,9 +4,8 @@
 .idea
 .DS_Store
 /build
-/trakt-api/build
+/lib/build
 /buildSrc/build
-/buildSrc/.gradle
 /captures
 .externalNativeBuild
 .cxx

@@ -10,5 +10,5 @@ enum class TraktListType(val value: String) {
     MOVIES("movies"),
     SHOWS("shows"),
     SEASONS("seasons"),
-    EPISODES("episodes");
+    EPISODES("episodes"),
 }

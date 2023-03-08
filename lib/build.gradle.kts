@@ -1,5 +1,5 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     alias(libs.plugins.kotlin.multiplatform)
@@ -17,7 +17,6 @@ val useSnapshot = false
 
 group = "app.moviebase"
 version = "$versionMajor.$versionMinor.$versionPatch" + if (useSnapshot) "-SNAPSHOT" else ""
-
 
 kotlin {
     jvm()
@@ -69,7 +68,6 @@ kotlin {
         }
 
         val jsMain by getting {
-
         }
     }
 }
