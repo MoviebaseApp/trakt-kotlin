@@ -1,7 +1,9 @@
 package app.moviebase.trakt
 
-object TraktWebConfig {
+internal object TraktWebConfig {
     const val BASE_URL = "https://api.trakt.tv"
+    const val WEBSITE_BASE_URL = "https://trakt.tv"
+
     const val VERSION = "2"
     const val OAUTH2_AUTHORIZATION_URL = "https://trakt.tv/oauth/authorize"
 
@@ -9,7 +11,7 @@ object TraktWebConfig {
     const val PAGE_LIMIT_RECOMMENDATION = 20
 }
 
-object TraktHeader {
+internal object TraktHeader {
     const val API_KEY = "trakt-api-key"
     const val API_VERSION = "trakt-api-version"
     const val PAGINATION_PAGE = "X-Pagination-Page"
@@ -17,12 +19,13 @@ object TraktHeader {
     const val PAGINATION_ITEM_COUNT = "X-Pagination-Item-Count"
 }
 
-object TraktUrlParameter {
+internal object TraktUrlParameter {
     const val HOST = "trakt.tv"
     const val BASE_URL = "https://trakt.tv"
 
     const val PARAM_SEARCH = "search"
-    const val PARAM_COMMENTS = "comments"
+    const val COMMENTS = "comments"
+    const val USERS = "users"
     const val PARAM_TRAKT_IMDB = "imdb"
     const val SHOWS = "shows"
     const val MOVIES = "movies"
