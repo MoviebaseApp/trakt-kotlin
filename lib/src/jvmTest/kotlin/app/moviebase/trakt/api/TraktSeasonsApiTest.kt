@@ -9,8 +9,8 @@ class TraktSeasonsApiTest {
 
     val client = mockHttpClient(
         responses = mapOf(
-            "shows/the-expanse/seasons/4?extended=full" to "seasons/seasons_episodes_expanse_season_4.json"
-        )
+            "shows/the-expanse/seasons/4?extended=full" to "seasons/seasons_episodes_expanse_season_4.json",
+        ),
     )
 
     val classToTest = TraktSeasonsApi(client)

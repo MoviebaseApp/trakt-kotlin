@@ -15,7 +15,7 @@ enum class TraktMediaType(val value: String) {
     SEASON("season"),
 
     @SerialName("episode")
-    EPISODE("episode")
+    EPISODE("episode"),
 }
 
 @Serializable
@@ -24,5 +24,5 @@ data class TraktIds(
     val slug: String? = null,
     val tmdb: Int? = null,
     val tvdb: Int? = null,
-    val imdb: String? = null
+    val imdb: String? = null,
 )

@@ -8,10 +8,9 @@ import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-
 @Serializable
 data class TraktSearchResults(
-    val items: List<TraktSearchResult>
+    val items: List<TraktSearchResult>,
 ) {
 
     // use custom serializer because List cannot be used in client.get (JS inline method not allowed)
@@ -30,26 +29,23 @@ data class TraktSearchResults(
             return TraktSearchResults(items)
         }
     }
-
 }
-
 
 @Serializable
 data class TraktSearchResult(
     val type: TraktMediaType,
     val movie: TraktMovie? = null,
     val show: TraktShow? = null,
-    val episode: TraktEpisode? = null
+    val episode: TraktEpisode? = null,
 ) {
 
     val ids: TraktIds?
         get() = when {
-            movie != null   -> movie.ids
+            movie != null -> movie.ids
             episode != null -> episode.ids // could have show and episode
-            show != null    -> show.ids
-            else            -> null
+            show != null -> show.ids
+            else -> null
         }
-
 }
 
 enum class TraktSearchType(val value: String) {
@@ -57,4 +53,3 @@ enum class TraktSearchType(val value: String) {
     TMDB("tmdb"),
     TVDB("tvdb"),
 }
-

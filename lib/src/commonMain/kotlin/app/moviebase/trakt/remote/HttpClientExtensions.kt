@@ -1,10 +1,11 @@
 package app.moviebase.trakt.remote
 
-import io.ktor.client.*
-import io.ktor.client.call.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
-import io.ktor.util.pipeline.*
+import io.ktor.client.HttpClient
+import io.ktor.client.call.HttpClientCall
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.HttpRequestPipeline
+import io.ktor.client.statement.HttpResponsePipeline
+import io.ktor.util.pipeline.PipelinePhase
 
 typealias RequestInterceptor = suspend (HttpRequestBuilder) -> Unit
 typealias ResponseInterceptor = suspend (HttpClientCall) -> Unit
@@ -17,4 +18,3 @@ fun HttpClient.interceptRequest(phase: PipelinePhase = HttpRequestPipeline.Rende
  */
 fun HttpClient.interceptResponse(phase: PipelinePhase = HttpResponsePipeline.Parse, interceptor: ResponseInterceptor) =
     responsePipeline.intercept(phase) { interceptor(context) }
-

@@ -2,8 +2,12 @@ package app.moviebase.trakt.remote
 
 import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.TraktWebConfig
-import io.ktor.client.request.*
-import io.ktor.http.*
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.parameter
+import io.ktor.client.request.url
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
+import io.ktor.http.path
 
 fun HttpRequestBuilder.json() {
     contentType(ContentType.Application.Json)
@@ -11,7 +15,7 @@ fun HttpRequestBuilder.json() {
 
 fun HttpRequestBuilder.endPoint(vararg paths: String) {
     url {
-        takeFrom(TraktWebConfig.BASE_URL)
+        url(TraktWebConfig.BASE_URL)
         path(*paths)
     }
 }
@@ -25,4 +29,3 @@ fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
 fun HttpRequestBuilder.parameterExtended(extended: String = TraktExtended.FULL) {
     parameter("extended", extended)
 }
-
