@@ -2,25 +2,26 @@
 [Support](https://support.trakt.tv/support/home) |
 [Documentation](https://trakt.docs.apiary.io/)
 
-
 <a href="https://www.trakt.tv"><img alt="Trakt" src="doc/images/trakt-wide-red-black.svg" width="400"></a>
 
-***Get movie and TV show content from Trakt.***
+***Track your TV shows and movies with Trakt.***
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-api?label=Maven%20Central)](https://search.maven.org/artifact/app.moviebase/trakt-api)
-[![Issues](https://img.shields.io/github/issues/MoviebaseApp/trakt-api/total)](http://kotlinlang.org)
-[![Kotlin](https://img.shields.io/badge/kotlin-1.7.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
-[![Gradle](https://img.shields.io/badge/Gradle-7-green?style=flat)](https://gradle.org)
+![Github Actions](https://github.com/MoviebaseApp/trakt-api/actions/workflows/build.yml/badge.svg)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 
 <hr>
 
-
 # Trakt API
-This library is a lightweight [Trakt API](https://trakt.docs.apiary.io/).
-It supports Swift, Kotlin, and JavaScript by setting up as a Kotlin Multiplatform project.
 
-*This library is mainly used and supported by [Moviebase](https://www.moviebase.app).*
+Trakt API is a **Kotlin Multiplatform** library for tracking your series and movies.
+
+* Written in Kotlin native with ktor from the ground up.
+* Support for Android, iOS, desktop, and web applications.
+* High customizable HttpClient configuration
+* Fully supported by [Moviebase for Android](https://play.google.com/store/apps/details?id=com.moviebase)
 
 
 ## Adding to your project
@@ -41,7 +42,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:trakt-api:0.1.3")
+    implementation("app.moviebase:trakt-api:0.2.0")
 }
 ```
 
@@ -50,10 +51,10 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:trakt-api:0.1.3")
+        implementation("app.moviebase:trakt-api:0.2.0")
     }
 }
-``` 
+```
 
 ### Maven
 
@@ -63,7 +64,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>trakt-api</artifactId>
-    <version>0.1.3</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 
