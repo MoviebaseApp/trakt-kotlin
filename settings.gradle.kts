@@ -7,4 +7,4 @@ pluginManagement {
 }
 rootProject.name = "trakt-api"
 
-include(":trakt-api")
+include(":lib")
