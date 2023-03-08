@@ -2,20 +2,26 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
-    kotlin("multiplatform")
-    kotlin("plugin.serialization")
-    id("org.jetbrains.dokka")
+    alias(libs.plugins.kotlin.multiplatform)
+    alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.dokka)
+    alias(libs.plugins.ben.manes.versions)
     id("maven-publish")
     id("signing")
-    id("com.github.ben-manes.versions") version "0.46.0"
 }
 
+val versionMajor = 0
+val versionMinor = 2
+val versionPatch = 0
+val useSnapshot = false
+
 group = "app.moviebase"
-version = Versions.versionName
+version = "$versionMajor.$versionMinor.$versionPatch" + if (useSnapshot) "-SNAPSHOT" else ""
+
 
 kotlin {
     jvm()
-    js {
+    js(IR) {
         browser()
         nodejs()
     }
@@ -23,43 +29,42 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Kotlin.kotlinSerialization)
-                implementation(Libs.Kotlin.kotlinxDateTime)
-                api(Libs.Kotlin.kotlinIo)
-
-                implementation(Libs.Data.ktorCore)
-                implementation(Libs.Data.ktorJson)
-                implementation(Libs.Data.ktorLogging)
-                implementation(Libs.Data.ktorSerialization)
-                implementation(Libs.Data.ktorContentNegotiation)
-                implementation(Libs.Data.ktorAuth)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.serialization)
+                implementation(libs.kotlinx.datetime)
+                implementation(libs.ktor.core)
+                implementation(libs.ktor.json)
+                implementation(libs.ktor.logging)
+                implementation(libs.ktor.serialization.json)
+                implementation(libs.ktor.content.negotiation)
+                implementation(libs.ktor.auth)
             }
         }
         val commonTest by getting {
             dependencies {
-                implementation(kotlin("test-common"))
-                implementation(kotlin("test-annotations-common"))
+                implementation(libs.kotlin.test.common)
+                implementation(libs.kotlin.test.annotations)
             }
         }
 
         val jvmMain by getting {
             dependencies {
-                implementation(Libs.Data.ktorOkhttp)
+                implementation(libs.ktor.okhttp)
             }
         }
 
         val jvmTest by getting {
             dependencies {
-                implementation(kotlin("test-junit5"))
-                implementation(Libs.Data.ktorOkhttp)
+                implementation(libs.ktor.okhttp)
+                implementation(libs.ktor.mock)
 
-                implementation(Libs.Kotlin.coroutines)
-                implementation(Libs.Testing.jupiter)
-                runtimeOnly(Libs.Testing.jupiterEngine)
-                implementation(Libs.Testing.coroutinesTest)
-                implementation(Libs.Testing.truth)
-                implementation(Libs.Testing.ktorClientMock)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.coroutines.test)
+                implementation(libs.kotlin.junit5)
+                implementation(libs.junit)
+                implementation(libs.junit.jupiter.api)
+                runtimeOnly(libs.junit.jupiter.engine)
+                implementation(libs.truth)
             }
         }
 
@@ -107,7 +112,7 @@ afterEvaluate {
                 name.set("Kotlin Multiplatform Trakt API")
                 description.set("A Kotlin Multiplatform library to access the Trakt API.")
                 url.set("https://github.com/MoviebaseApp/trakt-api")
-                inceptionYear.set("2021")
+                inceptionYear.set("2023")
 
                 developers {
                     developer {
@@ -137,4 +142,15 @@ afterEvaluate {
     signing {
         sign(publishing.publications)
     }
+}
+
+// skip signing for SNAPSHOT builds
+tasks.withType<Sign>().configureEach {
+    onlyIf { !project.version.toString().endsWith("SNAPSHOT") }
+}
+
+// Workaround for optimization publishing issue, see https://youtrack.jetbrains.com/issue/KT-46466
+val signingTasks = tasks.withType<Sign>()
+tasks.withType<AbstractPublishToMaven>().configureEach {
+    dependsOn(signingTasks)
 }

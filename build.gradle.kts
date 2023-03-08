@@ -1,5 +1,11 @@
+
 plugins {
-    id("io.github.gradle-nexus.publish-plugin") version "1.3.0"
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.kotlin.multiplatform) apply false
+    alias(libs.plugins.nexus) apply true
+    alias(libs.plugins.dokka) apply false
+    alias(libs.plugins.ben.manes.versions) apply false
+    alias(libs.plugins.spotless) apply false
 }
 
 buildscript {
@@ -8,15 +14,7 @@ buildscript {
         google()
         mavenCentral()
     }
-    dependencies {
-        classpath(kotlin("gradle-plugin", Versions.kotlin))
-        classpath(kotlin("serialization", Versions.kotlin))
-        classpath(Plugins.dokka)
-    }
 }
-
-group = "app.moviebase"
-version = Versions.versionName
 
 nexusPublishing {
     repositories {
