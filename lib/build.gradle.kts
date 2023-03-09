@@ -9,8 +9,6 @@ plugins {
     alias(libs.plugins.maven.publish)
 }
 
-
-
 kotlin {
     jvm()
     js(IR) {
@@ -90,5 +88,3 @@ fun isNonStable(version: String): Boolean {
     val isStable = stableKeyword || regex.matches(version)
     return isStable.not()
 }
-
-
