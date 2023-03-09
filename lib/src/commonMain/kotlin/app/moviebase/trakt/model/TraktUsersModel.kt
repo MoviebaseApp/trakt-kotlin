@@ -70,6 +70,7 @@ data class TraktAvatar(
 @Serializable
 data class TraktList(
     @SerialName("name") val name: String? = null,
+    @SerialName("privacy") val privacy: TraktListPrivacy? = null,
 )
 
 data class TraktHistoryItem(
