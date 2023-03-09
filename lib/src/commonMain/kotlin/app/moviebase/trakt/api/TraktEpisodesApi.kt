@@ -1,5 +1,6 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.model.TraktEpisodeSummary
@@ -12,8 +13,9 @@ class TraktEpisodesApi(private val client: HttpClient) {
         traktSlug: String,
         seasonNumber: Int,
         episodeNumber: Int,
+        extended: TraktExtended = TraktExtended.FULL
     ): TraktEpisodeSummary = client.getByPaths(*pathEpisodes(traktSlug, seasonNumber, episodeNumber)) {
-        parameterExtended()
+        parameterExtended(extended)
     }
 
     suspend fun getRating(

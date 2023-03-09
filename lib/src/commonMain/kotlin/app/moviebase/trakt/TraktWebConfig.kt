@@ -34,6 +34,7 @@ internal object TraktUrlParameter {
     const val EPISODES = "episodes"
 }
 
-object TraktExtended {
-    const val FULL = "full"
+enum class TraktExtended(val value: String) {
+    FULL("full"),
+    EPISODES("episodes")
 }

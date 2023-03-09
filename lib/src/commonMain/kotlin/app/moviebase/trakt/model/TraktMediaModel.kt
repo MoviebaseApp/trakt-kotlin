@@ -20,9 +20,9 @@ enum class TraktMediaType(val value: String) {
 
 @Serializable
 data class TraktIds(
-    val trakt: Int,
-    val slug: String? = null,
-    val tmdb: Int? = null,
-    val tvdb: Int? = null,
-    val imdb: String? = null,
+    @SerialName("trakt") val trakt: Int,
+    @SerialName("slug") val slug: String? = null,
+    @SerialName("tmdb") val tmdb: Int? = null,
+    @SerialName("tvdb") val tvdb: Int? = null,
+    @SerialName("imdb") val imdb: String? = null,
 )
