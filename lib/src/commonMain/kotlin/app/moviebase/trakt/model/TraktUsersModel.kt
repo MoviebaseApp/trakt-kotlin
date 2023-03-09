@@ -29,8 +29,11 @@ data class TraktUserSettings(
 @Serializable
 data class TraktUser(
     @SerialName("username") val userName: String? = null,
-    @SerialName("name") val displayName: String? = null,
+    @SerialName("name") val name: String? = null,
+    @SerialName("location") val location: String? = null,
+    @SerialName("about") val about: String? = null,
     @SerialName("vip") val vip: Boolean = false,
+    @SerialName("joined_at") val joinedAt: Instant? = null,
     @SerialName("vip_ep") val vipEp: Boolean = false,
     @SerialName("ids") val ids: TraktUserIds? = null,
     @SerialName("vip_og") val vipOg: Boolean = false,
@@ -81,4 +84,39 @@ data class TraktHistoryItem(
     @SerialName("movie") val movie: TraktMovie? = null,
     @SerialName("show") val show: TraktShow? = null,
     @SerialName("episode") val episode: TraktEpisode? = null,
+)
+
+@Serializable
+data class TraktUserListItem(
+    @SerialName("id") val id: Long,
+    @SerialName("rank") val rank: Int,
+    @SerialName("listed_at") val listedAt: Instant,
+    @SerialName("type") val type: String,
+    @SerialName("movie") val movie: TraktMovie? = null,
+    @SerialName("show") val show: TraktShow? = null,
+    @SerialName("episode") val episode: TraktEpisode? = null,
+    @SerialName("person") val person: TraktPerson? = null,
+)
+
+// TODO: Split into separate media classes (via sealed)?
+@Serializable
+data class TraktMediaItem(
+    @SerialName("ids") val ids: TraktIds? = null,
+    @SerialName("rating") val rating: Int? = null,
+    @SerialName("type") val type: TraktMediaType? = null,
+
+    @SerialName("seasons") val seasons: List<TraktSeason> = emptyList(),
+    @SerialName("movie") val movie: TraktMovie? = null,
+    @SerialName("show") val show: TraktShow? = null,
+    @SerialName("episode") val episode: TraktEpisode? = null,
+    @SerialName("season") val season: TraktSeason? = null,
+    @SerialName("plays") val plays: Int = 0,
+
+    @SerialName("collected_at") val collectedAt: Instant? = null,
+    @SerialName("last_collected_at") val lastCollectedAt: Instant? = null,
+    @SerialName("last_watched_at") val lastWatchedAt: Instant? = null,
+    @SerialName("last_updated_at") val lastUpdatedAt: Instant? = null,
+    @SerialName("rated_at") val ratedAt: Instant? = null,
+    @SerialName("listed_at") val listedAt: Instant? = null,
+    @SerialName("hidden_at") val hiddenAt: Instant? = null
 )

@@ -19,11 +19,23 @@ sealed class TraktCheckin {
 
 @Serializable
 data class TraktCheckinItem(
-    val movie: TraktItem?,
-    val show: TraktItem?,
+    val movie: TraktCheckinMovie?,
+    val show: TraktCheckinShow?,
     val episode: TraktEpisode?,
     val sharing: TraktSharing,
     val message: String?,
+)
+
+@Serializable
+data class TraktCheckinMovie(
+    @SerialName("title") val title: String?,
+    @SerialName("ids") val ids: TraktItemIds,
+)
+
+@Serializable
+data class TraktCheckinShow(
+    @SerialName("title") val title: String?,
+    @SerialName("ids") val ids: TraktItemIds,
 )
 
 @Serializable
