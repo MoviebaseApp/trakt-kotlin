@@ -15,7 +15,7 @@ import kotlinx.serialization.encoding.Encoder
 @Serializable
 data class TraktSeason(
     @SerialName("number") val number: Int,
-    @SerialName("ids") val ids: TraktIds? = null,
+    @SerialName("ids") val ids: TraktItemIds? = null,
     @SerialName("rating") val rating: Int? = null,
     @SerialName("votes") val votes: Int? = null,
     @SerialName("episode_count") val episodeCount: Int,
