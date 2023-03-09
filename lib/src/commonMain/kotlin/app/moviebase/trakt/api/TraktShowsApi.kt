@@ -44,9 +44,9 @@ class TraktShowsApi(private val client: HttpClient) {
     }
 
     suspend fun getSummary(
-        traktSlug: String,
+        showId: String,
         extended: TraktExtended? = null,
-    ): TraktShow = client.getByPaths(*pathShows(traktSlug)) {
+    ): TraktShow = client.getByPaths(*pathShows(showId)) {
         extended?.let { parameterExtended(it) }
     }
 

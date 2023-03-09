@@ -22,4 +22,3 @@ class TraktRecommendationsApi(private val client: HttpClient) {
 
     private fun pathRecommendations(vararg paths: String) = arrayOf("recommendations", *paths)
 }
-

@@ -8,11 +8,11 @@ import app.moviebase.trakt.core.parameterStartAt
 import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.model.TraktHistoryItem
 import app.moviebase.trakt.model.TraktList
-import app.moviebase.trakt.model.TraktUserListItem
 import app.moviebase.trakt.model.TraktListMediaType
 import app.moviebase.trakt.model.TraktSyncItems
 import app.moviebase.trakt.model.TraktSyncResponse
 import app.moviebase.trakt.model.TraktUser
+import app.moviebase.trakt.model.TraktUserListItem
 import app.moviebase.trakt.model.TraktUserSettings
 import app.moviebase.trakt.model.TraktUserSlug
 import io.ktor.client.HttpClient
@@ -93,7 +93,6 @@ class TraktUsersApi(private val client: HttpClient) {
         itemId: Int?,
         vararg paths: String,
     ) = listOfNotNull("users", userSlug.name, "history", listType?.value, itemId?.toString(), *paths).toTypedArray()
-
 
     /**
      * Path: users/{userSlug}/lists/{id}/items

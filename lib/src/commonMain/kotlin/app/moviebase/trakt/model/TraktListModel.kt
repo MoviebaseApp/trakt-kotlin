@@ -21,7 +21,7 @@ enum class TraktListMediaType(val value: String) {
     SEASONS("seasons"),
 
     @SerialName("episodes")
-    EPISODES("episodes")
+    EPISODES("episodes"),
 }
 
 @Serializable
@@ -36,7 +36,7 @@ enum class TraktListType(val value: String) {
     WATCHLIST("watchlist"),
 
     @SerialName("watched")
-    WATCHED("watched")
+    WATCHED("watched"),
 }
 
 @Serializable
@@ -48,5 +48,5 @@ enum class TraktListPrivacy {
     FRIENDS,
 
     @SerialName("public")
-    PUBLIC
+    PUBLIC,
 }

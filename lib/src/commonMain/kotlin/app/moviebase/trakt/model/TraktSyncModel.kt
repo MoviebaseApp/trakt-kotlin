@@ -38,7 +38,7 @@ data class TraktSyncShow(
     @SerialName("collected_at") override val collectedAt: Instant? = null,
     @SerialName("rated_at") override val ratedAt: Instant? = null,
     @SerialName("seasons") val seasons: List<TraktSyncSeason>? = null,
-): TraktSyncItem
+) : TraktSyncItem
 
 @Serializable
 data class TraktSyncSeason(
@@ -48,7 +48,7 @@ data class TraktSyncSeason(
     @SerialName("collected_at") override val collectedAt: Instant? = null,
     @SerialName("rated_at") override val ratedAt: Instant? = null,
     @SerialName("episodes") val episodes: List<TraktSyncEpisode> = emptyList(),
-): TraktSyncItem
+) : TraktSyncItem
 
 @Serializable
 data class TraktSyncEpisode(
@@ -58,7 +58,6 @@ data class TraktSyncEpisode(
     @SerialName("collected_at") val collectedAt: Instant? = null,
     @SerialName("rated_at") val ratedAt: Instant? = null,
 )
-
 
 @Serializable
 data class TraktSyncPerson(
@@ -95,7 +94,4 @@ data class TraktSyncErrors(
 ) {
 
     val isEmpty: Boolean get() = listOf(movies, shows, seasons, episodes, people, ids).all { it.isEmpty() }
-
 }
-
-

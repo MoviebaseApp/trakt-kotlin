@@ -27,6 +27,6 @@ data class TraktEpisode(
     @SerialName("ids") val ids: TraktItemIds? = null,
     @SerialName("number_abs") val numberAbs: Int? = null,
     @SerialName("first_aired") val firstAired: Instant? = null,
-    @SerialName("rating") val rating: Int? = null,
+    @SerialName("rating") val rating: Float? = null,
     @SerialName("votes") val votes: Int? = null,
 )

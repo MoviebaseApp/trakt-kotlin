@@ -121,7 +121,6 @@ internal object HttpClientFactory {
 //        }
 //    }
 
-
     private val HttpResponse.isTraktStatusHandled: Boolean
         get() = status == HttpStatusCode.NotFound ||
             status == HttpStatusCode.Unauthorized ||
@@ -135,5 +134,4 @@ internal object HttpClientFactory {
     }
 
     private fun TraktBearerTokens.toKtor() = BearerTokens(accessToken, refreshToken)
-
 }

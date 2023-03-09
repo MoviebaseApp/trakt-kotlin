@@ -61,7 +61,7 @@ enum class TraktSearchType(val value: String) {
     SHOW("show"),
     EPISODE("episode"),
     PERSON("person"),
-    LIST("list")
+    LIST("list"),
 }
 
 // TODO: field can be limited by media type

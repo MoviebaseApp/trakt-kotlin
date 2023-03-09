@@ -18,7 +18,6 @@ class TraktSearchApi(private val client: HttpClient) {
 
     /**
      * Lookup items by their Trakt, IMDB, TMDB, TVDB, or TVRage ID.
-     *
      * URL example: /search/tmdb/:id?type=movie
      *
      * @see [Search - ID Lookup](https://trakt.docs.apiary.io/#reference/search/id-lookup)

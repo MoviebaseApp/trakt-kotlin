@@ -1,3 +1,5 @@
+// ktlint-disable filename
+
 package app.moviebase.trakt.model
 
 import kotlinx.datetime.LocalDate
