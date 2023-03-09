@@ -10,6 +10,8 @@ internal object TraktWebConfig {
 
     const val PAGE_LIMIT = 10
     const val PAGE_LIMIT_RECOMMENDATION = 20
+    const val PAGE_INITIAL = 0
+    const val PAGE_MAX_LIMIT = 20
 }
 
 internal object TraktHeader {
@@ -36,5 +38,6 @@ internal object TraktUrlParameter {
 
 enum class TraktExtended(val value: String) {
     FULL("full"),
+    NOSEASONS("noseasons"),
     EPISODES("episodes")
 }
