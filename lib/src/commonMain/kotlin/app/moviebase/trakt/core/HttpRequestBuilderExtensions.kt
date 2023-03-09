@@ -10,21 +10,18 @@ import io.ktor.http.contentType
 import io.ktor.http.path
 import kotlinx.datetime.Instant
 
-fun HttpRequestBuilder.json() {
-    contentType(ContentType.Application.Json)
-}
-
-fun HttpRequestBuilder.endPoint(vararg paths: String) {
-    url {
-        url(TraktWebConfig.BASE_URL)
-        path(*paths)
-    }
-}
-
 fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
     parameters.entries.forEach {
-        parameter(it.key, it.value)
+        if(it.value != null) parameter(it.key, it.value)
     }
+}
+
+fun HttpRequestBuilder.parameterPage(page: Int) {
+    parameter("page", page)
+}
+
+fun HttpRequestBuilder.parameterLimit(limit: Int) {
+    parameter("limit", limit)
 }
 
 fun HttpRequestBuilder.parameterExtended(extended: TraktExtended = TraktExtended.FULL) {

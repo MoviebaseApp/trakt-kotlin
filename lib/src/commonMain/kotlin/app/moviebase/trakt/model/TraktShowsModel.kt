@@ -49,3 +49,8 @@ enum class TraktShowStatus(val value: String) {
     ENDED("ended")
 }
 
+@Serializable
+data class TraktTrendingShow(
+    @SerialName("show") val show: TraktShow? = null,
+    @SerialName("watchers") val watchers: Int? = null,
+)
