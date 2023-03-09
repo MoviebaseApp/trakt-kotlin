@@ -1,4 +1,4 @@
-package app.moviebase.trakt.remote
+package app.moviebase.trakt.core
 
 import io.ktor.client.HttpClient
 import io.ktor.client.call.HttpClientCall

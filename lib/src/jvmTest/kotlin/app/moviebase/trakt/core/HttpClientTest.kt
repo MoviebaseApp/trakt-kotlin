@@ -1,12 +1,15 @@
 // ktlint-disable filename
 
-package app.moviebase.trakt.remote
+package app.moviebase.trakt.core
 
+import app.moviebase.trakt.TraktWebConfig
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
 import io.ktor.client.engine.mock.respond
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.plugins.defaultRequest
 import io.ktor.http.ContentType
+import io.ktor.http.URLProtocol
 import io.ktor.http.decodeURLPart
 import io.ktor.http.headersOf
 import io.ktor.serialization.kotlinx.json.json
@@ -21,8 +24,16 @@ fun mockHttpClient(
     }
     val headers = headersOf("Content-Type" to listOf(ContentType.Application.Json.toString()))
 
+    defaultRequest {
+        url {
+            protocol = URLProtocol.HTTPS
+            host = TraktWebConfig.HOST
+        }
+    }
+
     install(ContentNegotiation) {
-        json(buildJson())
+        val json = JsonFactory.create()
+        json(json)
     }
 
     engine {

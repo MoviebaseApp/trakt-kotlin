@@ -1,9 +1,9 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.core.endPoint
 import app.moviebase.trakt.model.TraktMediaType
 import app.moviebase.trakt.model.TraktSearchResult
 import app.moviebase.trakt.model.TraktSearchType
-import app.moviebase.trakt.remote.endPoint
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.HttpRequestBuilder
