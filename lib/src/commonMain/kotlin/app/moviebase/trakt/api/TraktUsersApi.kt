@@ -12,6 +12,7 @@ import app.moviebase.trakt.model.TraktUserListItem
 import app.moviebase.trakt.model.TraktListMediaType
 import app.moviebase.trakt.model.TraktSyncItems
 import app.moviebase.trakt.model.TraktSyncResponse
+import app.moviebase.trakt.model.TraktUser
 import app.moviebase.trakt.model.TraktUserSettings
 import app.moviebase.trakt.model.TraktUserSlug
 import io.ktor.client.HttpClient
@@ -21,6 +22,13 @@ import kotlinx.datetime.Instant
 class TraktUsersApi(private val client: HttpClient) {
 
     suspend fun getSettings(): TraktUserSettings = client.getByPaths("users")
+
+    suspend fun getProfile(
+        userSlug: TraktUserSlug,
+        extended: TraktExtended? = null,
+    ): TraktUser = client.getByPaths(*pathUsers(userSlug)) {
+        extended?.let { parameterExtended(it) }
+    }
 
     suspend fun createList(
         userSlug: TraktUserSlug = TraktUserSlug.ME,

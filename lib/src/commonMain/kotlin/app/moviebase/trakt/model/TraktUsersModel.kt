@@ -73,7 +73,14 @@ data class TraktAvatar(
 @Serializable
 data class TraktList(
     @SerialName("name") val name: String? = null,
+    @SerialName("ids") val ids: TraktListIds? = null,
     @SerialName("privacy") val privacy: TraktListPrivacy? = null,
+)
+
+@Serializable
+data class TraktListIds(
+    @SerialName("trakt") val trakt: Int? = null,
+    @SerialName("slug") val slug: String? = null,
 )
 
 data class TraktHistoryItem(
@@ -118,5 +125,5 @@ data class TraktMediaItem(
     @SerialName("last_updated_at") val lastUpdatedAt: Instant? = null,
     @SerialName("rated_at") val ratedAt: Instant? = null,
     @SerialName("listed_at") val listedAt: Instant? = null,
-    @SerialName("hidden_at") val hiddenAt: Instant? = null
+    @SerialName("hidden_at") val hiddenAt: Instant? = null,
 )
