@@ -17,7 +17,7 @@ data class TraktShow(
     @SerialName("aired_episodes") val airedEpisodes: Int? = null,
     @SerialName("first_aired") val firstAired: Instant? = null,
     @SerialName("runtime") val runtime: Int? = null,
-    @SerialName("rating") val rating: Int? = null,
+    @SerialName("rating") val rating: Float? = null,
     @SerialName("votes") val votes: Int? = null,
     @SerialName("status") val status: TraktShowStatus? = null,
     @SerialName("airs") val airs: TraktAirs? = null,
@@ -46,7 +46,7 @@ enum class TraktShowStatus(val value: String) {
     CANCELED("canceled"),
 
     @SerialName("ended")
-    ENDED("ended")
+    ENDED("ended"),
 }
 
 @Serializable

@@ -1,5 +1,6 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
@@ -17,7 +18,7 @@ class TraktShowsApiTest {
 
     @Test
     fun `it can fetch show summary`() = runTest {
-        val traktShow = classToTest.getSummary("vikings")
+        val traktShow = classToTest.getSummary("vikings", TraktExtended.FULL)
 
         assertThat(traktShow.title).isEqualTo("Vikings")
     }

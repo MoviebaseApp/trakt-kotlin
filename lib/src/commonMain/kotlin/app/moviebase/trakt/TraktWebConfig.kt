@@ -39,5 +39,5 @@ internal object TraktUrlParameter {
 enum class TraktExtended(val value: String) {
     FULL("full"),
     NOSEASONS("noseasons"),
-    EPISODES("episodes")
+    EPISODES("episodes"),
 }

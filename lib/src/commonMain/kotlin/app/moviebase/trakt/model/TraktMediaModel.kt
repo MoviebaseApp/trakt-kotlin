@@ -19,10 +19,10 @@ enum class TraktMediaType(val value: String) {
 }
 
 sealed interface TraktIds {
-     val trakt: Int?
-     val slug: String?
-     val tmdb: Int?
-     val imdb: String?
+    val trakt: Int?
+    val slug: String?
+    val tmdb: Int?
+    val imdb: String?
 }
 
 @Serializable

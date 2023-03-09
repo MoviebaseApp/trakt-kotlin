@@ -7,8 +7,8 @@ import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.model.TraktListType
 import app.moviebase.trakt.model.TraktMediaItem
 import app.moviebase.trakt.model.TraktMediaType
-import app.moviebase.trakt.model.TraktSyncResponse
 import app.moviebase.trakt.model.TraktSyncItems
+import app.moviebase.trakt.model.TraktSyncResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.request.setBody
 

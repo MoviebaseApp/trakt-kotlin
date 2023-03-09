@@ -17,7 +17,7 @@ class TraktSeasonsApiTest {
 
     @Test
     fun `it can fetch season episodes`() = runTest {
-        val episodes = classToTest.getEpisodes("the-expanse", 4)
+        val episodes = classToTest.getSeason("the-expanse", 4)
 
         val episodeOne = episodes.first()
         assertThat(episodeOne.season).isEqualTo(4)
