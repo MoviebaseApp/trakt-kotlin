@@ -8,8 +8,8 @@ import app.moviebase.trakt.core.parameterStartAt
 import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.model.TraktHistoryItem
 import app.moviebase.trakt.model.TraktList
-import app.moviebase.trakt.model.TraktListItem
-import app.moviebase.trakt.model.TraktListType
+import app.moviebase.trakt.model.TraktUserListItem
+import app.moviebase.trakt.model.TraktListMediaType
 import app.moviebase.trakt.model.TraktSyncItems
 import app.moviebase.trakt.model.TraktSyncResponse
 import app.moviebase.trakt.model.TraktUserSettings
@@ -35,7 +35,7 @@ class TraktUsersApi(private val client: HttpClient) {
         userSlug: TraktUserSlug = TraktUserSlug.ME,
         listId: String,
         extended: TraktExtended? = null,
-    ): List<TraktListItem> = client.getByPaths(*pathLists(userSlug, listId)) {
+    ): List<TraktUserListItem> = client.getByPaths(*pathLists(userSlug, listId)) {
         extended?.let { parameterExtended(it) }
     }
 
@@ -60,7 +60,7 @@ class TraktUsersApi(private val client: HttpClient) {
      */
     suspend fun getHistory(
         userSlug: TraktUserSlug = TraktUserSlug.ME,
-        listType: TraktListType? = null,
+        listType: TraktListMediaType? = null,
         itemId: Int? = null,
         extended: TraktExtended? = null,
         startAt: Instant? = null,
@@ -81,7 +81,7 @@ class TraktUsersApi(private val client: HttpClient) {
      */
     private fun pathHistory(
         userSlug: TraktUserSlug,
-        listType: TraktListType?,
+        listType: TraktListMediaType?,
         itemId: Int?,
         vararg paths: String,
     ) = listOfNotNull("users", userSlug.name, "history", listType?.value, itemId?.toString(), *paths).toTypedArray()

@@ -13,7 +13,6 @@ data class TraktSyncItems(
     @SerialName("ids") var ids: List<Long>? = null,
 )
 
-
 sealed interface TraktSyncItem {
     val ids: TraktItemIds
     val rating: Int?
@@ -98,4 +97,5 @@ data class TraktSyncErrors(
     val isEmpty: Boolean get() = listOf(movies, shows, seasons, episodes, people, ids).all { it.isEmpty() }
 
 }
+
 

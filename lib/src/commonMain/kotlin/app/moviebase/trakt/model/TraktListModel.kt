@@ -1,6 +1,5 @@
 package app.moviebase.trakt.model
 
-import kotlinx.datetime.Instant
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -11,7 +10,7 @@ object TraktListCategory {
 }
 
 @Serializable
-enum class TraktListType(val value: String) {
+enum class TraktListMediaType(val value: String) {
     @SerialName("movies")
     MOVIES("movies"),
 
@@ -26,6 +25,21 @@ enum class TraktListType(val value: String) {
 }
 
 @Serializable
+enum class TraktListType(val value: String) {
+    @SerialName("collection")
+    COLLECTION("collection"),
+
+    @SerialName("ratings")
+    RATINGS("ratings"),
+
+    @SerialName("watchlist")
+    WATCHLIST("watchlist"),
+
+    @SerialName("watched")
+    WATCHED("watched")
+}
+
+@Serializable
 enum class TraktListPrivacy {
     @SerialName("private")
     PRIVATE,
@@ -36,16 +50,3 @@ enum class TraktListPrivacy {
     @SerialName("public")
     PUBLIC
 }
-
-
-@Serializable
-data class TraktListItem(
-    @SerialName("id") val id: Long,
-    @SerialName("rank") val rank: Int,
-    @SerialName("listed_at") val listedAt: Instant,
-    @SerialName("type") val type: String,
-    @SerialName("movie") val movie: TraktMovie? = null,
-    @SerialName("show") val show: TraktShow? = null,
-    @SerialName("episode") val episode: TraktEpisode? = null,
-    @SerialName("person") val person: TraktPerson? = null,
-)
