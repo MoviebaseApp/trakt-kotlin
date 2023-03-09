@@ -2,7 +2,7 @@ package app.moviebase.trakt.api
 
 import app.moviebase.trakt.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Test
 
 class TraktSeasonsApiTest {
@@ -16,7 +16,7 @@ class TraktSeasonsApiTest {
     val classToTest = TraktSeasonsApi(client)
 
     @Test
-    fun `it can fetch season episodes`() = runBlocking {
+    fun `it can fetch season episodes`() = runTest {
         val episodes = classToTest.getEpisodes("the-expanse", 4)
 
         val episodeOne = episodes.first()
