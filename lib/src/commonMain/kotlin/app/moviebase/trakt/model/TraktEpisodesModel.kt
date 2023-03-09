@@ -1,7 +1,6 @@
 package app.moviebase.trakt.model
 
-import app.moviebase.trakt.core.LocalDateTimeSerializer
-import kotlinx.datetime.LocalDateTime
+import kotlinx.datetime.Instant
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
@@ -10,22 +9,20 @@ data class TraktEpisodeSummary(
     @SerialName("season") val season: Int,
     @SerialName("number") val number: Int,
     @SerialName("title") val title: String,
+    @SerialName("overview") val overview: String? = null,
     @SerialName("ids") val ids: TraktIds? = null,
-    @SerialName("first_aired")
-    @Serializable(LocalDateTimeSerializer::class)
-    val firstAired: LocalDateTime? = null, // date time in UTC
+    @SerialName("first_aired") val firstAired: Instant? = null,
+    @SerialName("number_abs") val numberAbs: Int? = null,
+    @SerialName("rating") val rating: Int? = null,
+    @SerialName("votes") val votes: Int? = null,
 )
 
 @Serializable
 data class TraktEpisode(
-    val season: Int,
-    val number: Int,
-    val title: String? = null,
-    val ids: TraktIds,
+    @SerialName("season") val season: Int,
+    @SerialName("number") val number: Int,
+    @SerialName("title") val title: String? = null,
+    @SerialName("ids") val ids: TraktIds? = null,
     @SerialName("number_abs") val numberAbs: Int? = null,
-    @SerialName("first_aired")
-    @Serializable(LocalDateTimeSerializer::class)
-    val firstAired: LocalDateTime? = null,
-    val runtime: Int? = null,
-    val tmdbNumber: Int? = null,
+    @SerialName("first_aired") val firstAired: Instant? = null,
 )

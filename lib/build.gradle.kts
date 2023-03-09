@@ -21,11 +21,11 @@ kotlin {
             dependencies {
                 api(libs.kotlinx.coroutines.core)
                 api(libs.kotlinx.serialization)
+                api(libs.ktor.serialization.json)
                 api(libs.kotlinx.datetime)
                 api(libs.ktor.core)
                 implementation(libs.ktor.json)
                 implementation(libs.ktor.logging)
-                implementation(libs.ktor.serialization.json)
                 implementation(libs.ktor.content.negotiation)
                 implementation(libs.ktor.auth)
             }

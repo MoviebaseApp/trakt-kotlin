@@ -26,6 +26,6 @@ fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
     }
 }
 
-fun HttpRequestBuilder.parameterExtended(extended: String = TraktExtended.FULL) {
-    parameter("extended", extended)
+fun HttpRequestBuilder.parameterExtended(extended: TraktExtended = TraktExtended.FULL) {
+    parameter("extended", extended.value)
 }
