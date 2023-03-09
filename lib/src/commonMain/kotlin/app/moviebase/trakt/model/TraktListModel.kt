@@ -9,6 +9,10 @@ object TraktListCategory {
     const val BOX_OFFICE = "boxoffice"
 }
 
+object TraktListName {
+    const val FOLLOWING = "Following"
+}
+
 @Serializable
 enum class TraktListType(val value: String) {
     @SerialName("movies")
@@ -22,4 +26,16 @@ enum class TraktListType(val value: String) {
 
     @SerialName("episodes")
     EPISODES("episodes")
+}
+
+@Serializable
+enum class TraktListPrivacy {
+    @SerialName("private")
+    PRIVATE,
+
+    @SerialName("friends")
+    FRIENDS,
+
+    @SerialName("public")
+    PUBLIC
 }

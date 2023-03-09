@@ -39,7 +39,7 @@ data class TraktSearchResult(
     val episode: TraktEpisode? = null,
 ) {
 
-    val ids: TraktIds?
+    val ids: TraktItemIds?
         get() = when {
             movie != null -> movie.ids
             episode != null -> episode.ids // could have show and episode

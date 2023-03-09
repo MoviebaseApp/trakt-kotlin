@@ -35,40 +35,6 @@ class TraktUsersApi(private val client: HttpClient) {
         endAt?.let { parameterEndAt(it) }
     }
 
-    suspend fun getShowHistory(
-        startAt: Instant? = null,
-        endAt: Instant? = null,
-    ) = getHistory(
-        listType = TraktListType.SHOWS,
-        extended = TraktExtended.NOSEASONS,
-        startAt = startAt,
-        endAt = endAt,
-    )
-
-    suspend fun getSeasonHistory(
-        seasonId: Int,
-        startAt: Instant? = null,
-        endAt: Instant? = null,
-    ) = getHistory(
-        listType = TraktListType.SEASONS,
-        extended = TraktExtended.NOSEASONS,
-        itemId = seasonId,
-        startAt = startAt,
-        endAt = endAt,
-    )
-
-    suspend fun getEpisodeHistory(
-        episodeId: Int,
-        startAt: Instant? = null,
-        endAt: Instant? = null,
-    ) = getHistory(
-        listType = TraktListType.EPISODES,
-        extended = TraktExtended.NOSEASONS,
-        itemId = episodeId,
-        startAt = startAt,
-        endAt = endAt,
-    )
-
     private fun pathUsers(vararg paths: String) = arrayOf("users", *paths)
 
     /**

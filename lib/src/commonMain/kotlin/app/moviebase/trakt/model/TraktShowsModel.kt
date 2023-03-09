@@ -7,7 +7,7 @@ import kotlinx.serialization.Serializable
 data class TraktShow(
     val title: String? = null,
     val year: Int? = null,
-    val ids: TraktIds,
+    val ids: TraktItemIds,
     val network: String? = null,
     @SerialName("aired_episodes") val airedEpisodes: Int? = null,
     val runtime: Int? = null,
