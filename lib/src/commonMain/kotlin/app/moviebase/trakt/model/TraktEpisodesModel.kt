@@ -1,6 +1,6 @@
 package app.moviebase.trakt.model
 
-import app.moviebase.trakt.remote.LocalDateTimeSerializer
+import app.moviebase.trakt.core.LocalDateTimeSerializer
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

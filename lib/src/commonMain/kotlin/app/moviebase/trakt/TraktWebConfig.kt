@@ -1,6 +1,7 @@
 package app.moviebase.trakt
 
 internal object TraktWebConfig {
+    const val HOST = "api.trakt.tv"
     const val BASE_URL = "https://api.trakt.tv"
     const val WEBSITE_BASE_URL = "https://trakt.tv"
 

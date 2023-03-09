@@ -1,8 +1,8 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.core.mockHttpClient
 import app.moviebase.trakt.model.TraktMediaType
 import app.moviebase.trakt.model.TraktSearchType
-import app.moviebase.trakt.remote.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test

@@ -1,9 +1,9 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.core.endPoint
+import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.model.TraktMovie
 import app.moviebase.trakt.model.TraktRating
-import app.moviebase.trakt.remote.endPoint
-import app.moviebase.trakt.remote.parameterExtended
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.HttpRequestBuilder

@@ -1,4 +1,4 @@
-package app.moviebase.trakt.remote
+package app.moviebase.trakt.core
 
 import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.TraktWebConfig

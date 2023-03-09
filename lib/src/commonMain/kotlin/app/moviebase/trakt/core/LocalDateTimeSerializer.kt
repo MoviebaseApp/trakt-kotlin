@@ -1,4 +1,4 @@
-package app.moviebase.trakt.remote
+package app.moviebase.trakt.core
 
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.KSerializer
