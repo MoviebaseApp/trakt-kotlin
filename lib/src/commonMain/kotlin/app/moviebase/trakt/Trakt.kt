@@ -3,9 +3,12 @@ package app.moviebase.trakt
 import app.moviebase.trakt.api.TraktCheckinApi
 import app.moviebase.trakt.api.TraktEpisodesApi
 import app.moviebase.trakt.api.TraktMoviesApi
+import app.moviebase.trakt.api.TraktRecommendationsApi
 import app.moviebase.trakt.api.TraktSearchApi
 import app.moviebase.trakt.api.TraktSeasonsApi
 import app.moviebase.trakt.api.TraktShowsApi
+import app.moviebase.trakt.api.TraktSyncApi
+import app.moviebase.trakt.api.TraktUsersApi
 import app.moviebase.trakt.core.HttpClientFactory
 import app.moviebase.trakt.core.TraktDsl
 import app.moviebase.trakt.core.interceptRequest
@@ -41,6 +44,9 @@ class Trakt internal constructor(private val config: TraktClientConfig) {
     val episodes by buildApi(::TraktEpisodesApi)
     val checkin by buildApi(::TraktCheckinApi)
     val search by buildApi(::TraktSearchApi)
+    val users by buildApi(::TraktUsersApi)
+    val sync by buildApi(::TraktSyncApi)
+    val recommendations by buildApi(::TraktRecommendationsApi)
 
     private inline fun <T> buildApi(crossinline builder: (HttpClient) -> T) = lazy {
         builder(client)

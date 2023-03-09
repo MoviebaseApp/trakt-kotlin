@@ -1,5 +1,6 @@
 package app.moviebase.trakt.core
 
+import app.moviebase.trakt.TraktBearerTokens
 import app.moviebase.trakt.TraktClientConfig
 import app.moviebase.trakt.TraktWebConfig
 import io.ktor.client.HttpClient
@@ -10,6 +11,7 @@ import io.ktor.client.plugins.HttpRequestRetry
 import io.ktor.client.plugins.HttpRequestTimeoutException
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.auth.Auth
+import io.ktor.client.plugins.auth.providers.BearerTokens
 import io.ktor.client.plugins.auth.providers.bearer
 import io.ktor.client.plugins.cache.HttpCache
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -46,7 +48,7 @@ internal object HttpClientFactory {
                 install(Auth) {
                     bearer {
                         loadTokens {
-                            config.traktAuthCredentials?.bearerTokensProvider?.invoke()
+                            config.traktAuthCredentials?.bearerTokensProvider?.invoke()?.toKtor()
                         }
 
                         sendWithoutRequest { request ->
@@ -72,7 +74,7 @@ internal object HttpClientFactory {
                 install(HttpRequestRetry) {
                     exponentialDelay()
                     retryOnServerErrors(maxRetries = it)
-
+                    // TODO: don't retry on 429
 //                    retryOnExceptionIf(maxRetries = it) { _, cause ->
 //                        when {
 //                            cause.isTimeoutException() -> false
@@ -119,6 +121,7 @@ internal object HttpClientFactory {
 //        }
 //    }
 
+
     private val HttpResponse.isTraktStatusHandled: Boolean
         get() = status == HttpStatusCode.NotFound ||
             status == HttpStatusCode.Unauthorized ||
@@ -130,4 +133,7 @@ internal object HttpClientFactory {
             exception is ConnectTimeoutException ||
             exception is SocketTimeoutException
     }
+
+    private fun TraktBearerTokens.toKtor() = BearerTokens(accessToken, refreshToken)
+
 }
