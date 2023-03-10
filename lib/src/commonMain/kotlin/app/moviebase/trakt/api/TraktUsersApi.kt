@@ -37,7 +37,7 @@ class TraktUsersApi(private val client: HttpClient) {
         setBody(list)
     }
 
-    suspend fun getLists(userSlug: TraktUserSlug = TraktUserSlug.ME): List<TraktList> = client.getByPaths(*pathUsers(userSlug))
+    suspend fun getLists(userSlug: TraktUserSlug = TraktUserSlug.ME): List<TraktList> = client.getByPaths(*pathUsers(userSlug, "lists"))
 
     suspend fun getListItems(
         userSlug: TraktUserSlug = TraktUserSlug.ME,
