@@ -39,7 +39,7 @@ class TraktSearchApi(private val client: HttpClient) {
     suspend fun searchTextQuery(
         mediaType: TraktMediaType,
         searchQuery: TraktSearchQuery,
-    ): List<TraktSearchResult> = client.getByPaths(*pathSearch(mediaType.type)) {
+    ): List<TraktSearchResult> = client.getByPaths(*pathSearch(mediaType.value)) {
         parameters(searchQuery.parameters)
     }
 
