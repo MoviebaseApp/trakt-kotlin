@@ -15,9 +15,9 @@ class TraktSeasonsApi(private val client: HttpClient) {
      */
     suspend fun getSummary(
         showId: String,
-        extended: TraktExtended = TraktExtended.FULL,
+        extended: TraktExtended? = null,
     ): List<TraktSeason> = client.getByPaths("shows", showId, "seasons") {
-        parameterExtended(extended)
+        extended?.let { parameterExtended(it) }
     }
 
     /**
@@ -26,8 +26,9 @@ class TraktSeasonsApi(private val client: HttpClient) {
     suspend fun getSeason(
         showId: String,
         seasonNumber: Int,
+        extended: TraktExtended? = null,
     ): List<TraktEpisode> = client.getByPaths(*pathSeasons(showId, seasonNumber)) {
-        parameterExtended()
+        extended?.let { parameterExtended(it) }
     }
 
     /**
