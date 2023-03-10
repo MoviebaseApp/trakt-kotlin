@@ -4,11 +4,7 @@ import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.core.postByPaths
-import app.moviebase.trakt.model.TraktListType
-import app.moviebase.trakt.model.TraktMediaItem
-import app.moviebase.trakt.model.TraktMediaType
-import app.moviebase.trakt.model.TraktSyncItems
-import app.moviebase.trakt.model.TraktSyncResponse
+import app.moviebase.trakt.model.*
 import io.ktor.client.HttpClient
 import io.ktor.client.request.setBody
 
@@ -24,24 +20,24 @@ class TraktSyncApi(private val client: HttpClient) {
 
     suspend fun getSyncList(
         listType: TraktListType,
-        mediaType: TraktMediaType,
+        mediaType: TraktListMediaType,
         extended: TraktExtended? = null,
     ): List<TraktMediaItem> = client.getByPaths(*pathSyncList(listType, mediaType)) {
         extended?.let { parameterExtended(it) }
     }
 
-    suspend fun getWatchedShows(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHED, TraktMediaType.SHOW, extended)
-    suspend fun getWatchedMovies(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHED, TraktMediaType.MOVIE, extended)
+    suspend fun getWatchedShows(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHED, TraktListMediaType.SHOWS, extended)
+    suspend fun getWatchedMovies(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHED, TraktListMediaType.MOVIES, extended)
 
-    suspend fun getWatchlistMovies(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktMediaType.MOVIE, extended)
-    suspend fun getWatchlistShows(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktMediaType.SHOW, extended)
-    suspend fun getWatchlistSeasons(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktMediaType.SEASON, extended)
-    suspend fun getWatchlistEpisodes(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktMediaType.EPISODE, extended)
+    suspend fun getWatchlistMovies(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktListMediaType.MOVIES, extended)
+    suspend fun getWatchlistShows(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktListMediaType.SHOWS, extended)
+    suspend fun getWatchlistSeasons(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktListMediaType.SEASONS, extended)
+    suspend fun getWatchlistEpisodes(extended: TraktExtended? = null) = getSyncList(TraktListType.WATCHLIST, TraktListMediaType.EPISODES, extended)
 
     private fun pathSync(vararg paths: String) = arrayOf("sync", *paths)
 
     private fun pathSyncList(
         listType: TraktListType,
-        mediaType: TraktMediaType,
-    ) = pathSync(listType.value, mediaType.path)
+        mediaType: TraktListMediaType,
+    ) = pathSync(listType.value, mediaType.value)
 }

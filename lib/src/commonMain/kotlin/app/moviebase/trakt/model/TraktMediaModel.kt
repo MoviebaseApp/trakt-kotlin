@@ -4,18 +4,18 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-enum class TraktMediaType(internal val type: String, internal val path: String) {
+enum class TraktMediaType(val value: String) {
     @SerialName("movie")
-    MOVIE(type = "movie", path = "movies"),
+    MOVIE("movie"),
 
     @SerialName("show")
-    SHOW(type = "show", path = "shows"),
+    SHOW("show"),
 
     @SerialName("season")
-    SEASON(type = "season", path = "seasons"),
+    SEASON("season"),
 
     @SerialName("episode")
-    EPISODE(type = "episode", path = "episodes"),
+    EPISODE("episode"),
 }
 
 sealed interface TraktIds {
