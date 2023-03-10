@@ -43,5 +43,5 @@ class TraktSyncApi(private val client: HttpClient) {
     private fun pathSyncList(
         listType: TraktListType,
         mediaType: TraktMediaType,
-    ) = pathSync(listType.value, mediaType.value)
+    ) = pathSync(listType.value, mediaType.path)
 }
