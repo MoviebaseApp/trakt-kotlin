@@ -2,15 +2,16 @@
 [Support](https://support.trakt.tv/support/home) |
 [Documentation](https://trakt.docs.apiary.io/)
 
-<a href="https://www.trakt.tv"><img alt="Trakt" src="doc/images/trakt-wide-red-black.svg" width="400"></a>
+<a href="https://www.trakt.tv"><img alt="Trakt" src="doc/images/trakt-wide-red-black.svg" width="300"></a>
 
-***Track your TV shows and movies with Trakt.***
+***Track and discover your TV shows and movies with Trakt.***
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-api?label=Maven%20Central)](https://central.sonatype.com/artifact/app.moviebase/trakt-api/)
 ![Github Actions](https://github.com/MoviebaseApp/trakt-api/actions/workflows/build.yml/badge.svg)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub Account](https://img.shields.io/static/v1?label=GitHub&message=chrisnkrueger&color=C51162)](https://github.com/chrisnkrueger)
 
 <hr>
 
