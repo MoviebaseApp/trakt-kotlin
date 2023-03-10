@@ -83,6 +83,7 @@ data class TraktListIds(
     @SerialName("slug") val slug: String? = null,
 )
 
+@Serializable
 data class TraktHistoryItem(
     @SerialName("id") val id: String? = null,
     @SerialName("watched_at") val watchedAt: Instant? = null,
