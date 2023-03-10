@@ -1,5 +1,6 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.mockHttpClient
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
@@ -17,7 +18,7 @@ class TraktSeasonsApiTest {
 
     @Test
     fun `it can fetch season episodes`() = runTest {
-        val episodes = classToTest.getSeason("the-expanse", 4)
+        val episodes = classToTest.getSeason("the-expanse", 4, TraktExtended.FULL)
 
         val episodeOne = episodes.first()
         assertThat(episodeOne.season).isEqualTo(4)
