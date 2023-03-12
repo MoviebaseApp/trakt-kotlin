@@ -8,6 +8,7 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-api?label=Maven%20Central)](https://central.sonatype.com/artifact/app.moviebase/trakt-api/)
 ![Github Actions](https://github.com/MoviebaseApp/trakt-api/actions/workflows/build.yml/badge.svg)
+[![Issues](https://img.shields.io/github/issues/MoviebaseApp/trakt-api)](https://github.com/MoviebaseApp/tmdb-api/issues)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.8.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -22,8 +23,11 @@ Trakt API is a **Kotlin Multiplatform** library for tracking your series and mov
 * Written in Kotlin native with ktor from the ground up.
 * Support for Android, iOS, desktop, and web applications.
 * High customizable HttpClient configuration
-* Fully supported by [Moviebase for Android](https://play.google.com/store/apps/details?id=com.moviebase)
 
+Sample projects:
+
+* [tivi](https://github.com/chrisbanes/tivi)
+* [Moviebase](https://play.google.com/store/apps/details?id=com.moviebase)
 
 ## Adding to your project
 
@@ -43,7 +47,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:trakt-api:0.2.0")
+    implementation("app.moviebase:trakt-api:0.3.0")
 }
 ```
 
@@ -52,7 +56,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:trakt-api:0.2.0")
+        implementation("app.moviebase:trakt-api:0.3.0")
     }
 }
 ```
@@ -65,13 +69,38 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>trakt-api</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
 </dependency>
 ```
 
 
 ## Usage
 Most of the library follows the possibilities and naming at the official [Trakt documentation](https://trakt.docs.apiary.io/).
+
+### Configuration
+Build up your Trakt instance to access the APIs. You can configure the entire HttpClient of ktor.
+
+```kotlin
+val trakt = Trakt {
+    traktApiKey = "clientId"
+
+    expectSuccess = false // if you want to disable exceptions
+    useCache = true
+    useTimeout = true
+    maxRetriesOnException = 3 // retries when network calls throw an exception
+
+    // add your own client
+    httpClient(OkHttp) {
+        engine {
+
+        }
+    }
+
+    httpClient {
+        // for custom HttpClient configuration
+    }
+}
+```
 
 ### Get information
 For getting basic information about a shows or other media content.
@@ -92,6 +121,9 @@ val showPageResult = trakt.search.search(
     mediaType = TraktMediaType.SHOW
 )
 ```
+
+## Contributing 🤝
+Please feel free to [open an issue](https://github.com/MoviebaseApp/trakt-api/issues/new/choose) if you have any questions or suggestions. Or participate in the [discussion](https://github.com/MoviebaseApp/trakt-api/discussions). If you want to contribute, please read the [contribution guidelines](https://github.com/MoviebaseApp/trakt-api/blob/main/CONTRIBUTING.md) for more information.
 
 <br>
 
