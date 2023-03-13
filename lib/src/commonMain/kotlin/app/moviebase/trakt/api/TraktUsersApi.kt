@@ -17,6 +17,8 @@ import app.moviebase.trakt.model.TraktUserSettings
 import app.moviebase.trakt.model.TraktUserSlug
 import io.ktor.client.HttpClient
 import io.ktor.client.request.setBody
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
 import kotlinx.datetime.Instant
 
 class TraktUsersApi(private val client: HttpClient) {
@@ -34,6 +36,7 @@ class TraktUsersApi(private val client: HttpClient) {
         userSlug: TraktUserSlug = TraktUserSlug.ME,
         list: TraktList,
     ): TraktList = client.postByPaths(*pathUsers(userSlug, "lists")) {
+        contentType(ContentType.Application.Json)
         setBody(list)
     }
 
@@ -52,6 +55,7 @@ class TraktUsersApi(private val client: HttpClient) {
         listId: String,
         items: TraktSyncItems,
     ): TraktSyncResponse = client.postByPaths(*pathLists(userSlug, listId)) {
+        contentType(ContentType.Application.Json)
         setBody(items)
     }
 
@@ -60,6 +64,7 @@ class TraktUsersApi(private val client: HttpClient) {
         listId: String,
         items: TraktSyncItems,
     ): TraktSyncResponse = client.postByPaths(*pathLists(userSlug, listId, "remove")) {
+        contentType(ContentType.Application.Json)
         setBody(items)
     }
 

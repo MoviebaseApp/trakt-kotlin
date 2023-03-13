@@ -4,17 +4,25 @@ import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.core.postByPaths
-import app.moviebase.trakt.model.*
+import app.moviebase.trakt.model.TraktListMediaType
+import app.moviebase.trakt.model.TraktListType
+import app.moviebase.trakt.model.TraktMediaItem
+import app.moviebase.trakt.model.TraktSyncItems
+import app.moviebase.trakt.model.TraktSyncResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.request.setBody
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
 
 class TraktSyncApi(private val client: HttpClient) {
 
     suspend fun addWatchedHistory(items: TraktSyncItems): TraktSyncResponse = client.postByPaths(*pathSync("history")) {
+        contentType(ContentType.Application.Json)
         setBody(items)
     }
 
     suspend fun removeWatchedHistory(items: TraktSyncItems): TraktSyncResponse = client.postByPaths(*pathSync("history", "remove")) {
+        contentType(ContentType.Application.Json)
         setBody(items)
     }
 
