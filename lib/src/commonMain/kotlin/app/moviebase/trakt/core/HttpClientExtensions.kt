@@ -16,17 +16,33 @@ internal suspend inline fun <reified T> HttpClient.getByPaths(
     block: HttpRequestBuilder.() -> Unit = {},
 ): T = get(urlString = buildPaths(*paths), block = block).body()
 
+internal suspend inline fun <reified T> HttpClient.getByPaths(
+    paths: Collection<String>,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = get(urlString = buildPaths(paths), block = block).body()
+
 internal suspend inline fun <reified T> HttpClient.postByPaths(
     vararg paths: String,
     block: HttpRequestBuilder.() -> Unit = {},
 ): T = post(urlString = buildPaths(*paths), block = block).body()
+
+internal suspend inline fun <reified T> HttpClient.postByPaths(
+    paths: Collection<String>,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = post(urlString = buildPaths(paths), block = block).body()
 
 internal suspend inline fun <reified T> HttpClient.deleteByPaths(
     vararg paths: String,
     block: HttpRequestBuilder.() -> Unit = {},
 ): T = delete(urlString = buildPaths(*paths), block = block).body()
 
+internal suspend inline fun <reified T> HttpClient.deleteByPaths(
+    paths: Collection<String>,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = delete(urlString = buildPaths(paths), block = block).body()
+
 private fun buildPaths(vararg paths: String): String = paths.joinToString(separator = "/")
+private fun buildPaths(paths: Collection<String>): String = paths.joinToString(separator = "/")
 
 typealias RequestInterceptor = suspend (HttpRequestBuilder) -> Unit
 typealias ResponseInterceptor = suspend (HttpClientCall) -> Unit
