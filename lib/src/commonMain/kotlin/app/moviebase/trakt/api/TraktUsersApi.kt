@@ -4,6 +4,8 @@ import app.moviebase.trakt.TraktExtended
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterEndAt
 import app.moviebase.trakt.core.parameterExtended
+import app.moviebase.trakt.core.parameterLimit
+import app.moviebase.trakt.core.parameterPage
 import app.moviebase.trakt.core.parameterStartAt
 import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.model.TraktHistoryItem
@@ -78,10 +80,14 @@ class TraktUsersApi(private val client: HttpClient) {
         extended: TraktExtended? = null,
         startAt: Instant? = null,
         endAt: Instant? = null,
+        page: Int? = null,
+        limit: Int? = null,
     ): List<TraktHistoryItem> = client.getByPaths(*pathHistory(userSlug, listType, itemId)) {
         extended?.let { parameterExtended(extended) }
         startAt?.let { parameterStartAt(it) }
         endAt?.let { parameterEndAt(it) }
+        page?.let { parameterPage(it) }
+        limit?.let { parameterLimit(it) }
     }
 
     /**
