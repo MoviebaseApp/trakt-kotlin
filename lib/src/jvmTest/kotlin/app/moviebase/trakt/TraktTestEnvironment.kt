@@ -35,7 +35,8 @@ fun defaultTmdbConfiguration(
 ): TraktClientConfig.() -> Unit = {
     traktApiKey = apiKey ?: properties.getProperty("TRAKT_CLIENT_ID")
     userAuthentication {
-        loadBearerTokens { authStore?.bearerTokens }
+        refreshTokens { authStore?.bearerTokens }
+        loadTokens { authStore?.bearerTokens }
     }
 
     useCache = true

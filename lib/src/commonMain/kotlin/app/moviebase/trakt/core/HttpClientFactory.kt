@@ -48,7 +48,11 @@ internal object HttpClientFactory {
                 install(Auth) {
                     bearer {
                         loadTokens {
-                            config.traktAuthCredentials?.bearerTokensProvider?.invoke()?.toKtor()
+                            config.traktAuthCredentials?.loadTokensProvider?.invoke()?.toKtor()
+                        }
+
+                        refreshTokens {
+                            config.traktAuthCredentials?.refreshTokensProvider?.invoke()?.toKtor()
                         }
 
                         sendWithoutRequest { request ->

@@ -63,10 +63,15 @@ class TraktClientConfig {
 @TraktDsl
 class TraktAuthCredentials {
 
-    internal var bearerTokensProvider: (suspend () -> TraktBearerTokens?)? = null
+    internal var refreshTokensProvider: (suspend () -> TraktBearerTokens?)? = null
+    internal var loadTokensProvider: (suspend () -> TraktBearerTokens?)? = null
 
-    fun loadBearerTokens(provider: suspend() -> TraktBearerTokens?) {
-        bearerTokensProvider = provider
+    fun refreshTokens(provider: suspend() -> TraktBearerTokens?) {
+        refreshTokensProvider = provider
+    }
+
+    fun loadTokens(provider: suspend() -> TraktBearerTokens?) {
+        loadTokensProvider = provider
     }
 }
 
