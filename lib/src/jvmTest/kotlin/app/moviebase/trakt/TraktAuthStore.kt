@@ -1,5 +1,5 @@
 package app.moviebase.trakt
 
-class TraktAccountStorage {
+class TraktAuthStore {
     var bearerTokens: TraktBearerTokens? = null
 }

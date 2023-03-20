@@ -1,5 +1,6 @@
 package app.moviebase.trakt
 
+import app.moviebase.trakt.api.TraktAuthApi
 import app.moviebase.trakt.api.TraktCheckinApi
 import app.moviebase.trakt.api.TraktEpisodesApi
 import app.moviebase.trakt.api.TraktMoviesApi
@@ -38,6 +39,7 @@ class Trakt internal constructor(private val config: TraktClientConfig) {
         }
     }
 
+    val auth by lazy { TraktAuthApi(client, config) }
     val movies by buildApi(::TraktMoviesApi)
     val shows by buildApi(::TraktShowsApi)
     val seasons by buildApi(::TraktSeasonsApi)

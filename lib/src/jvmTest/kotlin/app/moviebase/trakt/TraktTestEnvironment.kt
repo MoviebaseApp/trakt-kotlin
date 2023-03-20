@@ -5,7 +5,7 @@ import io.ktor.client.plugins.logging.LogLevel
 import io.ktor.client.plugins.logging.Logger
 import java.io.FileInputStream
 import java.nio.file.Paths
-import java.util.*
+import java.util.Properties
 
 val properties by lazy {
     Properties().apply {
@@ -16,20 +16,26 @@ val properties by lazy {
     }
 }
 
+fun createTraktCredentials() = TraktCredentials(
+    accessToken = properties.getProperty("TRAKT_ACCESS_TOKEN"),
+    refreshToken = properties.getProperty("TRAKT_REFRESH_TOKEN"),
+)
+
+
 fun buildTrakt(
     apiKey: String? = null,
-    storage: TraktAccountStorage? = null,
+    authStore: TraktAuthStore? = null,
 ): Trakt {
-    return Trakt(defaultTmdbConfiguration(apiKey, storage))
+    return Trakt(defaultTmdbConfiguration(apiKey, authStore))
 }
 
 fun defaultTmdbConfiguration(
     apiKey: String? = null,
-    storage: TraktAccountStorage? = null,
+    authStore: TraktAuthStore? = null,
 ): TraktClientConfig.() -> Unit = {
     traktApiKey = apiKey ?: properties.getProperty("TRAKT_CLIENT_ID")
     userAuthentication {
-        loadBearerTokens { storage?.bearerTokens }
+        loadBearerTokens { authStore?.bearerTokens }
     }
 
     useCache = true
