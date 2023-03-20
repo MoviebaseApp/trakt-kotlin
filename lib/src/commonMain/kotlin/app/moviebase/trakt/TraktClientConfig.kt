@@ -11,6 +11,8 @@ import io.ktor.client.plugins.logging.Logging
 class TraktClientConfig {
 
     var traktApiKey: String? = null
+    var clientSecret: String? = null
+
     internal var traktAuthCredentials: TraktAuthCredentials? = null
 
     var expectSuccess: Boolean = true
