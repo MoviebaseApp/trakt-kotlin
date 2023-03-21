@@ -8,6 +8,7 @@ import io.ktor.client.request.HttpRequestPipeline
 import io.ktor.client.request.delete
 import io.ktor.client.request.get
 import io.ktor.client.request.post
+import io.ktor.client.request.put
 import io.ktor.client.statement.HttpResponsePipeline
 import io.ktor.util.pipeline.PipelinePhase
 
@@ -40,6 +41,12 @@ internal suspend inline fun <reified T> HttpClient.deleteByPaths(
     paths: Collection<String>,
     block: HttpRequestBuilder.() -> Unit = {},
 ): T = delete(urlString = buildPaths(paths), block = block).body()
+
+internal suspend inline fun <reified T> HttpClient.putByPaths(
+    vararg paths: String,
+    block: HttpRequestBuilder.() -> Unit = {},
+): T = put(urlString = buildPaths(*paths), block = block).body()
+
 
 private fun buildPaths(vararg paths: String): String = paths.joinToString(separator = "/")
 private fun buildPaths(paths: Collection<String>): String = paths.joinToString(separator = "/")

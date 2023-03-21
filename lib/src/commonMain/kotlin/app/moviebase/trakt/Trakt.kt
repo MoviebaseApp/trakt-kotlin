@@ -1,6 +1,7 @@
 package app.moviebase.trakt
 
 import app.moviebase.trakt.api.TraktCheckinApi
+import app.moviebase.trakt.api.TraktCommentsApi
 import app.moviebase.trakt.api.TraktEpisodesApi
 import app.moviebase.trakt.api.TraktMoviesApi
 import app.moviebase.trakt.api.TraktRecommendationsApi
@@ -47,6 +48,7 @@ class Trakt internal constructor(private val config: TraktClientConfig) {
     val users by buildApi(::TraktUsersApi)
     val sync by buildApi(::TraktSyncApi)
     val recommendations by buildApi(::TraktRecommendationsApi)
+    val comments by buildApi(::TraktCommentsApi)
 
     private inline fun <T> buildApi(crossinline builder: (HttpClient) -> T) = lazy {
         builder(client)
