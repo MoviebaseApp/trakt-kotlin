@@ -4,11 +4,12 @@ import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 
 // TODO: Enable test when move into integration test folder + own source set
-//@Disabled
+@Disabled
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class TraktAccountIntegrationTest {
 
