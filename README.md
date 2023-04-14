@@ -16,9 +16,9 @@
 
 <hr>
 
-# Trakt API
+# Trakt Kotlin
 
-Trakt API is a **Kotlin Multiplatform** library for tracking your series and movies.
+Trakt Kotlin is a **Kotlin Multiplatform** library for tracking your series and movies.
 
 * Written in Kotlin native with ktor from the ground up.
 * Support for Android, iOS, desktop, and web applications.
