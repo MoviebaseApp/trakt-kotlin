@@ -29,7 +29,7 @@ Sample projects:
 * [tivi](https://github.com/chrisbanes/tivi)
 * [Moviebase](https://play.google.com/store/apps/details?id=com.moviebase)
 
-## Adding to your project
+## Setup
 
 The library is available on Maven Central.
 
