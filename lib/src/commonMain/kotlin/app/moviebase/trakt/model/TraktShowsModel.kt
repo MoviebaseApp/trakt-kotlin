@@ -26,9 +26,9 @@ data class TraktShow(
 
 @Serializable
 data class TraktAirs(
-    @SerialName("day") val day: String,
-    @SerialName("time") val time: String,
-    @SerialName("timezone") val timezone: String,
+    @SerialName("day") val day: String? = null,
+    @SerialName("time") val time: String? = null,
+    @SerialName("timezone") val timezone: String? = null,
 )
 
 @Serializable
