@@ -1,6 +1,5 @@
 package app.moviebase.trakt
 
-import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.BeforeEach

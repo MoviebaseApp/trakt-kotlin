@@ -47,7 +47,6 @@ internal suspend inline fun <reified T> HttpClient.putByPaths(
     block: HttpRequestBuilder.() -> Unit = {},
 ): T = put(urlString = buildPaths(*paths), block = block).body()
 
-
 private fun buildPaths(vararg paths: String): String = paths.joinToString(separator = "/")
 private fun buildPaths(paths: Collection<String>): String = paths.joinToString(separator = "/")
 
