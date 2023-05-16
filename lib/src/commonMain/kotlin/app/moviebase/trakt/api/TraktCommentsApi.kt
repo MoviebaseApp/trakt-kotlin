@@ -4,9 +4,9 @@ import app.moviebase.trakt.core.deleteByPaths
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.core.putByPaths
-import app.moviebase.trakt.model.TraktPostComment
 import app.moviebase.trakt.model.TraktCheckin
 import app.moviebase.trakt.model.TraktComment
+import app.moviebase.trakt.model.TraktPostComment
 import io.ktor.client.HttpClient
 import io.ktor.client.request.setBody
 import io.ktor.http.ContentType

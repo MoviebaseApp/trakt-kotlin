@@ -21,7 +21,6 @@ fun createTraktCredentials() = TraktCredentials(
     refreshToken = properties.getProperty("TRAKT_REFRESH_TOKEN"),
 )
 
-
 fun buildTrakt(
     apiKey: String? = null,
     authStore: TraktAuthStore? = null,

@@ -9,7 +9,7 @@ enum class TraktGrantType(val value: String) {
     REFRESH_TOKEN("refresh_token"),
 
     @SerialName("authorization_code")
-    AUTHORIZATION_CODE("authorization_code")
+    AUTHORIZATION_CODE("authorization_code"),
 }
 
 data class TraktAccessToken(
