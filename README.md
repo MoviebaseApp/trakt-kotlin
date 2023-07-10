@@ -47,7 +47,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:trakt-api:0.4.0")
+    implementation("app.moviebase:trakt-api:0.5.0")
 }
 ```
 
@@ -56,7 +56,7 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:trakt-api:0.4.0")
+        implementation("app.moviebase:trakt-api:0.5.0")
     }
 }
 ```
@@ -69,7 +69,7 @@ Add a dependency to the `<dependencies>` element.
 <dependency>
     <groupId>app.moviebase</groupId>
     <artifactId>trakt-api</artifactId>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
 </dependency>
 ```
 
