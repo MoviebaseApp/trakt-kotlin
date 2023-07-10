@@ -33,7 +33,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build and run tests
-        run: ./gradlew build --parallel
+        run: ./gradlew build --warning-mode all
 
       - name: Upload build outputs
         if: always()
