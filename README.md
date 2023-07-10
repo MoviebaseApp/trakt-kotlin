@@ -6,9 +6,9 @@
 
 ***Track and discover your TV shows and movies with Trakt.***
 
-[![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-api?label=Maven%20Central)](https://central.sonatype.com/artifact/app.moviebase/trakt-api/)
-![Github Actions](https://github.com/MoviebaseApp/trakt-api/actions/workflows/build.yml/badge.svg)
-[![Issues](https://img.shields.io/github/issues/MoviebaseApp/trakt-api)](https://github.com/MoviebaseApp/tmdb-api/issues)
+[![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-kotlin?label=Maven%20Central)](https://central.sonatype.com/artifact/app.moviebase/trakt-api/)
+![Github Actions](https://github.com/MoviebaseApp/trakt-kotlin/actions/workflows/build.yml/badge.svg)
+[![Issues](https://img.shields.io/github/issues/MoviebaseApp/trakt-kotlin)](https://github.com/MoviebaseApp/tmdb-api/issues)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
@@ -123,7 +123,7 @@ val showPageResult = trakt.search.search(
 ```
 
 ## Contributing 🤝
-Please feel free to [open an issue](https://github.com/MoviebaseApp/trakt-api/issues/new/choose) if you have any questions or suggestions. Or participate in the [discussion](https://github.com/MoviebaseApp/trakt-api/discussions). If you want to contribute, please read the [contribution guidelines](https://github.com/MoviebaseApp/trakt-api/blob/main/CONTRIBUTING.md) for more information.
+Please feel free to [open an issue](https://github.com/MoviebaseApp/trakt-kotlin/issues/new/choose) if you have any questions or suggestions. Or participate in the [discussion](https://github.com/MoviebaseApp/trakt-kotlin/discussions). If you want to contribute, please read the [contribution guidelines](https://github.com/MoviebaseApp/trakt-api/blob/main/CONTRIBUTING.md) for more information.
 
 <br>
 

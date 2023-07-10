@@ -41,7 +41,7 @@ class TraktClientConfig {
 
     /**
      * Creates an custom [HttpClient] with the specified [HttpClientEngineFactory] and optional [block] configuration.
-     * Note that the TMDB config will be added afterwards.
+     * Note that the Trakt config will be added afterwards.
      */
     fun <T : HttpClientEngineConfig> httpClient(
         engineFactory: HttpClientEngineFactory<T>,

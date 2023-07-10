@@ -22,17 +22,20 @@ fun createTraktCredentials() = TraktCredentials(
 )
 
 fun buildTrakt(
-    apiKey: String? = null,
+    traktApiKey: String? = null,
     authStore: TraktAuthStore? = null,
 ): Trakt {
-    return Trakt(defaultTmdbConfiguration(apiKey, authStore))
+    val configuration = defaultTraktConfiguration(traktApiKey, authStore)
+    return Trakt(configuration)
 }
 
-fun defaultTmdbConfiguration(
-    apiKey: String? = null,
+fun defaultTraktConfiguration(
+    traktApiKey: String? = null,
     authStore: TraktAuthStore? = null,
 ): TraktClientConfig.() -> Unit = {
-    traktApiKey = apiKey ?: properties.getProperty("TRAKT_CLIENT_ID")
+    this.traktApiKey = traktApiKey ?: properties.getProperty("TRAKT_CLIENT_ID")
+    requireNotNull(this.traktApiKey)
+
     userAuthentication {
         refreshTokens { authStore?.bearerTokens }
         loadTokens { authStore?.bearerTokens }
