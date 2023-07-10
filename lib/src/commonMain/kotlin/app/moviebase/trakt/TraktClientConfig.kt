@@ -18,7 +18,7 @@ class TraktClientConfig {
     var expectSuccess: Boolean = true
     var useCache: Boolean = false
     var useTimeout: Boolean = false
-    var maxRetriesOnException: Int? = null
+    var maxRetries: Int = 3
 
     internal var httpClientConfigBlock: (HttpClientConfig<*>.() -> Unit)? = null
     internal var httpClientBuilder: (() -> HttpClient)? = null
