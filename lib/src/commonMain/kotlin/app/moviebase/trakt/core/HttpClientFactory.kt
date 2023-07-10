@@ -120,7 +120,7 @@ internal object HttpClientFactory {
 //        return try {
 //            decodeFromString(TmdbErrorResponse.serializer(), exceptionResponseText)
 //        } catch (t: Throwable) {
-//            // if we don't get a TMDB error response, skip the handling
+//            // if we don't get a Trakt error response, skip the handling
 //            null
 //        }
 //    }

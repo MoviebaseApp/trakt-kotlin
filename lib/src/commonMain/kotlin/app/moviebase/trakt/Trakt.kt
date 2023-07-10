@@ -25,7 +25,7 @@ fun Trakt(block: TraktClientConfig.() -> Unit): Trakt {
 
 class Trakt internal constructor(private val config: TraktClientConfig) {
 
-    constructor(tmdbApiKey: String) : this(TraktClientConfig.withKey(tmdbApiKey))
+    constructor(traktApiKey: String) : this(TraktClientConfig.withKey(traktApiKey))
 
     private val client: HttpClient = HttpClientFactory.create(config).apply {
         interceptRequest {
@@ -36,7 +36,7 @@ class Trakt internal constructor(private val config: TraktClientConfig) {
 
     init {
         requireNotNull(config.traktApiKey) {
-            "TMDB API key unavailable. Set the tmdbApiKey field in the class TmdbClientConfig when instantiate the TMDB client."
+            "Trakt API key unavailable. Set the traktApiKey field in the class TraktClientConfig when instantiate the Trakt client."
         }
     }
 
