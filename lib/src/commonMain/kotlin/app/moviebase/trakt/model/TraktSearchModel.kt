@@ -10,14 +10,11 @@ import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 
-@Serializable
+@Serializable(TraktSearchResults.Companion::class)
 data class TraktSearchResults(
     val items: List<TraktSearchResult>,
 ) {
 
-    // use custom serializer because List cannot be used in client.get (JS inline method not allowed)
-    @ExperimentalSerializationApi
-    @Serializer(TraktSearchResults::class)
     companion object : KSerializer<TraktSearchResults> {
 
         override val descriptor = serializer().descriptor

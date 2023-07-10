@@ -28,14 +28,11 @@ data class TraktSeason(
     @SerialName("episodes") val episodes: List<TraktEpisode>? = null,
 )
 
-@Serializable
+@Serializable(TraktSeasonEpisodes.Companion::class)
 data class TraktSeasonEpisodes(
     val items: List<TraktEpisode>,
 ) {
 
-    // use custom serializer because List cannot be used in client.get (JS inline method not allowed)
-    @ExperimentalSerializationApi
-    @Serializer(TraktSeasonEpisodes::class)
     companion object : KSerializer<TraktSeasonEpisodes> {
 
         override val descriptor = serializer().descriptor
@@ -48,7 +45,5 @@ data class TraktSeasonEpisodes(
             val items = ListSerializer(TraktEpisode.serializer()).deserialize(decoder)
             return TraktSeasonEpisodes(items)
         }
-
-        fun build(items: List<TraktEpisode>) = TraktSeasonEpisodes(items)
     }
 }
