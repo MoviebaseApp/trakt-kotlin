@@ -1,5 +1,3 @@
-// ktlint-disable filename
-
 package app.moviebase.trakt.core
 
 import app.moviebase.trakt.TraktWebConfig

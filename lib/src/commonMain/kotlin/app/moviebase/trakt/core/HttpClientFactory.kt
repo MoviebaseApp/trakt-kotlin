@@ -17,13 +17,21 @@ import io.ktor.client.plugins.cache.HttpCache
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.plugins.defaultRequest
 import io.ktor.client.plugins.logging.Logging
-import io.ktor.client.statement.HttpResponse
 import io.ktor.client.utils.unwrapCancellationException
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.URLProtocol
 import io.ktor.serialization.kotlinx.json.json
+import io.ktor.utils.io.CancellationException
 
 internal object HttpClientFactory {
+
+    private val retryClientHttpCodes by lazy {
+        listOf(
+            HttpStatusCode.RequestTimeout,
+            HttpStatusCode.TooEarly,
+            HttpStatusCode.TooManyRequests,
+        ).map { it.value }.toSet()
+    }
 
     fun create(
         config: TraktClientConfig,
@@ -64,29 +72,22 @@ internal object HttpClientFactory {
 
             // see https://ktor.io/docs/response-validation.html
             expectSuccess = config.expectSuccess
-//            HttpResponseValidator {
-//                handleResponseExceptionWithRequest { exception, _ ->
-//                    val clientException = exception as? ClientRequestException ?: return@handleResponseExceptionWithRequest
-//                    val exceptionResponse = clientException.response
-//                    val tmdbErrorResponse = json.decodeTmdbErrorResponse(exceptionResponse) ?: return@handleResponseExceptionWithRequest
-//                    throw TmdbException(tmdbErrorResponse, exception)
-//                }
-//            }
 
             // see https://ktor.io/docs/client-retry.html
-            config.maxRetriesOnException?.let {
-                install(HttpRequestRetry) {
-                    exponentialDelay()
-                    retryOnServerErrors(maxRetries = it)
-                    // TODO: don't retry on 429
-//                    retryOnExceptionIf(maxRetries = it) { _, cause ->
-//                        when {
-//                            cause.isTimeoutException() -> false
-//                            cause is CancellationException -> false
-//                            cause is TmdbException -> false
-//                            else -> true
-//                        }
-//                    }
+            install(HttpRequestRetry) {
+                maxRetries = config.maxRetries
+                exponentialDelay()
+
+                retryIf { _, response ->
+                    response.status.value.let { it in 500..599 || retryClientHttpCodes.contains(it) }
+                }
+
+                retryOnExceptionIf { _, cause ->
+                    when {
+                        cause.isTimeoutException() -> false
+                        cause is CancellationException -> false
+                        else -> true
+                    }
                 }
             }
 
@@ -112,23 +113,6 @@ internal object HttpClientFactory {
 
         return config.httpClientBuilder?.invoke()?.config(defaultConfig) ?: HttpClient(defaultConfig)
     }
-
-//    private suspend fun Json.decodeTmdbErrorResponse(response: HttpResponse): TmdbErrorResponse? {
-//        if (!response.isTmdbStatusHandled) return null
-//        val exceptionResponseText = response.bodyAsText()
-//
-//        return try {
-//            decodeFromString(TmdbErrorResponse.serializer(), exceptionResponseText)
-//        } catch (t: Throwable) {
-//            // if we don't get a Trakt error response, skip the handling
-//            null
-//        }
-//    }
-
-    private val HttpResponse.isTraktStatusHandled: Boolean
-        get() = status == HttpStatusCode.NotFound ||
-            status == HttpStatusCode.Unauthorized ||
-            status == HttpStatusCode.InternalServerError
 
     private fun Throwable.isTimeoutException(): Boolean {
         val exception = unwrapCancellationException()
