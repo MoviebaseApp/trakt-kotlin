@@ -1,4 +1,7 @@
 import com.diffplug.gradle.spotless.SpotlessExtension
+import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnLockMismatchReport
+import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin
+import org.jetbrains.kotlin.gradle.targets.js.yarn.YarnRootExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 
 plugins {
@@ -52,5 +55,12 @@ allprojects {
                 "-opt-in=kotlinx.coroutines.FlowPreview",
             )
         }
+    }
+
+    rootProject.plugins.withType<YarnPlugin>().configureEach {
+        rootProject.the<YarnRootExtension>().yarnLockMismatchReport =
+            YarnLockMismatchReport.WARNING // NONE | FAIL
+        rootProject.the<YarnRootExtension>().reportNewYarnLock = false // true
+        rootProject.the<YarnRootExtension>().yarnLockAutoReplace = false // true
     }
 }
