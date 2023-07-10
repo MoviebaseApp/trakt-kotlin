@@ -1,34 +1,8 @@
 package app.moviebase.trakt.model
 
 import app.moviebase.trakt.TraktExtended
-import kotlinx.serialization.ExperimentalSerializationApi
-import kotlinx.serialization.KSerializer
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.Serializer
-import kotlinx.serialization.builtins.ListSerializer
-import kotlinx.serialization.encoding.Decoder
-import kotlinx.serialization.encoding.Encoder
-
-@Serializable(TraktSearchResults.Companion::class)
-data class TraktSearchResults(
-    val items: List<TraktSearchResult>,
-) {
-
-    companion object : KSerializer<TraktSearchResults> {
-
-        override val descriptor = serializer().descriptor
-
-        override fun serialize(encoder: Encoder, value: TraktSearchResults) {
-            ListSerializer(TraktSearchResult.serializer()).serialize(encoder, value.items)
-        }
-
-        override fun deserialize(decoder: Decoder): TraktSearchResults {
-            val items = ListSerializer(TraktSearchResult.serializer()).deserialize(decoder)
-            return TraktSearchResults(items)
-        }
-    }
-}
 
 @Serializable
 data class TraktSearchResult(
