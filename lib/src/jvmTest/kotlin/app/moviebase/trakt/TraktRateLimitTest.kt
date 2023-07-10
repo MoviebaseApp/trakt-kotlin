@@ -25,7 +25,7 @@ class TraktRateLimitTest {
     fun `it can fetches with one retry of one second`() = runBlocking {
         val config = mockHttpErrorConfig(
             result = show,
-            retryAfterSeconds = 1
+            retryAfterSeconds = 1,
         )
         val client = Trakt(config)
 
@@ -42,7 +42,7 @@ class TraktRateLimitTest {
         val config = mockHttpErrorConfig(
             result = show,
             timesToFail = 3,
-            retryAfterSeconds = 1
+            retryAfterSeconds = 1,
         )
         val client = Trakt(config)
 
@@ -53,7 +53,7 @@ class TraktRateLimitTest {
     private fun mockHttpErrorConfig(
         result: String,
         timesToFail: Int = 1,
-        retryAfterSeconds: Int = 1
+        retryAfterSeconds: Int = 1,
     ): TraktClientConfig.() -> Unit = {
         traktApiKey = "someKey"
         useCache = true
@@ -71,11 +71,11 @@ class TraktRateLimitTest {
 
             engine {
                 addHandler { _ ->
-                    if(times > 0) {
+                    if (times > 0) {
                         val headers = headersOf(
                             "Content-Type" to listOf(ContentType.Application.Json.toString()),
                             "X-Ratelimit" to listOf("""{"name":"UNAUTHED_API_GET_LIMIT","period":300,"limit":1000,"remaining":0,"until":"2020-10-10T00:24:00Z"}"""),
-                            "Retry-After" to listOf(retryAfterSeconds.toString()) // after 1 seconds
+                            "Retry-After" to listOf(retryAfterSeconds.toString()), // after 1 seconds
                         )
                         times--
                         respondError(HttpStatusCode.TooManyRequests, headers = headers)
