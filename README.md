@@ -9,7 +9,7 @@
 [![Maven Central](https://img.shields.io/maven-central/v/app.moviebase/trakt-api?label=Maven%20Central)](https://central.sonatype.com/artifact/app.moviebase/trakt-api/)
 ![Github Actions](https://github.com/MoviebaseApp/trakt-kotlin/actions/workflows/build.yml/badge.svg)
 [![Issues](https://img.shields.io/github/issues/MoviebaseApp/trakt-kotlin)](https://github.com/MoviebaseApp/tmdb-api/issues)
-[![Kotlin](https://img.shields.io/badge/kotlin-1.8.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-1.9.23-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/Gradle-8-green?style=flat)](https://gradle.org)
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 [![GitHub Account](https://img.shields.io/static/v1?label=GitHub&message=chrisnkrueger&color=C51162)](https://github.com/chrisnkrueger)
@@ -47,7 +47,7 @@ To use the library in a single-platform project, add a dependency.
 
 ```kotlin
 dependencies {
-    implementation("app.moviebase:trakt-api:0.5.0")
+    implementation("app.moviebase:trakt-api:0.6.0")
 }
 ```
 
@@ -56,23 +56,10 @@ In Kotlin Multiplatform projects, add the dependency to your commonMain source-s
 ```kotlin
 commonMain {
     dependencies {
-        implementation("app.moviebase:trakt-api:0.5.0")
+        implementation("app.moviebase:trakt-api:0.6.0")
     }
 }
 ```
-
-### Maven
-
-Add a dependency to the `<dependencies>` element.
-
-```xml
-<dependency>
-    <groupId>app.moviebase</groupId>
-    <artifactId>trakt-api</artifactId>
-    <version>0.5.0</version>
-</dependency>
-```
-
 
 ## Usage
 Most of the library follows the possibilities and naming at the official [Trakt documentation](https://trakt.docs.apiary.io/).
