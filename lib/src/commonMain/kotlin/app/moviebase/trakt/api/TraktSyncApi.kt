@@ -1,32 +1,36 @@
 package app.moviebase.trakt.api
 
 import app.moviebase.trakt.TraktExtended
+import app.moviebase.trakt.core.buildPaths
 import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.core.parameterLimit
 import app.moviebase.trakt.core.parameterPage
-import app.moviebase.trakt.core.postByPaths
 import app.moviebase.trakt.model.TraktListMediaType
 import app.moviebase.trakt.model.TraktListType
 import app.moviebase.trakt.model.TraktMediaItem
 import app.moviebase.trakt.model.TraktSyncItems
 import app.moviebase.trakt.model.TraktSyncResponse
 import io.ktor.client.HttpClient
+import io.ktor.client.call.body
+import io.ktor.client.request.post
 import io.ktor.client.request.setBody
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 
 class TraktSyncApi(private val client: HttpClient) {
 
-    suspend fun addWatchedHistory(items: TraktSyncItems): TraktSyncResponse = client.postByPaths(pathSync("history")) {
-        contentType(ContentType.Application.Json)
-        setBody(items)
-    }
+    suspend fun addWatchedHistory(items: TraktSyncItems): TraktSyncResponse =
+        client.post(urlString = pathSync("history")) {
+            contentType(ContentType.Application.Json)
+            setBody(items)
+        }.body()
 
-    suspend fun removeWatchedHistory(items: TraktSyncItems): TraktSyncResponse = client.postByPaths(pathSync("history", "remove")) {
-        contentType(ContentType.Application.Json)
-        setBody(items)
-    }
+    suspend fun removeWatchedHistory(items: TraktSyncItems): TraktSyncResponse =
+        client.post(urlString = pathSync("history", "remove")) {
+            contentType(ContentType.Application.Json)
+            setBody(items)
+        }.body()
 
     suspend fun getSyncList(
         listType: TraktListType,
@@ -89,7 +93,7 @@ class TraktSyncApi(private val client: HttpClient) {
         extended = extended,
     )
 
-    private fun pathSync(vararg paths: String?) = arrayOf("sync", *paths).filterNotNull()
+    private fun pathSync(vararg paths: String?) = buildPaths(arrayOf("sync", *paths).filterNotNull())
 
     private fun pathSyncList(
         listType: TraktListType,

@@ -1,9 +1,19 @@
 package app.moviebase.trakt.core
 
 import app.moviebase.trakt.TraktExtended
+import app.moviebase.trakt.TraktWebConfig
 import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.parameter
+import io.ktor.http.path
+import io.ktor.http.takeFrom
 import kotlinx.datetime.Instant
+
+fun HttpRequestBuilder.endPoint(vararg paths: String) {
+    url {
+        takeFrom(TraktWebConfig.BASE_URL)
+        path(*paths)
+    }
+}
 
 fun HttpRequestBuilder.parameters(parameters: Map<String, Any?>) {
     parameters.entries.forEach {
