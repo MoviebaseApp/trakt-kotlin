@@ -5,6 +5,7 @@ import io.ktor.client.HttpClient
 import io.ktor.client.HttpClientConfig
 import io.ktor.client.engine.HttpClientEngineConfig
 import io.ktor.client.engine.HttpClientEngineFactory
+import io.ktor.client.plugins.auth.providers.BearerTokens
 import io.ktor.client.plugins.logging.Logging
 
 @TraktDsl
@@ -18,7 +19,7 @@ class TraktClientConfig {
     var expectSuccess: Boolean = true
     var useCache: Boolean = false
     var useTimeout: Boolean = false
-    var maxRetries: Int = 3
+    var maxRetries: Int = 5
 
     internal var httpClientConfigBlock: (HttpClientConfig<*>.() -> Unit)? = null
     internal var httpClientBuilder: (() -> HttpClient)? = null
@@ -63,19 +64,14 @@ class TraktClientConfig {
 @TraktDsl
 class TraktAuthCredentials {
 
-    internal var refreshTokensProvider: (suspend () -> TraktBearerTokens?)? = null
-    internal var loadTokensProvider: (suspend () -> TraktBearerTokens?)? = null
+    internal var refreshTokensProvider: suspend () -> BearerTokens? = { null }
+    internal var loadTokensProvider: suspend () -> BearerTokens? = { null }
 
-    fun refreshTokens(provider: suspend() -> TraktBearerTokens?) {
+    fun refreshTokens(provider: suspend () -> BearerTokens?) {
         refreshTokensProvider = provider
     }
 
-    fun loadTokens(provider: suspend() -> TraktBearerTokens?) {
+    fun loadTokens(provider: suspend () -> BearerTokens?) {
         loadTokensProvider = provider
     }
 }
-
-data class TraktBearerTokens(
-    val accessToken: String,
-    val refreshToken: String,
-)
