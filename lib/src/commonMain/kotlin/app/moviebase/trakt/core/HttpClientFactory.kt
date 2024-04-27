@@ -1,6 +1,5 @@
 package app.moviebase.trakt.core
 
-import app.moviebase.trakt.TraktBearerTokens
 import app.moviebase.trakt.TraktClientConfig
 import app.moviebase.trakt.TraktWebConfig
 import io.ktor.client.HttpClient
@@ -11,7 +10,6 @@ import io.ktor.client.plugins.HttpRequestRetry
 import io.ktor.client.plugins.HttpRequestTimeoutException
 import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.auth.Auth
-import io.ktor.client.plugins.auth.providers.BearerTokens
 import io.ktor.client.plugins.auth.providers.bearer
 import io.ktor.client.plugins.cache.HttpCache
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -25,18 +23,7 @@ import io.ktor.utils.io.CancellationException
 
 internal object HttpClientFactory {
 
-    private val retryClientHttpCodes by lazy {
-        listOf(
-            HttpStatusCode.RequestTimeout,
-            HttpStatusCode.TooEarly,
-            HttpStatusCode.TooManyRequests,
-        ).map { it.value }.toSet()
-    }
-
-    fun create(
-        config: TraktClientConfig,
-        useAuthentication: Boolean = false,
-    ): HttpClient {
+    fun create(config: TraktClientConfig): HttpClient {
         val defaultConfig: HttpClientConfig<*>.() -> Unit = {
             val json = JsonFactory.create()
 
@@ -52,15 +39,18 @@ internal object HttpClientFactory {
             }
 
             // see https://ktor.io/docs/auth.html
-            if (useAuthentication) {
+            val authCredentials = config.traktAuthCredentials
+            if (authCredentials != null) {
                 install(Auth) {
                     bearer {
                         loadTokens {
-                            config.traktAuthCredentials?.loadTokensProvider?.invoke()?.toKtor()
+                            // TODO: load cached tokens
+                            authCredentials.loadTokensProvider()
                         }
 
                         refreshTokens {
-                            config.traktAuthCredentials?.refreshTokensProvider?.invoke()?.toKtor()
+                            // TODO:  add here the 401 handling
+                            authCredentials.refreshTokensProvider()
                         }
 
                         sendWithoutRequest { request ->
@@ -75,11 +65,14 @@ internal object HttpClientFactory {
 
             // see https://ktor.io/docs/client-retry.html
             install(HttpRequestRetry) {
-                maxRetries = config.maxRetries
                 exponentialDelay()
 
-                retryIf { _, response ->
-                    response.status.value.let { it in 500..599 || retryClientHttpCodes.contains(it) }
+                retryIf(config.maxRetries) { _, httpResponse ->
+                    when {
+                        httpResponse.status.value in 500..599 -> true
+                        httpResponse.status == HttpStatusCode.TooManyRequests -> true
+                        else -> false
+                    }
                 }
 
                 retryOnExceptionIf { _, cause ->
@@ -108,6 +101,7 @@ internal object HttpClientFactory {
                 Logging(it)
             }
 
+            // add custom configuration
             config.httpClientConfigBlock?.invoke(this)
         }
 
@@ -120,6 +114,4 @@ internal object HttpClientFactory {
             exception is ConnectTimeoutException ||
             exception is SocketTimeoutException
     }
-
-    private fun TraktBearerTokens.toKtor() = BearerTokens(accessToken, refreshToken)
 }

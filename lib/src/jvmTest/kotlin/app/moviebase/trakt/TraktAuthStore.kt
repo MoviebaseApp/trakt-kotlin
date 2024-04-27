@@ -1,5 +1,7 @@
 package app.moviebase.trakt
 
+import io.ktor.client.plugins.auth.providers.BearerTokens
+
 class TraktAuthStore {
-    var bearerTokens: TraktBearerTokens? = null
+    var bearerTokens: BearerTokens? = null
 }

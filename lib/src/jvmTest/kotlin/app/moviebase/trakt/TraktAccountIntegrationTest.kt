@@ -1,5 +1,6 @@
 package app.moviebase.trakt
 
+import io.ktor.client.plugins.auth.providers.BearerTokens
 import kotlin.test.assertNotNull
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.BeforeEach
@@ -19,7 +20,7 @@ class TraktAccountIntegrationTest {
     @BeforeEach
     fun setUp() {
         traktCredentials.accessToken?.let {
-            authStore.bearerTokens = TraktBearerTokens(
+            authStore.bearerTokens = BearerTokens(
                 accessToken = traktCredentials.accessToken,
                 refreshToken = traktCredentials.refreshToken!!,
             )
