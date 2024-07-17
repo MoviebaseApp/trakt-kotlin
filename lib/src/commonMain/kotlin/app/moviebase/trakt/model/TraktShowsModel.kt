@@ -54,3 +54,9 @@ data class TraktTrendingShow(
     @SerialName("show") val show: TraktShow? = null,
     @SerialName("watchers") val watchers: Int? = null,
 )
+
+@Serializable
+data class TraktAnticipatedShow(
+    @SerialName("show") val show: TraktShow? = null,
+    @SerialName("list_count") val listCount: Int? = null,
+)
