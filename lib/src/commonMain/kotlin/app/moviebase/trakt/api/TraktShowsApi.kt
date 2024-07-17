@@ -32,6 +32,16 @@ class TraktShowsApi(private val client: HttpClient) {
         extended?.let { parameterExtended(it) }
     }
 
+    suspend fun getAnticipated(
+        page: Int,
+        limit: Int,
+        extended: TraktExtended? = null,
+    ): List<TraktAnticipatedShow> = client.getByPaths(*pathShows("anticipated")) {
+        parameterPage(page)
+        parameterLimit(limit)
+        extended?.let { parameterExtended(it) }
+    }
+
     suspend fun getRelated(
         showId: String,
         page: Int,
