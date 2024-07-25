@@ -5,6 +5,7 @@ import app.moviebase.trakt.core.getByPaths
 import app.moviebase.trakt.core.parameterExtended
 import app.moviebase.trakt.core.parameterLimit
 import app.moviebase.trakt.core.parameterPage
+import app.moviebase.trakt.model.TraktAnticipatedShow
 import app.moviebase.trakt.model.TraktRating
 import app.moviebase.trakt.model.TraktShow
 import app.moviebase.trakt.model.TraktTrendingShow
