@@ -27,10 +27,12 @@ class Trakt internal constructor(private val config: TraktClientConfig) {
 
     constructor(traktApiKey: String) : this(TraktClientConfig.withKey(traktApiKey))
 
-    private val client: HttpClient = HttpClientFactory.create(config).apply {
-        interceptRequest {
-            it.header(TraktHeader.API_KEY, config.traktApiKey)
-            it.header(TraktHeader.API_VERSION, TraktWebConfig.VERSION)
+    val client: HttpClient by lazy {
+        HttpClientFactory.create(config).apply {
+            interceptRequest {
+                it.header(TraktHeader.API_KEY, config.traktApiKey)
+                it.header(TraktHeader.API_VERSION, TraktWebConfig.VERSION)
+            }
         }
     }
 
