@@ -1,0 +1,22 @@
+{
+  "username": "chrisbln_cac11e",
+  "private": false,
+  "deleted": false,
+  "name": "Moviebase",
+  "vip": false,
+  "vip_ep": false,
+  "director": false,
+  "ids": {
+    "slug": "chrisbln-cac11e"
+  },
+  "joined_at": "2026-08-10T10:03:41.000Z",
+  "location": "Germany",
+  "about": null,
+  "gender": null,
+  "age": null,
+  "images": {
+    "avatar": {
+      "full": "https://secure.gravatar.com/avatar/00000000000000000000000000000000?d=https%3A%2F%2Fmedia.trakt.tv%2Fhotlink-ok%2Fplaceholders%2Fmedium%2Fzoidberg.png&r=pg&s=256"
+    }
+  }
+}

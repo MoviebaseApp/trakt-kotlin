@@ -1,0 +1,17 @@
+{
+  "type": "movie",
+  "movie": {
+    "ids": {
+      "imdb": "tt0052077",
+      "plex": {
+        "guid": "5d9f34fbd74e670020020087",
+        "slug": "plan-9-from-outer-space"
+      },
+      "slug": "plan-9-from-outer-space-1957",
+      "tmdb": 10513,
+      "trakt": 5693
+    },
+    "year": 1957,
+    "title": "Plan 9 from Outer Space"
+  }
+}

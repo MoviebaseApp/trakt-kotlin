@@ -1,0 +1,53 @@
+[
+  {
+    "list_count": 69880,
+    "movie": {
+      "ids": {
+        "imdb": "tt21357150",
+        "plex": {
+          "guid": "62deb8bf9576053a6b5c5ee7",
+          "slug": "avengers-doomsday"
+        },
+        "slug": "avengers-doomsday-2026",
+        "tmdb": 1003596,
+        "trakt": 806490
+      },
+      "year": 2026,
+      "title": "Avengers: Doomsday"
+    }
+  },
+  {
+    "list_count": 49610,
+    "movie": {
+      "ids": {
+        "imdb": "tt31378509",
+        "plex": {
+          "guid": "65d514b7e0e20b8c84ece2f6",
+          "slug": "dune-messiah-2026"
+        },
+        "slug": "dune-part-three-2026",
+        "tmdb": 1170608,
+        "trakt": 943606
+      },
+      "year": 2026,
+      "title": "Dune: Part Three"
+    }
+  },
+  {
+    "list_count": 39643,
+    "movie": {
+      "ids": {
+        "imdb": "tt16360004",
+        "plex": {
+          "guid": "61b7468e1ce168bf98de89dd",
+          "slug": "spider-man-beyond-the-spider-verse"
+        },
+        "slug": "spider-man-beyond-the-spider-verse-2027",
+        "tmdb": 911916,
+        "trakt": 729942
+      },
+      "year": 2027,
+      "title": "Spider-Man: Beyond the Spider-Verse"
+    }
+  }
+]

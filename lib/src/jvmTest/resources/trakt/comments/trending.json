@@ -1,0 +1,184 @@
+[
+  {
+    "type": "list",
+    "list": {
+      "name": "Horror Recs",
+      "description": "*The Descent*, *Insidious* and *Sinister* are the most scary for me.",
+      "privacy": "private",
+      "share_link": "https://trakt.tv/lists/25995968",
+      "type": "personal",
+      "display_numbers": false,
+      "allow_comments": true,
+      "sort_by": "rank",
+      "sort_how": "asc",
+      "created_at": "2023-10-09T18:16:13.000Z",
+      "updated_at": "2024-08-18T18:10:00.000Z",
+      "item_count": 17,
+      "comment_count": 3,
+      "likes": 1,
+      "ids": {
+        "trakt": 25995968,
+        "slug": "horror-recs"
+      },
+      "user": {
+        "username": "Acoucalancha",
+        "private": false,
+        "deleted": false,
+        "name": "Acoucalancha",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "acoucalancha"
+        }
+      }
+    },
+    "comment": {
+      "id": 665578,
+      "comment": "Let's test this thread with me as the OP",
+      "gif": null,
+      "spoiler": false,
+      "review": false,
+      "parent_id": 0,
+      "created_at": "2024-04-19T12:03:05.000Z",
+      "updated_at": "2024-04-19T12:03:05.000Z",
+      "replies": 296,
+      "likes": 0,
+      "user_rating": null,
+      "language": "en",
+      "user_stats": {
+        "rating": null,
+        "play_count": 0,
+        "completed_count": 0
+      },
+      "user": {
+        "username": "Dulneth D. Perera",
+        "private": false,
+        "deleted": false,
+        "name": "Dulneth Perera",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "dulneth-d-perera"
+        }
+      }
+    }
+  },
+  {
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 10,
+      "title": "Troy",
+      "ids": {
+        "trakt": 14129566,
+        "tvdb": 11751888,
+        "imdb": "tt41591874",
+        "tmdb": 7173966,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Silo",
+      "year": 2023,
+      "ids": {
+        "trakt": 180770,
+        "slug": "silo",
+        "tvdb": 403245,
+        "imdb": "tt14688458",
+        "tmdb": 125988,
+        "tvrage": null
+      }
+    },
+    "comment": {
+      "id": 1041365,
+      "comment": "Next season, I want to see Helen and her generation in Silo 18.",
+      "gif": null,
+      "spoiler": false,
+      "review": false,
+      "parent_id": 0,
+      "created_at": "2026-09-04T02:23:34.000Z",
+      "updated_at": "2026-09-04T02:23:34.000Z",
+      "replies": 5,
+      "likes": 67,
+      "user_rating": 10,
+      "language": "en",
+      "user_stats": {
+        "rating": 10,
+        "play_count": 1,
+        "completed_count": 1
+      },
+      "user": {
+        "username": "fernando87f",
+        "private": false,
+        "deleted": false,
+        "name": "Fernando S",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "fernando87f"
+        }
+      }
+    }
+  },
+  {
+    "type": "episode",
+    "episode": {
+      "season": 3,
+      "number": 10,
+      "title": "Troy",
+      "ids": {
+        "trakt": 14129566,
+        "tvdb": 11751888,
+        "imdb": "tt41591874",
+        "tmdb": 7173966,
+        "tvrage": null
+      }
+    },
+    "show": {
+      "title": "Silo",
+      "year": 2023,
+      "ids": {
+        "trakt": 180770,
+        "slug": "silo",
+        "tvdb": 403245,
+        "imdb": "tt14688458",
+        "tmdb": 125988,
+        "tvrage": null
+      }
+    },
+    "comment": {
+      "id": 1041419,
+      "comment": "Saudades dos comentários do TV Time. Esse Trakt é chato demais.",
+      "gif": null,
+      "spoiler": false,
+      "review": false,
+      "parent_id": 0,
+      "created_at": "2026-09-04T03:41:06.000Z",
+      "updated_at": "2026-09-04T04:02:14.000Z",
+      "replies": 10,
+      "likes": 64,
+      "user_rating": 10,
+      "language": "pt",
+      "user_stats": {
+        "rating": 10,
+        "play_count": 1,
+        "completed_count": 1
+      },
+      "user": {
+        "username": "brunobucci",
+        "private": false,
+        "deleted": false,
+        "name": "Bruno Bucci",
+        "vip": true,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "brunobucci"
+        }
+      }
+    }
+  }
+]

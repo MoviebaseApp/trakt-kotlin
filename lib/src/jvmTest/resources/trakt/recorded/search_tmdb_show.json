@@ -1,0 +1,22 @@
+[
+  {
+    "show": {
+      "ids": {
+        "imdb": "tt5489690",
+        "plex": {
+          "guid": "5d9c07f62df347001e3a704a",
+          "slug": "paradise-hotel-no"
+        },
+        "slug": "paradise-hotel-no",
+        "tmdb": 36109,
+        "tvdb": 149591,
+        "trakt": 35953
+      },
+      "year": 2009,
+      "title": "Paradise Hotel (NO)",
+      "aired_episodes": 758
+    },
+    "type": "show",
+    "score": 100
+  }
+]

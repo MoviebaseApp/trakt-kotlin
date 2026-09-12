@@ -1,0 +1,21 @@
+{
+  "deleted": {
+    "movies": 1,
+    "shows": 1,
+    "seasons": 0,
+    "episodes": 0,
+    "people": 0
+  },
+  "not_found": {
+    "movies": [],
+    "shows": [],
+    "seasons": [],
+    "episodes": [],
+    "people": [],
+    "users": []
+  },
+  "list": {
+    "updated_at": "2026-09-12T16:59:36.000Z",
+    "item_count": 1
+  }
+}

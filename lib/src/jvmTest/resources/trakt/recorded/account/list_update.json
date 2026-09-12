@@ -1,0 +1,32 @@
+{
+  "name": "cc",
+  "description": null,
+  "privacy": "private",
+  "share_link": "https://trakt.tv/lists/36798585",
+  "type": "personal",
+  "display_numbers": false,
+  "allow_comments": true,
+  "sort_by": "rank",
+  "sort_how": "asc",
+  "created_at": "2026-08-10T18:40:57.000Z",
+  "updated_at": "2026-08-10T18:40:58.000Z",
+  "item_count": 1,
+  "comment_count": 0,
+  "likes": 0,
+  "ids": {
+    "trakt": 36798585,
+    "slug": "cc"
+  },
+  "user": {
+    "username": "chrisbln_cac11e",
+    "private": false,
+    "deleted": false,
+    "name": "Moviebase",
+    "vip": false,
+    "vip_ep": false,
+    "director": false,
+    "ids": {
+      "slug": "chrisbln-cac11e"
+    }
+  }
+}

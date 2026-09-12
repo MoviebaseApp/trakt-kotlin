@@ -1,0 +1,107 @@
+[
+  {
+    "liked_at": "2026-09-12T10:17:51.000Z",
+    "type": "comment",
+    "comment": {
+      "id": 1041849,
+      "comment": "My 2 cents on this movie\n\nLet's start with one thing: now I understand why Warner Bros. didn't want to distribute this film. Not because it's shit, but because it's one of those movies you finish and think, “Okay… so what?”\n\nLooney Tunes are an icon, but they don't pull like they used to in theaters anymore, and coyote vs. acme is exactly the kind of movie that would probably have attracted longtime fans, made them smile a few times while watching, and then ended up in oblivion within a week.\nThe movie isn't bad, it's just… there.\n\nIt has 2/3 cute scenes, a few gags that work, and a basic idea that's also funny, but otherwise it never manages to make that leap from “nice movie” to “movies worth remembering”, adds practically nothing to the genre, and most importantly, it never gave me that feeling of “fuck, thank goodness they saved it”.\n\nIn fact, if it hadn't been for all the fuss behind the distribution, I probably would never have known it existed, and after seeing it, I can say with some serenity that I might still not have known.\n\nThe funniest part, in the end, was the entire Warner Bros. story that kept it locked away. In the long run, evidently, the strategy worked: the mess transformed a film destined for oblivion into a kind of Holy Grail of lost cinema. \nIn my opinion, they would have made a much better impression by shadow-dropping it directly on HBO Max and bon. No controversy, no fan crusades, no people describing it as the film that would save cinema and above all I would still have my 5.50€.\n\nMy advice: if you want to see a Looney Tunes mixed media movie that's truly worthwhile, watch Back in Action, or even better, who framed Roger Rabbit.",
+      "gif": null,
+      "spoiler": false,
+      "review": true,
+      "parent_id": 0,
+      "created_at": "2026-09-04T18:00:01.000Z",
+      "updated_at": "2026-09-04T18:00:01.000Z",
+      "replies": 0,
+      "likes": 1,
+      "user_rating": null,
+      "language": "en",
+      "user_stats": {
+        "rating": null,
+        "play_count": 1,
+        "completed_count": 1
+      },
+      "user": {
+        "username": "vincikuma",
+        "private": false,
+        "deleted": false,
+        "name": "Vincenzo Lorusso",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "vincikuma"
+        }
+      }
+    }
+  },
+  {
+    "liked_at": "2026-09-12T10:15:02.000Z",
+    "type": "comment",
+    "comment": {
+      "id": 1035361,
+      "comment": "A superbly clever take on the Looney Tunes world and the evil ACME! The animation is superb, as well as its blending with reality. The story is so smart and well narrated and told, with good laughs, a bit of the nostalgia factor and a lot of modern messages in the movie too.\nA solid animation movie for all ages, from kids of today to the kids of yesterday who grew up with these characters. :)",
+      "gif": null,
+      "spoiler": false,
+      "review": false,
+      "parent_id": 0,
+      "created_at": "2026-08-28T00:24:36.000Z",
+      "updated_at": "2026-08-28T00:24:36.000Z",
+      "replies": 2,
+      "likes": 12,
+      "user_rating": 9,
+      "language": "en",
+      "user_stats": {
+        "rating": 9,
+        "play_count": 1,
+        "completed_count": 1
+      },
+      "user": {
+        "username": "DinisMiguel",
+        "private": false,
+        "deleted": false,
+        "name": "Dinis Lopes",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "dinismiguel"
+        }
+      }
+    }
+  },
+  {
+    "liked_at": "2026-09-04T16:44:47.000Z",
+    "type": "comment",
+    "comment": {
+      "id": 1009279,
+      "comment": "Psychic types are weak against Bug types.",
+      "gif": null,
+      "spoiler": false,
+      "review": false,
+      "parent_id": 0,
+      "created_at": "2026-07-31T19:37:17.000Z",
+      "updated_at": "2026-07-31T19:37:17.000Z",
+      "replies": 0,
+      "likes": 139,
+      "user_rating": null,
+      "language": "en",
+      "user_stats": {
+        "rating": null,
+        "play_count": 0,
+        "completed_count": 0
+      },
+      "user": {
+        "username": "Jasmohan",
+        "private": true,
+        "deleted": false,
+        "name": "Jasmohan",
+        "vip": false,
+        "vip_ep": false,
+        "director": false,
+        "ids": {
+          "slug": "jasmohan"
+        }
+      }
+    }
+  }
+]

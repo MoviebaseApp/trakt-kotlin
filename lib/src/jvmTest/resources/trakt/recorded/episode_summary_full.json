@@ -1,0 +1,68 @@
+{
+  "ids": {
+    "imdb": "tt14693272",
+    "plex": {
+      "guid": "61b180696bfb4feb48515e2c"
+    },
+    "tmdb": 2964686,
+    "tvdb": 8440385,
+    "trakt": 5165667
+  },
+  "title": "Freedom Day",
+  "votes": 5244,
+  "images": {
+    "screenshot": [
+      "media.trakt.tv/images/episodes/005/165/667/screenshots/medium/e035db5f06.jpg.webp"
+    ]
+  },
+  "number": 1,
+  "rating": 7.831235885620117,
+  "season": 1,
+  "runtime": 62,
+  "overview": "Sheriff Becker's plans for the future are thrown off course after his wife meets a hacker with information about the silo.",
+  "released": "2023-05-05",
+  "number_abs": 1,
+  "updated_at": "2026-09-12T15:35:16.000Z",
+  "first_aired": "2023-05-05T01:00:00.000Z",
+  "episode_type": "series_premiere",
+  "after_credits": false,
+  "comment_count": 48,
+  "during_credits": false,
+  "original_title": "Freedom Day",
+  "available_translations": [
+    "ar",
+    "ca",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "fa",
+    "fi",
+    "fr",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "no",
+    "pl",
+    "pt",
+    "ru",
+    "sk",
+    "sl",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "ur",
+    "vi",
+    "zh"
+  ],
+  "effective_release_date": "2023-05-05T01:00:00.000Z"
+}

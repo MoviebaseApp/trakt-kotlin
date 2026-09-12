@@ -1,0 +1,68 @@
+[
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt32890033",
+        "plex": {
+          "guid": "6693e558bb02d52ce0523254",
+          "slug": "mega-minions"
+        },
+        "slug": "minions-monsters-2026",
+        "tmdb": 1315772,
+        "trakt": 1075712
+      },
+      "year": 2026,
+      "title": "Minions & Monsters"
+    },
+    "rank": 4,
+    "id": 1532409367,
+    "listed_at": "2026-08-10T18:40:40.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt31036941",
+        "plex": {
+          "guid": "65b5cdc473638dcdb7d7db05",
+          "slug": "jurassic-world-rebirth"
+        },
+        "slug": "jurassic-world-rebirth-2025",
+        "tmdb": 1234821,
+        "trakt": 998800
+      },
+      "year": 2025,
+      "title": "Jurassic World Rebirth"
+    },
+    "rank": 6,
+    "id": 1532409369,
+    "listed_at": "2026-08-10T18:40:40.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt9218128",
+        "plex": {
+          "guid": "5d777097cfbb56001fb89e15",
+          "slug": "gladiator-ii"
+        },
+        "slug": "gladiator-ii-2024",
+        "tmdb": 558449,
+        "trakt": 409281
+      },
+      "year": 2024,
+      "title": "Gladiator II"
+    },
+    "rank": 8,
+    "id": 1532409371,
+    "listed_at": "2026-08-10T18:40:40.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

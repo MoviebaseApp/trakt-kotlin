@@ -1,0 +1,116 @@
+[
+  {
+    "type": "episode",
+    "show": {
+      "ids": {
+        "imdb": "tt7587890",
+        "plex": {
+          "guid": "5d9c08ffe264b7001fc4d397",
+          "slug": "the-rookie"
+        },
+        "slug": "the-rookie-2018",
+        "tmdb": 79744,
+        "tvdb": 350665,
+        "trakt": 134421
+      },
+      "year": 2018,
+      "title": "The Rookie",
+      "aired_episodes": 144
+    },
+    "episode": {
+      "ids": {
+        "imdb": "tt10525796",
+        "plex": {
+          "guid": "5e833861627391004310edd2"
+        },
+        "tmdb": 1948790,
+        "tvdb": 7375467,
+        "trakt": 3659501
+      },
+      "title": "Warriors and Guardians",
+      "number": 4,
+      "season": 2
+    },
+    "rank": 17,
+    "id": 1532409382,
+    "listed_at": "2026-08-10T18:40:41.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "episode",
+    "show": {
+      "ids": {
+        "imdb": "tt7587890",
+        "plex": {
+          "guid": "5d9c08ffe264b7001fc4d397",
+          "slug": "the-rookie"
+        },
+        "slug": "the-rookie-2018",
+        "tmdb": 79744,
+        "tvdb": 350665,
+        "trakt": 134421
+      },
+      "year": 2018,
+      "title": "The Rookie",
+      "aired_episodes": 144
+    },
+    "episode": {
+      "ids": {
+        "imdb": "tt10360952",
+        "plex": {
+          "guid": "5de7da86f7b868001d898bd0"
+        },
+        "tmdb": 1842631,
+        "tvdb": 7262755,
+        "trakt": 3604335
+      },
+      "title": "Impact",
+      "number": 1,
+      "season": 2
+    },
+    "rank": 19,
+    "id": 1532409384,
+    "listed_at": "2026-08-10T18:40:41.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "episode",
+    "show": {
+      "ids": {
+        "imdb": "tt7587890",
+        "plex": {
+          "guid": "5d9c08ffe264b7001fc4d397",
+          "slug": "the-rookie"
+        },
+        "slug": "the-rookie-2018",
+        "tmdb": 79744,
+        "tvdb": 350665,
+        "trakt": 134421
+      },
+      "year": 2018,
+      "title": "The Rookie",
+      "aired_episodes": 144
+    },
+    "episode": {
+      "ids": {
+        "imdb": "tt10525792",
+        "plex": {
+          "guid": "5de7da86f7b868001d898bd4"
+        },
+        "tmdb": 1933365,
+        "tvdb": 7354195,
+        "trakt": 3659497
+      },
+      "title": "The Night General",
+      "number": 2,
+      "season": 2
+    },
+    "rank": 20,
+    "id": 1532409385,
+    "listed_at": "2026-08-10T18:40:41.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

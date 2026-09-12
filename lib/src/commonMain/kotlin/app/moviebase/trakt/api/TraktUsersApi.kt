@@ -40,6 +40,7 @@ import io.ktor.client.call.body
 import io.ktor.client.request.HttpRequestBuilder
 import io.ktor.client.request.delete
 import io.ktor.client.request.get
+import io.ktor.client.request.parameter
 import io.ktor.client.request.post
 import io.ktor.client.request.put
 import io.ktor.client.request.setBody
@@ -210,9 +211,14 @@ class TraktUsersApi(
         extended?.let { parameterExtended(it) }
     }.body()
 
-    suspend fun getStats(userSlug: TraktUserSlug = TraktUserSlug.ME): TraktUserStats = client.get {
-        endPointUsers(userSlug, "stats")
-    }.body()
+    // Trakt answers 204 until it has computed stats for the account, although the spec only lists 200.
+    suspend fun getStats(userSlug: TraktUserSlug = TraktUserSlug.ME): TraktUserStats? {
+        val response = client.get {
+            endPointUsers(userSlug, "stats")
+        }
+        if (response.status == HttpStatusCode.NoContent) return null
+        return response.body()
+    }
 
     suspend fun getWatching(
         userSlug: TraktUserSlug = TraktUserSlug.ME,
@@ -350,11 +356,8 @@ class TraktUsersApi(
         limit: Int = TraktWebConfig.MAX_LIMIT_ITEMS,
         extended: TraktExtended? = null,
     ): TraktPage<TraktHiddenItem> = client.get {
-        if (type != null) {
-            endPoint("users", "hidden", section.value, type.value)
-        } else {
-            endPoint("users", "hidden", section.value)
-        }
+        endPoint("users", "hidden", section.value)
+        type?.let { parameter("type", it.value) }
         parameterPage(page)
         parameterLimit(limit)
         extended?.let { parameterExtended(it) }

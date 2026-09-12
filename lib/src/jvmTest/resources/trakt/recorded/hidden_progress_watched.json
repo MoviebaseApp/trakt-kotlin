@@ -1,0 +1,50 @@
+[
+  {
+    "hidden_at": "2026-09-12T16:28:56.000Z",
+    "type": "show",
+    "show": {
+      "title": "My Life with the Walter Boys",
+      "year": 2023,
+      "ids": {
+        "trakt": 183619,
+        "slug": "my-life-with-the-walter-boys",
+        "tvdb": 405817,
+        "imdb": "tt8323628",
+        "tmdb": 199001,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "hidden_at": "2026-09-12T16:28:56.000Z",
+    "type": "show",
+    "show": {
+      "title": "Dark Matter",
+      "year": 2024,
+      "ids": {
+        "trakt": 170597,
+        "slug": "dark-matter-2024",
+        "tvdb": 393159,
+        "imdb": "tt19231492",
+        "tmdb": 196322,
+        "tvrage": null
+      }
+    }
+  },
+  {
+    "hidden_at": "2026-09-12T16:28:56.000Z",
+    "type": "show",
+    "show": {
+      "title": "Rick and Morty",
+      "year": 2013,
+      "ids": {
+        "trakt": 69829,
+        "slug": "rick-and-morty",
+        "tvdb": 275274,
+        "imdb": "tt2861424",
+        "tmdb": 60625,
+        "tvrage": null
+      }
+    }
+  }
+]

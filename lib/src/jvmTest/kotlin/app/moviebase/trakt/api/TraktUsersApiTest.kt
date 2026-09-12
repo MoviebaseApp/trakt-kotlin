@@ -1,5 +1,6 @@
 package app.moviebase.trakt.api
 
+import app.moviebase.trakt.core.NO_CONTENT
 import app.moviebase.trakt.core.mockHttpClient
 import app.moviebase.trakt.model.TraktHiddenSection
 import app.moviebase.trakt.model.TraktMediaType
@@ -211,7 +212,7 @@ class TraktUsersApiTest {
     @Test
     fun `it can fetch user stats`() =
         runTest {
-            val stats = classToTest.getStats(TraktUserSlug.ME)
+            val stats = requireNotNull(classToTest.getStats(TraktUserSlug.ME))
 
             assertThat(stats.movies.plays).isEqualTo(155)
             assertThat(stats.movies.watched).isEqualTo(114)
@@ -227,6 +228,16 @@ class TraktUsersApiTest {
             assertThat(stats.network.friends).isEqualTo(1)
             assertThat(stats.ratings.total).isEqualTo(389)
             assertThat(stats.ratings.distribution["10"]).isEqualTo(63f)
+        }
+
+    @Test
+    fun `it returns no stats when trakt has not computed them yet`() =
+        runTest {
+            val noStatsClient = mockHttpClient(mapOf("users/me/stats" to NO_CONTENT))
+
+            val stats = TraktUsersApi(noStatsClient).getStats(TraktUserSlug.ME)
+
+            assertThat(stats).isNull()
         }
 
     @Test

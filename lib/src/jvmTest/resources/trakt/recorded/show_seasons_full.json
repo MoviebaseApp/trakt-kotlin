@@ -1,0 +1,82 @@
+[
+  {
+    "ids": {
+      "plex": {
+        "guid": null
+      },
+      "tmdb": null,
+      "tvdb": 542492,
+      "trakt": 130768
+    },
+    "title": "Specials",
+    "votes": 0,
+    "images": {
+      "thumb": [],
+      "poster": []
+    },
+    "number": 0,
+    "rating": 0,
+    "network": null,
+    "overview": null,
+    "updated_at": "2026-09-12T10:21:21.000Z",
+    "first_aired": "2016-06-01T22:00:00.000Z",
+    "episode_count": 8,
+    "total_runtime": 360,
+    "aired_episodes": 8,
+    "original_title": null
+  },
+  {
+    "ids": {
+      "plex": {
+        "guid": "602e59a82d6795002c5475fe"
+      },
+      "tmdb": 46941,
+      "tvdb": 212991,
+      "trakt": 47792
+    },
+    "title": "Season 1",
+    "votes": 0,
+    "images": {
+      "thumb": [],
+      "poster": [
+        "media.trakt.tv/images/seasons/000/047/792/posters/medium/4f1a02eecf.jpg.webp"
+      ]
+    },
+    "number": 1,
+    "rating": 0,
+    "network": null,
+    "overview": null,
+    "updated_at": "2026-09-12T10:21:22.000Z",
+    "first_aired": "2009-03-08T23:00:00.000Z",
+    "episode_count": 40,
+    "total_runtime": 1680,
+    "aired_episodes": 40,
+    "original_title": "Season 1"
+  },
+  {
+    "ids": {
+      "plex": {
+        "guid": "602e599e2d6795002c5475d6"
+      },
+      "tmdb": 46942,
+      "tvdb": 213001,
+      "trakt": 47793
+    },
+    "title": "Season 2",
+    "votes": 0,
+    "images": {
+      "thumb": [],
+      "poster": []
+    },
+    "number": 2,
+    "rating": 0,
+    "network": null,
+    "overview": null,
+    "updated_at": "2026-09-12T10:21:22.000Z",
+    "first_aired": "2010-03-07T23:00:00.000Z",
+    "episode_count": 40,
+    "total_runtime": 1680,
+    "aired_episodes": 40,
+    "original_title": "Season 2"
+  }
+]

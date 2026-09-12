@@ -1,0 +1,74 @@
+[
+  {
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt2707408",
+        "plex": {
+          "guid": "5d9c0803705e7a001e6cfe42",
+          "slug": "narcos"
+        },
+        "slug": "narcos",
+        "tmdb": 63351,
+        "tvdb": 282670,
+        "trakt": 94630
+      },
+      "year": 2015,
+      "title": "Narcos",
+      "aired_episodes": 30
+    },
+    "rank": 18,
+    "id": 1543720765,
+    "listed_at": "2026-09-12T10:15:52.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt11198330",
+        "plex": {
+          "guid": "5e160ed3e68804001e87a7b5",
+          "slug": "house-of-the-dragon"
+        },
+        "slug": "house-of-the-dragon",
+        "tmdb": 94997,
+        "tvdb": 371572,
+        "trakt": 154574
+      },
+      "year": 2022,
+      "title": "House of the Dragon",
+      "aired_episodes": 26
+    },
+    "rank": 19,
+    "id": 1543720766,
+    "listed_at": "2026-09-12T10:15:52.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt5489690",
+        "plex": {
+          "guid": "5d9c07f62df347001e3a704a",
+          "slug": "paradise-hotel-no"
+        },
+        "slug": "paradise-hotel-no",
+        "tmdb": 36109,
+        "tvdb": 149591,
+        "trakt": 35953
+      },
+      "year": 2009,
+      "title": "Paradise Hotel (NO)",
+      "aired_episodes": 758
+    },
+    "rank": 20,
+    "id": 1543720767,
+    "listed_at": "2026-09-12T10:15:52.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

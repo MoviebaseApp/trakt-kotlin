@@ -1,0 +1,62 @@
+[
+  {
+    "last_updated_at": "2026-08-11T07:47:54.000Z",
+    "last_watched_at": "2026-09-04T17:04:00.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt32358025",
+        "plex": {
+          "guid": "6646bd630ccfbffd8011e229",
+          "slug": "beast-race"
+        },
+        "slug": "beast-race-2026",
+        "tmdb": 1263532,
+        "trakt": 1025341
+      },
+      "year": 2026,
+      "title": "Beast Race"
+    },
+    "plays": 1,
+    "total_count": 52
+  },
+  {
+    "last_updated_at": "2026-08-10T12:53:21.000Z",
+    "last_watched_at": "2026-09-04T17:04:00.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt10872600",
+        "plex": {
+          "guid": "5e16138ce0d3ae001ed11b39",
+          "slug": "spider-man-no-way-home"
+        },
+        "slug": "spider-man-no-way-home-2021",
+        "tmdb": 634649,
+        "trakt": 474180
+      },
+      "year": 2021,
+      "title": "Spider-Man: No Way Home"
+    },
+    "plays": 1,
+    "total_count": 52
+  },
+  {
+    "last_updated_at": "2026-08-10T12:53:16.000Z",
+    "last_watched_at": "2026-09-04T17:04:00.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt33612209",
+        "plex": {
+          "guid": "668da3cd701c9385b944d19e",
+          "slug": "the-devil-wears-prada-2"
+        },
+        "slug": "the-devil-wears-prada-2-2026",
+        "tmdb": 1314481,
+        "trakt": 1074519
+      },
+      "year": 2026,
+      "title": "The Devil Wears Prada 2"
+    },
+    "plays": 1,
+    "total_count": 52
+  }
+]

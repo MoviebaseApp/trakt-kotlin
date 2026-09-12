@@ -1,0 +1,88 @@
+{
+  "user": {
+    "username": "chrisbln_cac11e",
+    "private": false,
+    "deleted": false,
+    "name": "Moviebase",
+    "vip": false,
+    "vip_ep": false,
+    "director": false,
+    "ids": {
+      "slug": "chrisbln-cac11e",
+      "uuid": "0000000000000000000000000000000000000000"
+    },
+    "joined_at": "2026-08-10T10:03:41.000Z",
+    "location": "Germany",
+    "about": null,
+    "gender": null,
+    "age": null,
+    "images": {
+      "avatar": {
+        "full": "https://secure.gravatar.com/avatar/00000000000000000000000000000000?d=https%3A%2F%2Fmedia.trakt.tv%2Fhotlink-ok%2Fplaceholders%2Fmedium%2Fzoidberg.png&r=pg&s=256"
+      }
+    },
+    "vip_og": false,
+    "vip_years": 0,
+    "vip_cover_image": null
+  },
+  "account": {
+    "timezone": "Europe/London",
+    "date_format": "mdy",
+    "time_24hr": false,
+    "cover_image": null,
+    "token": null,
+    "display_ads": true
+  },
+  "connections": {
+    "facebook": false,
+    "twitter": false,
+    "mastodon": false,
+    "google": false,
+    "tumblr": false,
+    "medium": false,
+    "slack": false,
+    "apple": false,
+    "dropbox": false,
+    "microsoft": false
+  },
+  "sharing_text": {
+    "watching": "I'm watching [item]",
+    "watched": "I just watched [item]",
+    "rated": null
+  },
+  "limits": {
+    "list": {
+      "count": 5,
+      "item_count": 1000
+    },
+    "watchlist": {
+      "item_count": 1000
+    },
+    "favorites": {
+      "item_count": 100
+    },
+    "search": {
+      "recent_count": 5
+    },
+    "collection": {
+      "item_count": 1000
+    },
+    "notes": {
+      "item_count": 100
+    },
+    "saved_filters": {
+      "count": 5
+    },
+    "streaming": {
+      "connection_count": 1
+    },
+    "recommendations": {
+      "item_count": 100
+    }
+  },
+  "permissions": {
+    "commenting": true,
+    "liking": true,
+    "following": true
+  }
+}

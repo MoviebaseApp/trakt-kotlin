@@ -1,0 +1,104 @@
+[
+  {
+    "show": {
+      "ids": {
+        "imdb": "tt13111078",
+        "plex": {
+          "guid": "62ac863c44b73ea95829962c",
+          "slug": "lioness-1"
+        },
+        "slug": "lioness",
+        "tmdb": 113962,
+        "tvdb": 388589,
+        "trakt": 167187
+      },
+      "year": 2023,
+      "title": "Lioness",
+      "aired_episodes": 22
+    },
+    "episode": {
+      "ids": {
+        "imdb": "tt43388834",
+        "plex": {
+          "guid": "6a2433dc20a21cc960a85ad0"
+        },
+        "tmdb": 7355567,
+        "tvdb": 11908422,
+        "trakt": 14228487
+      },
+      "title": "Kiss the Girls",
+      "number": 7,
+      "season": 3
+    },
+    "first_aired": "2026-09-13T07:00:00.000Z",
+    "released": "2026-09-13"
+  },
+  {
+    "show": {
+      "ids": {
+        "imdb": "tt0388629",
+        "plex": {
+          "guid": "5d9c084fec357c001f9ab4d8",
+          "slug": "one-piece"
+        },
+        "slug": "one-piece",
+        "tmdb": 37854,
+        "tvdb": 81797,
+        "trakt": 37696
+      },
+      "year": 1999,
+      "title": "One Piece",
+      "aired_episodes": 1177
+    },
+    "episode": {
+      "ids": {
+        "imdb": null,
+        "plex": {
+          "guid": null
+        },
+        "tmdb": 7550223,
+        "tvdb": 11965739,
+        "trakt": 14324389
+      },
+      "title": "Protect History and the Future - Robin and Gaban Go on the Attack",
+      "number": 1178,
+      "season": 23
+    },
+    "first_aired": "2026-09-13T14:15:00.000Z",
+    "released": null
+  },
+  {
+    "show": {
+      "ids": {
+        "imdb": "tt13293588",
+        "plex": {
+          "guid": "5e01fc33932ff9001db3b242",
+          "slug": "mushoku-tensei-jobless-reincarnation"
+        },
+        "slug": "mushoku-tensei-jobless-reincarnation",
+        "tmdb": 94664,
+        "tvdb": 371310,
+        "trakt": 156460
+      },
+      "year": 2021,
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "aired_episodes": 58
+    },
+    "episode": {
+      "ids": {
+        "imdb": "tt44094993",
+        "plex": {
+          "guid": null
+        },
+        "tmdb": 7478566,
+        "tvdb": 11872052,
+        "trakt": 14290991
+      },
+      "title": "An End and a Beginning",
+      "number": 12,
+      "season": 3
+    },
+    "first_aired": "2026-09-14T11:00:00.000Z",
+    "released": "2026-09-13"
+  }
+]

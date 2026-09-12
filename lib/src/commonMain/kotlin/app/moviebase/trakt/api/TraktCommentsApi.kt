@@ -7,6 +7,7 @@ import app.moviebase.trakt.model.TraktComment
 import app.moviebase.trakt.model.TraktCommentItem
 import app.moviebase.trakt.model.TraktMediaType
 import app.moviebase.trakt.model.TraktPostComment
+import app.moviebase.trakt.model.pathSegment
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.HttpRequestBuilder
@@ -81,7 +82,7 @@ class TraktCommentsApi(
         includeReplies: Boolean? = null,
         page: Int = 1,
         limit: Int = 10,
-    ): List<TraktComment> = client.get {
+    ): List<TraktCommentItem> = client.get {
         endPointComments("trending", commentType, type)
         includeReplies?.let { parameter("include_replies", it) }
         parameterPage(page)
@@ -94,7 +95,7 @@ class TraktCommentsApi(
         includeReplies: Boolean? = null,
         page: Int = 1,
         limit: Int = 10,
-    ): List<TraktComment> = client.get {
+    ): List<TraktCommentItem> = client.get {
         endPointComments("recent", commentType, type)
         includeReplies?.let { parameter("include_replies", it) }
         parameterPage(page)
@@ -107,7 +108,7 @@ class TraktCommentsApi(
         includeReplies: Boolean? = null,
         page: Int = 1,
         limit: Int = 10,
-    ): List<TraktComment> = client.get {
+    ): List<TraktCommentItem> = client.get {
         endPointComments("updates", commentType, type)
         includeReplies?.let { parameter("include_replies", it) }
         parameterPage(page)
@@ -122,8 +123,12 @@ class TraktCommentsApi(
         val paths = buildList {
             add("comments")
             add(category)
-            commentType?.let { add(it) }
-            type?.let { add(it.value) }
+            if (type != null) {
+                add(commentType ?: "all")
+                add(type.pathSegment)
+            } else {
+                commentType?.let { add(it) }
+            }
         }
         endPoint(*paths.toTypedArray())
     }

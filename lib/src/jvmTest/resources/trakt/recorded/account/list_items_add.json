@@ -1,0 +1,28 @@
+{
+  "added": {
+    "movies": 1,
+    "shows": 1,
+    "seasons": 0,
+    "episodes": 0,
+    "people": 0
+  },
+  "existing": {
+    "movies": 0,
+    "shows": 0,
+    "seasons": 0,
+    "episodes": 0,
+    "people": 0
+  },
+  "not_found": {
+    "movies": [],
+    "shows": [],
+    "seasons": [],
+    "episodes": [],
+    "people": [],
+    "users": []
+  },
+  "list": {
+    "updated_at": "2026-09-12T16:59:31.000Z",
+    "item_count": 3
+  }
+}

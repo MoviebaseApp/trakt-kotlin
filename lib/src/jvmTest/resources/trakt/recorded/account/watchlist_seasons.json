@@ -1,0 +1,107 @@
+[
+  {
+    "type": "season",
+    "show": {
+      "ids": {
+        "imdb": "tt7587890",
+        "plex": {
+          "guid": "5d9c08ffe264b7001fc4d397",
+          "slug": "the-rookie"
+        },
+        "slug": "the-rookie-2018",
+        "tmdb": 79744,
+        "tvdb": 350665,
+        "trakt": 134421
+      },
+      "year": 2018,
+      "title": "The Rookie",
+      "aired_episodes": 144
+    },
+    "season": {
+      "ids": {
+        "plex": {
+          "guid": "602e74550f4bde002da4d4dd"
+        },
+        "tmdb": 127101,
+        "tvdb": 816982,
+        "trakt": 194138
+      },
+      "number": 2
+    },
+    "rank": 14,
+    "id": 1532409378,
+    "listed_at": "2026-08-10T18:40:40.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "season",
+    "show": {
+      "ids": {
+        "imdb": "tt7631058",
+        "plex": {
+          "guid": "5d9c09154eefaa001f5e7cd2",
+          "slug": "the-lord-of-the-rings-the-rings-of-power"
+        },
+        "slug": "the-lord-of-the-rings-the-rings-of-power",
+        "tmdb": 84773,
+        "tvdb": 367506,
+        "trakt": 150900
+      },
+      "year": 2022,
+      "title": "The Lord of the Rings: The Rings of Power",
+      "aired_episodes": 16
+    },
+    "season": {
+      "ids": {
+        "plex": {
+          "guid": null
+        },
+        "tmdb": 467821,
+        "tvdb": 2171719,
+        "trakt": 468881
+      },
+      "number": 3
+    },
+    "rank": 15,
+    "id": 1532409379,
+    "listed_at": "2026-08-10T18:40:40.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "season",
+    "show": {
+      "ids": {
+        "imdb": "tt11198330",
+        "plex": {
+          "guid": "5e160ed3e68804001e87a7b5",
+          "slug": "house-of-the-dragon"
+        },
+        "slug": "house-of-the-dragon",
+        "tmdb": 94997,
+        "tvdb": 371572,
+        "trakt": 154574
+      },
+      "year": 2022,
+      "title": "House of the Dragon",
+      "aired_episodes": 26
+    },
+    "season": {
+      "ids": {
+        "plex": {
+          "guid": "63417f2f802d5b6727d74e0f"
+        },
+        "tmdb": 449260,
+        "tvdb": 2247337,
+        "trakt": 455942
+      },
+      "number": 3
+    },
+    "rank": 23,
+    "id": 1543720770,
+    "listed_at": "2026-09-12T10:15:53.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "type": "movie",
+    "collected_at": "2026-09-04T14:58:04.000Z",
+    "updated_at": "2026-09-04T14:58:04.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt22084616",
+        "plex": {
+          "guid": "5ed8a6246e2d7200411126cf",
+          "slug": "spider-man-brand-new-day"
+        },
+        "slug": "spider-man-brand-new-day-2026",
+        "tmdb": 969681,
+        "trakt": 905132
+      },
+      "year": 2026,
+      "title": "Spider-Man: Brand New Day"
+    },
+    "available_on": [],
+    "metadata": null
+  },
+  {
+    "type": "movie",
+    "collected_at": "2026-09-04T14:58:04.000Z",
+    "updated_at": "2026-09-04T14:58:04.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt32268156",
+        "plex": {
+          "guid": "663538426239ea0710cc9256",
+          "slug": "the-last-house-2026"
+        },
+        "slug": "the-last-house-2026",
+        "tmdb": 1284041,
+        "trakt": 1044265
+      },
+      "year": 2026,
+      "title": "The Last House"
+    },
+    "available_on": [],
+    "metadata": null
+  },
+  {
+    "type": "movie",
+    "collected_at": "2026-08-10T18:40:55.000Z",
+    "updated_at": "2026-08-10T18:40:55.000Z",
+    "movie": {
+      "ids": {
+        "imdb": "tt13287846",
+        "plex": {
+          "guid": "5f887c5b20bfce004175ce4a",
+          "slug": "napoleon-2023"
+        },
+        "slug": "napoleon-2023",
+        "tmdb": 753342,
+        "trakt": 593127
+      },
+      "year": 2023,
+      "title": "Napoleon"
+    },
+    "available_on": [],
+    "metadata": null
+  }
+]

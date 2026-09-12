@@ -1,0 +1,14 @@
+{
+  "deleted": {
+    "movies": 1,
+    "episodes": 1
+  },
+  "not_found": {
+    "movies": [],
+    "shows": [],
+    "seasons": [],
+    "episodes": [],
+    "people": [],
+    "users": []
+  }
+}

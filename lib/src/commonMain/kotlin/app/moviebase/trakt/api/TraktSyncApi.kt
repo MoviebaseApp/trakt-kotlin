@@ -11,6 +11,7 @@ import app.moviebase.trakt.model.TraktCollectionItem
 import app.moviebase.trakt.model.TraktFavoriteItem
 import app.moviebase.trakt.model.TraktLastActivities
 import app.moviebase.trakt.model.TraktMediaType
+import app.moviebase.trakt.model.pathSegment
 import app.moviebase.trakt.model.TraktRatedItem
 import app.moviebase.trakt.model.TraktWatchedItem
 import app.moviebase.trakt.model.TraktWatchlistItem
@@ -56,8 +57,8 @@ class TraktSyncApi(
         limit: Int? = null,
     ): List<TraktHistoryItem> = client.get {
         when {
-            type != null && itemId != null -> endPointSync("history", type.value, itemId.toString())
-            type != null -> endPointSync("history", type.value)
+            type != null && itemId != null -> endPointSync("history", type.pathSegment, itemId.toString())
+            type != null -> endPointSync("history", type.pathSegment)
             else -> endPointSync("history")
         }
         startAt?.let { parameter("start_at", it.toString()) }
@@ -77,8 +78,8 @@ class TraktSyncApi(
         limit: Int? = null,
     ): TraktPage<TraktHistoryItem> = client.get {
         when {
-            type != null && itemId != null -> endPointSync("history", type.value, itemId.toString())
-            type != null -> endPointSync("history", type.value)
+            type != null && itemId != null -> endPointSync("history", type.pathSegment, itemId.toString())
+            type != null -> endPointSync("history", type.pathSegment)
             else -> endPointSync("history")
         }
 
@@ -404,7 +405,7 @@ class TraktSyncApi(
         limit: Int? = null,
     ): List<TraktPlaybackItem> = client.get {
         if (type != null) {
-            endPointSync("playback", type.value)
+            endPointSync("playback", type.pathSegment)
         } else {
             endPointSync("playback")
         }

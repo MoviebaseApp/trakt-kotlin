@@ -13,7 +13,7 @@ class TraktSyncApiTest {
                 mapOf(
                     "sync/last_activities" to "sync/last_activities.json",
                     "sync/playback" to "sync/playback.json",
-                    "sync/playback/movie" to "sync/playback.json",
+                    "sync/playback/movies" to "sync/playback.json",
                     "sync/collection/shows" to "sync/collection_shows.json",
                     "sync/watched/movies?page=2&limit=250" to "sync/watched_movies.json",
                     "sync/watched/shows?page=1&limit=250" to "sync/watched_shows.json",

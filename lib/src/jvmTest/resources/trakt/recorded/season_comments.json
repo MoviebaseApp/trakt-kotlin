@@ -1,0 +1,91 @@
+[
+  {
+    "id": 568719,
+    "comment": "Started good and got really boring after a few episodes. It’s cleat that they’re not gonna show what’s outside in this season, but story doesn’t move right now.",
+    "gif": null,
+    "spoiler": true,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-05-29T14:11:35.000Z",
+    "updated_at": "2023-05-29T14:11:35.000Z",
+    "replies": 2,
+    "likes": 13,
+    "user_rating": null,
+    "language": "en",
+    "user_stats": {
+      "rating": null,
+      "play_count": 17,
+      "completed_count": 10
+    },
+    "user": {
+      "username": "gokaygurcan",
+      "private": true,
+      "deleted": false,
+      "ids": {
+        "slug": "gokaygurcan"
+      }
+    }
+  },
+  {
+    "id": 581856,
+    "comment": "Out of all the TV shows i saw this year, this is among the more interesting ones, at least in concept. Not as much in execution since it tends to go on for a bit too long at times, as if some episodes feel like they can be skipped without consequence after finishing them. \n\nSilo explores another post apocalyptic society surviving in an enclosed space. Their struggles and secrets, laws and traditions, and how people cope with wondering exactly what’s beyond the Silo. But unlike those other series such as 2023’s, Heavenly Delusion, i’m not likely to watch a 2nd season of this because i’m not sure i was given enough to chew on as motivation to return for more.",
+    "gif": null,
+    "spoiler": false,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-07-18T00:00:37.000Z",
+    "updated_at": "2023-07-18T00:00:37.000Z",
+    "replies": 0,
+    "likes": 6,
+    "user_rating": 6,
+    "language": "en",
+    "user_stats": {
+      "rating": 6,
+      "play_count": 10,
+      "completed_count": 10
+    },
+    "user": {
+      "username": "srahs",
+      "private": false,
+      "deleted": false,
+      "name": "srahs",
+      "vip": false,
+      "vip_ep": false,
+      "director": false,
+      "ids": {
+        "slug": "srahs"
+      }
+    }
+  },
+  {
+    "id": 577168,
+    "comment": "Solid show. It has the right amount of mystery to keep it entertaining. The story and it’s characters are great, but it gets a bit hard to believe at times. Also, fun to see the inhabitants of the Silo be obsessed by useless relics, like a Pez-dispenser. It ended the season good, but the twist that there are more silos was to be expected. It fits in the genre. Still, curious about season 2.",
+    "gif": null,
+    "spoiler": true,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-06-30T11:17:12.000Z",
+    "updated_at": "2023-06-30T11:17:12.000Z",
+    "replies": 1,
+    "likes": 4,
+    "user_rating": null,
+    "language": "en",
+    "user_stats": {
+      "rating": null,
+      "play_count": 10,
+      "completed_count": 10
+    },
+    "user": {
+      "username": "JoeyvanAwesome",
+      "private": false,
+      "deleted": false,
+      "name": "Joey",
+      "vip": true,
+      "vip_ep": false,
+      "director": false,
+      "ids": {
+        "slug": "joeyvanawesome"
+      }
+    }
+  }
+]

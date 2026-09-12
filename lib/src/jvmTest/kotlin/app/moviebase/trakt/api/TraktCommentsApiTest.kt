@@ -1,6 +1,7 @@
 package app.moviebase.trakt.api
 
 import app.moviebase.trakt.core.mockHttpClient
+import app.moviebase.trakt.model.TraktMediaType
 import app.moviebase.trakt.model.TraktPostComment
 import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.test.runTest
@@ -36,6 +37,31 @@ class TraktCommentsApiTest {
 
             assertThat(replies).hasSize(2)
             assertThat(replies.map { it.parentId }).containsExactly(1035361, 1035361)
+        }
+
+    @Test
+    fun `it decodes the trending feed with the item each comment belongs to`() =
+        runTest {
+            val feedClient = mockHttpClient(mapOf("comments/trending?page=1&limit=10" to "comments/trending.json"))
+
+            val feed = TraktCommentsApi(feedClient).getTrending()
+
+            assertThat(feed.map { it.comment?.id }).containsExactly(665578, 1041365, 1041419).inOrder()
+            assertThat(feed[0].list).isNotNull()
+            assertThat(feed[1].type).isEqualTo(TraktMediaType.EPISODE)
+            assertThat(feed[1].show).isNotNull()
+        }
+
+    @Test
+    fun `it filters the trending feed by media type`() =
+        runTest {
+            val feedClient = mockHttpClient(mapOf("comments/trending/all/movies?page=1&limit=10" to "comments/trending_movies.json"))
+
+            val feed = TraktCommentsApi(feedClient).getTrending(type = TraktMediaType.MOVIE)
+
+            assertThat(feed.map { it.type }.toSet()).containsExactly(TraktMediaType.MOVIE)
+            assertThat(feed.first().movie?.title).isEqualTo("Project Hail Mary")
+            assertThat(feed.first().comment?.id).isEqualTo(935888)
         }
 
     @Test

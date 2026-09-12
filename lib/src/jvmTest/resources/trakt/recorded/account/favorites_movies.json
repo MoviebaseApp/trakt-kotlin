@@ -1,0 +1,68 @@
+[
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt15239678",
+        "plex": {
+          "guid": "5eb8f22237ccbe0041723253",
+          "slug": "dune-part-two"
+        },
+        "slug": "dune-part-two-2024",
+        "tmdb": 693134,
+        "trakt": 537449
+      },
+      "year": 2024,
+      "title": "Dune: Part Two"
+    },
+    "rank": 1,
+    "id": 1532409465,
+    "listed_at": "2026-08-10T18:40:55.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt13287846",
+        "plex": {
+          "guid": "5f887c5b20bfce004175ce4a",
+          "slug": "napoleon-2023"
+        },
+        "slug": "napoleon-2023",
+        "tmdb": 753342,
+        "trakt": 593127
+      },
+      "year": 2023,
+      "title": "Napoleon"
+    },
+    "rank": 2,
+    "id": 1532409466,
+    "listed_at": "2026-08-10T18:40:55.000Z",
+    "notes": null,
+    "my_rating": null
+  },
+  {
+    "type": "movie",
+    "movie": {
+      "ids": {
+        "imdb": "tt35892608",
+        "plex": {
+          "guid": "67dd4b1d5e267cdf808eada4",
+          "slug": "undertone-2025-1"
+        },
+        "slug": "undertone-2026",
+        "tmdb": 1480387,
+        "trakt": 1213506
+      },
+      "year": 2026,
+      "title": "undertone"
+    },
+    "rank": 4,
+    "id": 1532423789,
+    "listed_at": "2026-08-10T19:47:07.000Z",
+    "notes": null,
+    "my_rating": null
+  }
+]

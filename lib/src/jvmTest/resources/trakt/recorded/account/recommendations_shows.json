@@ -1,0 +1,371 @@
+[
+  {
+    "ids": {
+      "imdb": "tt2661044",
+      "plex": {
+        "guid": "5d9c086d705e7a001e6dc723",
+        "slug": "the-100"
+      },
+      "slug": "the-100",
+      "tmdb": 48866,
+      "tvdb": 268592,
+      "trakt": 48562
+    },
+    "airs": {
+      "day": "Wednesday",
+      "time": "20:00",
+      "timezone": "America/New_York"
+    },
+    "year": 2014,
+    "title": "The 100",
+    "votes": 16413,
+    "colors": {
+      "poster": [
+        "#9BB870",
+        "#2D4A1E"
+      ]
+    },
+    "genres": [
+      "drama",
+      "science-fiction",
+      "action",
+      "adventure"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/shows/000/048/562/logos/medium/bf0af8ff52.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/shows/000/048/562/thumbs/medium/4252a4d8b6.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/shows/000/048/562/banners/medium/3453fb7781.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/shows/000/048/562/fanarts/medium/1e3ce34c11.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/shows/000/048/562/posters/medium/66cfbc0070.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/shows/000/048/562/cleararts/medium/ae5572cd3a.png.webp"
+      ]
+    },
+    "rating": 7.6638031005859375,
+    "status": "ended",
+    "country": "us",
+    "network": "The CW",
+    "runtime": 42,
+    "tagline": "Survival isn't who you are. It's who you become.",
+    "trailer": "https://youtube.com/watch?v=aDrsItJ_HU4",
+    "homepage": "https://www.cwtv.com/shows/the-100/",
+    "language": "en",
+    "overview": "100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet — but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "survival",
+      "post-apocalyptic-future",
+      "apocalypse",
+      "space",
+      "space-travel"
+    ],
+    "last_aired": "2020-10-01T00:00:00.000Z",
+    "social_ids": {
+      "twitter": "cwthe100",
+      "facebook": "cwthe100",
+      "instagram": "cw_the100",
+      "wikipedia": "The_100_(TV_series)"
+    },
+    "updated_at": "2026-09-04T15:31:05.000Z",
+    "first_aired": "2014-03-20T00:00:00.000Z",
+    "certification": "TV-14",
+    "comment_count": 203,
+    "total_runtime": 4197,
+    "aired_episodes": 100,
+    "original_title": "The 100",
+    "available_translations": [
+      "ar",
+      "bg",
+      "bs",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "km",
+      "ko",
+      "lt",
+      "lv",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "zh"
+    ]
+  },
+  {
+    "ids": {
+      "imdb": "tt10574236",
+      "plex": {
+        "guid": "5e160e5c9de8d9001fd8d8e5",
+        "slug": "station-eleven"
+      },
+      "slug": "station-eleven",
+      "tmdb": 90972,
+      "tvdb": 366529,
+      "trakt": 153862
+    },
+    "airs": {
+      "day": "",
+      "time": "",
+      "timezone": "America/New_York"
+    },
+    "year": 2021,
+    "title": "Station Eleven",
+    "votes": 2831,
+    "colors": {
+      "poster": [
+        "#AAAB9C",
+        "#5D4B37"
+      ]
+    },
+    "genres": [
+      "drama",
+      "mystery"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/shows/000/153/862/logos/medium/8f8f95ae43.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/shows/000/153/862/thumbs/medium/04cc38b6ea.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/shows/000/153/862/banners/medium/1496dac035.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/shows/000/153/862/fanarts/medium/7bdc6136f0.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/shows/000/153/862/posters/medium/e74ecdab0a.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/shows/000/153/862/cleararts/medium/03456586a4.png.webp"
+      ]
+    },
+    "rating": 7.4853410720825195,
+    "status": "ended",
+    "country": "us",
+    "network": "HBO Max",
+    "runtime": 46,
+    "tagline": "The end is the beginning.",
+    "trailer": "https://youtube.com/watch?v=LPm52rq8CZA",
+    "homepage": "https://www.hbomax.com/station-eleven",
+    "language": "en",
+    "overview": "The survivors of a devastating flu attempt to rebuild and reimagine the world anew – while holding on to the best of what’s been lost.",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "post-apocalyptic-future",
+      "disaster",
+      "inspirational"
+    ],
+    "last_aired": "2022-01-13T05:00:00.000Z",
+    "social_ids": {
+      "twitter": "Station11onmax",
+      "facebook": null,
+      "instagram": "station11onmax",
+      "wikipedia": "Station_Eleven_(miniseries)"
+    },
+    "updated_at": "2026-08-31T09:11:30.000Z",
+    "first_aired": "2021-12-16T05:00:00.000Z",
+    "certification": "TV-MA",
+    "comment_count": 61,
+    "total_runtime": 517,
+    "aired_episodes": 10,
+    "original_title": "Station Eleven",
+    "available_translations": [
+      "bg",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "it",
+      "ja",
+      "ko",
+      "lv",
+      "nl",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sl",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "zh"
+    ]
+  },
+  {
+    "ids": {
+      "imdb": "tt7949218",
+      "plex": {
+        "guid": "5d9c090508fddd001f2a6066",
+        "slug": "see"
+      },
+      "slug": "see",
+      "tmdb": 80752,
+      "tvdb": 361565,
+      "trakt": 145781
+    },
+    "airs": {
+      "day": "Thursday",
+      "time": "22:00",
+      "timezone": "America/New_York"
+    },
+    "year": 2019,
+    "title": "See",
+    "votes": 6362,
+    "colors": {
+      "poster": [
+        "#D05210",
+        "#470712"
+      ]
+    },
+    "genres": [
+      "drama",
+      "fantasy",
+      "science-fiction",
+      "action",
+      "adventure"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/shows/000/145/781/logos/medium/125fdb9987.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/shows/000/145/781/thumbs/medium/791227deda.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/shows/000/145/781/banners/medium/f8c78ac4ad.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/shows/000/145/781/fanarts/medium/f07fc67663.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/shows/000/145/781/posters/medium/2c462652a6.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/shows/000/145/781/cleararts/medium/0505f7f0a7.png.webp"
+      ]
+    },
+    "rating": 7.650110244750977,
+    "status": "ended",
+    "country": "us",
+    "network": "Apple TV",
+    "runtime": 55,
+    "tagline": "A new vision of the future.",
+    "trailer": "https://youtube.com/watch?v=03RAKJipMeM",
+    "homepage": "https://tv.apple.com/show/umc.cmc.3s4mgg2y7h95fks9gnc4pw13m",
+    "language": "en",
+    "overview": "A virus has decimated humankind. Those who survived emerged blind. Centuries later when twins are born with the mythic ability to see, their father must protect his tribe against a threatened queen.",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "power-struggle",
+      "sword-fight",
+      "post-apocalyptic-future",
+      "politics"
+    ],
+    "last_aired": "2022-10-14T02:00:00.000Z",
+    "social_ids": {
+      "twitter": "SeeOfficial",
+      "facebook": null,
+      "instagram": "seeofficial",
+      "wikipedia": "See_(TV_series)"
+    },
+    "updated_at": "2026-08-31T08:55:43.000Z",
+    "first_aired": "2019-11-02T02:00:00.000Z",
+    "certification": "TV-MA",
+    "comment_count": 76,
+    "total_runtime": 1283,
+    "aired_episodes": 24,
+    "original_title": "See",
+    "available_translations": [
+      "ar",
+      "bg",
+      "bs",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "ko",
+      "lt",
+      "my",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "so",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "zh"
+    ]
+  }
+]

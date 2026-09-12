@@ -1,0 +1,107 @@
+[
+  {
+    "rated_at": "2026-08-24T16:02:15.000Z",
+    "rating": 7,
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt41591872",
+        "plex": {
+          "guid": "69e798883ee599bb1e38a3c9"
+        },
+        "tmdb": 7173964,
+        "tvdb": 11751886,
+        "trakt": 14129564
+      },
+      "title": "Gray Goo",
+      "number": 8,
+      "season": 3
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt14688458",
+        "plex": {
+          "guid": "61b180686bfb4feb48515e07",
+          "slug": "silo"
+        },
+        "slug": "silo",
+        "tmdb": 125988,
+        "tvdb": 403245,
+        "trakt": 180770
+      },
+      "year": 2023,
+      "title": "Silo",
+      "aired_episodes": 30
+    }
+  },
+  {
+    "rated_at": "2026-08-12T19:20:30.000Z",
+    "rating": 6,
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt37443233",
+        "plex": {
+          "guid": "6983c708b78c4bf6cb7b2302"
+        },
+        "tmdb": 6912002,
+        "tvdb": 11593744,
+        "trakt": 13974259
+      },
+      "title": "Wherever You Go, There You Are",
+      "number": 6,
+      "season": 1
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt34866681",
+        "plex": {
+          "guid": "67507127b734a2ab5d683713",
+          "slug": "lucky-2026"
+        },
+        "slug": "lucky-2026",
+        "tmdb": 278624,
+        "tvdb": 457437,
+        "trakt": 265812
+      },
+      "year": 2026,
+      "title": "Lucky",
+      "aired_episodes": 7
+    }
+  },
+  {
+    "rated_at": "2026-08-08T20:55:53.000Z",
+    "rating": 7,
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt15496380",
+        "plex": {
+          "guid": "615082115a225a5da41cf639"
+        },
+        "tmdb": 3241290,
+        "tvdb": 8723885,
+        "trakt": 5546284
+      },
+      "title": "Some Mysteries Are Better Left Unsolved",
+      "number": 2,
+      "season": 1
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt11126994",
+        "plex": {
+          "guid": "5e1612eae68804001e87c4a3",
+          "slug": "arcane"
+        },
+        "slug": "arcane",
+        "tmdb": 94605,
+        "tvdb": 371028,
+        "trakt": 154164
+      },
+      "year": 2021,
+      "title": "Arcane",
+      "aired_episodes": 18
+    }
+  }
+]

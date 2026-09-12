@@ -1,0 +1,95 @@
+[
+  {
+    "id": 562361,
+    "comment": "**I LIKE IT. I LIKE IT A LOT.**",
+    "gif": null,
+    "spoiler": false,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-05-05T17:40:00.000Z",
+    "updated_at": "2023-05-05T17:40:00.000Z",
+    "replies": 0,
+    "likes": 31,
+    "user_rating": 7,
+    "language": "en",
+    "user_stats": {
+      "rating": 7,
+      "play_count": 1,
+      "completed_count": 1
+    },
+    "user": {
+      "username": "Typongtv",
+      "private": false,
+      "deleted": false,
+      "name": "Sam",
+      "vip": false,
+      "vip_ep": false,
+      "director": false,
+      "ids": {
+        "slug": "typongtv"
+      }
+    }
+  },
+  {
+    "id": 579888,
+    "comment": "She said “I’m either gonna wave goodbye and walk away and you’ll know I made the biggest mistake, or I’m gonna CLEAN… if I clean you’ll know it’s safe up here” and she CLEANED!!!! SHE FCKING CLEANED!!!!  I can’t get over it.\nI feel like this could be like a Snowpiercer or Divergent, but I’m excited!!",
+    "gif": null,
+    "spoiler": false,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-07-10T06:34:23.000Z",
+    "updated_at": "2023-07-10T06:34:23.000Z",
+    "replies": 1,
+    "likes": 20,
+    "user_rating": null,
+    "language": "en",
+    "user_stats": {
+      "rating": null,
+      "play_count": 1,
+      "completed_count": 1
+    },
+    "user": {
+      "username": "aars26",
+      "private": false,
+      "deleted": false,
+      "name": "Aars",
+      "vip": false,
+      "vip_ep": false,
+      "director": false,
+      "ids": {
+        "slug": "aars26"
+      }
+    }
+  },
+  {
+    "id": 562627,
+    "comment": "It's not often nowadays I'm really pulled into any new show coming up. This I like very much, very intrigued. \r\n\r\n[spoiler] The conversation between Allison and Holston gave me shivers. Where she told him that everything they see is a lie, that it's manipulated, you only see what \"They\" want you to see. Not so far fetched isn't it ? [/spoiler]\r\n\r\nI'm always afraid to get my hopes up for new shows because more often then not they fail to deliver on the long run. I hope this is an exception.",
+    "gif": null,
+    "spoiler": false,
+    "review": false,
+    "parent_id": 0,
+    "created_at": "2023-05-06T16:39:09.000Z",
+    "updated_at": "2023-05-06T16:39:09.000Z",
+    "replies": 0,
+    "likes": 16,
+    "user_rating": 8,
+    "language": "en",
+    "user_stats": {
+      "rating": 8,
+      "play_count": 1,
+      "completed_count": 1
+    },
+    "user": {
+      "username": "FinFan",
+      "private": false,
+      "deleted": false,
+      "name": "FinFan",
+      "vip": false,
+      "vip_ep": false,
+      "director": false,
+      "ids": {
+        "slug": "finfan"
+      }
+    }
+  }
+]

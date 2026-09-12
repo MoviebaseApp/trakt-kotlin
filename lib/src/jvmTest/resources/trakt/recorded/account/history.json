@@ -1,0 +1,110 @@
+[
+  {
+    "id": 14410464931,
+    "watched_at": "2026-09-10T10:46:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt41591874",
+        "plex": {
+          "guid": "69e798883ee599bb1e38a3cb"
+        },
+        "tmdb": 7173966,
+        "tvdb": 11751888,
+        "trakt": 14129566
+      },
+      "title": "Troy",
+      "number": 10,
+      "season": 3
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt14688458",
+        "plex": {
+          "guid": "61b180686bfb4feb48515e07",
+          "slug": "silo"
+        },
+        "slug": "silo",
+        "tmdb": 125988,
+        "tvdb": 403245,
+        "trakt": 180770
+      },
+      "year": 2023,
+      "title": "Silo",
+      "aired_episodes": 30
+    }
+  },
+  {
+    "id": 14410464930,
+    "watched_at": "2026-09-07T08:21:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt41591873",
+        "plex": {
+          "guid": "69e798883ee599bb1e38a3ca"
+        },
+        "tmdb": 7173965,
+        "tvdb": 11751887,
+        "trakt": 14129565
+      },
+      "title": "Farewell",
+      "number": 9,
+      "season": 3
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt14688458",
+        "plex": {
+          "guid": "61b180686bfb4feb48515e07",
+          "slug": "silo"
+        },
+        "slug": "silo",
+        "tmdb": 125988,
+        "tvdb": 403245,
+        "trakt": 180770
+      },
+      "year": 2023,
+      "title": "Silo",
+      "aired_episodes": 30
+    }
+  },
+  {
+    "id": 14378847356,
+    "watched_at": "2026-09-04T17:29:00.000Z",
+    "action": "watch",
+    "type": "episode",
+    "episode": {
+      "ids": {
+        "imdb": "tt14503476",
+        "plex": {
+          "guid": "61aa2b667b1043bb995a49af"
+        },
+        "tmdb": 3375621,
+        "tvdb": 8868127,
+        "trakt": 5733610
+      },
+      "title": "First Dance",
+      "number": 2,
+      "season": 1
+    },
+    "show": {
+      "ids": {
+        "imdb": "tt9288030",
+        "plex": {
+          "guid": "5d9c09190aaccd001f8f42f0",
+          "slug": "reacher"
+        },
+        "slug": "reacher",
+        "tmdb": 108978,
+        "tvdb": 366924,
+        "trakt": 155536
+      },
+      "year": 2022,
+      "title": "Reacher",
+      "aired_episodes": 31
+    }
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "liked_at": "2026-08-28T00:54:13.000Z",
+    "user": {
+      "ids": {
+        "slug": "geraesbroma",
+        "trakt": 9774111
+      },
+      "images": {
+        "avatar": {
+          "full": "https://media.trakt.tv/images/users/009/774/111/avatars/medium/7535151f2f.JPG"
+        }
+      },
+      "username": "geraesbroma",
+      "private": false,
+      "deleted": false,
+      "joined_at": "2020-04-13T17:46:20.000Z",
+      "location": "Hmo, Son, MX",
+      "about": "• Living one day at a time. •",
+      "name": "Gera E Bloch",
+      "gender": "male",
+      "age": 25,
+      "vip": false,
+      "vip_ep": false,
+      "vip_veteran_since": null,
+      "vip_veteran_years": null,
+      "vip_veteran_tier": null,
+      "vip_veteran_title": null,
+      "vip_cover_image": null,
+      "director": false
+    }
+  },
+  {
+    "liked_at": "2026-08-29T13:14:12.000Z",
+    "user": {
+      "ids": {
+        "slug": "carlosant",
+        "trakt": 332132
+      },
+      "images": {
+        "avatar": {
+          "full": "https://media.trakt.tv/images/users/000/332/132/avatars/medium/6e1100c912.jpeg"
+        }
+      },
+      "username": "carlosant",
+      "private": false,
+      "deleted": false,
+      "joined_at": "2013-10-21T02:29:04.000Z",
+      "location": "Natal, Rio Grande do Norte, Brasil",
+      "about": "Another day, another drama.",
+      "name": "Carlos Antônio",
+      "gender": "male",
+      "age": 30,
+      "vip": true,
+      "vip_ep": false,
+      "vip_veteran_since": "2024-10-30T09:54:53.000Z",
+      "vip_veteran_years": 1,
+      "vip_veteran_tier": 1,
+      "vip_veteran_title": null,
+      "vip_cover_image": null,
+      "director": false
+    }
+  },
+  {
+    "liked_at": "2026-08-29T23:37:44.000Z",
+    "user": {
+      "ids": {
+        "slug": "patrickjkellyii",
+        "trakt": 2245683
+      },
+      "images": {
+        "avatar": {
+          "full": "https://media.trakt.tv/images/users/002/245/683/avatars/medium/cd411a2033.png"
+        }
+      },
+      "username": "patrickjkellyii",
+      "private": false,
+      "deleted": false,
+      "joined_at": "2016-09-18T22:06:57.000Z",
+      "location": "Lexington, Kentucky",
+      "about": "",
+      "name": "Patrick Kelly",
+      "gender": "male",
+      "age": 41,
+      "vip": true,
+      "vip_ep": false,
+      "vip_veteran_since": "2017-02-03T22:35:27.000Z",
+      "vip_veteran_years": 9,
+      "vip_veteran_tier": 7,
+      "vip_veteran_title": "veteran",
+      "vip_cover_image": null,
+      "director": false
+    }
+  }
+]

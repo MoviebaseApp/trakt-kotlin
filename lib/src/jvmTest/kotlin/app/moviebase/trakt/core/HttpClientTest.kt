@@ -7,11 +7,14 @@ import io.ktor.client.engine.mock.respond
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.client.plugins.defaultRequest
 import io.ktor.http.ContentType
+import io.ktor.http.HttpStatusCode
 import io.ktor.http.URLProtocol
 import io.ktor.http.decodeURLPart
 import io.ktor.http.headersOf
 import io.ktor.serialization.kotlinx.json.json
 import java.io.File
+
+const val NO_CONTENT = ""
 
 fun mockHttpClient(responses: Map<String, String>) =
     HttpClient(MockEngine) {
@@ -38,6 +41,7 @@ fun mockHttpClient(responses: Map<String, String>) =
                 val url = request.url.toString().decodeURLPart()
 
                 val fileName = jsonFiles[url] ?: error("Unhandled url $url")
+                if (fileName == NO_CONTENT) return@addHandler respond(content = "", status = HttpStatusCode.NoContent)
                 val file = File("./src/jvmTest/resources/trakt/$fileName")
                 val content = file.readText()
                 respond(content = content, headers = headers)

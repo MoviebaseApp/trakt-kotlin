@@ -402,4 +402,5 @@ data class TraktCommentItem(
     @SerialName("season") val season: TraktSeason? = null,
     @SerialName("episode") val episode: TraktEpisode? = null,
     @SerialName("list") val list: TraktList? = null,
+    @SerialName("comment") val comment: TraktComment? = null,
 ) : TraktMediaItem

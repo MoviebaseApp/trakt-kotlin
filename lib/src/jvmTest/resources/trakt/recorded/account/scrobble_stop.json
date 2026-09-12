@@ -1,0 +1,18 @@
+{
+  "id": 1845766900,
+  "action": "pause",
+  "progress": 30.0,
+  "sharing": {
+    "facebook": false
+  },
+  "movie": {
+    "title": "Plan 9 from Outer Space",
+    "year": 1957,
+    "ids": {
+      "trakt": 5693,
+      "slug": "plan-9-from-outer-space-1957",
+      "imdb": "tt0052077",
+      "tmdb": 10513
+    }
+  }
+}

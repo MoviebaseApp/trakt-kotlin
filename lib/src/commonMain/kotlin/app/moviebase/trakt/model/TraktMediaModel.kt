@@ -20,6 +20,9 @@ enum class TraktMediaType(
     EPISODE("episode"),
 }
 
+// Path segments are plural (`/sync/history/movies`); Trakt 400s or silently drops the filter on the singular.
+internal val TraktMediaType.pathSegment: String get() = "${value}s"
+
 sealed interface TraktIds {
     val trakt: Int?
     val slug: String?

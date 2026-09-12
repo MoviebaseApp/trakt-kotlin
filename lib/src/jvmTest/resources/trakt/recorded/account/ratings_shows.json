@@ -1,0 +1,65 @@
+[
+  {
+    "rated_at": "2026-09-10T09:49:14.000Z",
+    "rating": 6,
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt9288030",
+        "plex": {
+          "guid": "5d9c09190aaccd001f8f42f0",
+          "slug": "reacher"
+        },
+        "slug": "reacher",
+        "tmdb": 108978,
+        "tvdb": 366924,
+        "trakt": 155536
+      },
+      "year": 2022,
+      "title": "Reacher",
+      "aired_episodes": 31
+    }
+  },
+  {
+    "rated_at": "2026-09-05T19:34:52.000Z",
+    "rating": 7,
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt5489690",
+        "plex": {
+          "guid": "5d9c07f62df347001e3a704a",
+          "slug": "paradise-hotel-no"
+        },
+        "slug": "paradise-hotel-no",
+        "tmdb": 36109,
+        "tvdb": 149591,
+        "trakt": 35953
+      },
+      "year": 2009,
+      "title": "Paradise Hotel (NO)",
+      "aired_episodes": 758
+    }
+  },
+  {
+    "rated_at": "2026-08-11T13:22:05.000Z",
+    "rating": 8,
+    "type": "show",
+    "show": {
+      "ids": {
+        "imdb": "tt0903747",
+        "plex": {
+          "guid": "5d9c083402391c001f583d09",
+          "slug": "breaking-bad"
+        },
+        "slug": "breaking-bad",
+        "tmdb": 1396,
+        "tvdb": 81189,
+        "trakt": 1388
+      },
+      "year": 2008,
+      "title": "Breaking Bad",
+      "aired_episodes": 62
+    }
+  }
+]

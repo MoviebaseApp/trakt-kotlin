@@ -1,0 +1,372 @@
+[
+  {
+    "ids": {
+      "imdb": "tt6791350",
+      "plex": {
+        "guid": "5d776d1bfb0d55001f597ed4",
+        "slug": "guardians-of-the-galaxy-vol-3"
+      },
+      "slug": "guardians-of-the-galaxy-volume-3-2023",
+      "tmdb": 447365,
+      "trakt": 293990
+    },
+    "year": 2023,
+    "title": "Guardians of the Galaxy Volume 3",
+    "votes": 39362,
+    "colors": {
+      "poster": [
+        "#F1E8E6",
+        "#6D365B"
+      ]
+    },
+    "genres": [
+      "science-fiction",
+      "superhero",
+      "action",
+      "adventure"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/movies/000/293/990/logos/medium/9021d3352d.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/movies/000/293/990/thumbs/medium/6d944d9545.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/movies/000/293/990/banners/medium/aadecf57bf.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/movies/000/293/990/fanarts/medium/2ea7854adf.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/movies/000/293/990/posters/medium/61ceb0624b.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/movies/000/293/990/cleararts/medium/719bb7c638.png.webp"
+      ]
+    },
+    "rating": 8.395559310913086,
+    "status": "released",
+    "country": "us",
+    "runtime": 150,
+    "tagline": "Once more with feeling.",
+    "trailer": "https://youtube.com/watch?v=AAE5VZktooM",
+    "homepage": "https://www.marvel.com/movies/guardians-of-the-galaxy-volume-3",
+    "language": "en",
+    "overview": "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
+    "released": "2023-05-05",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "hero",
+      "mad-scientist",
+      "space-opera",
+      "based-on-comic",
+      "marvel-cinematic-universe-mcu",
+      "superhero-team"
+    ],
+    "social_ids": {
+      "twitter": "Guardians",
+      "facebook": "guardiansofthegalaxy",
+      "instagram": "guardiansofthegalaxy",
+      "wikipedia": "Guardians_of_the_Galaxy_Vol._3"
+    },
+    "updated_at": "2026-09-12T08:19:58.000Z",
+    "after_credits": true,
+    "certification": "PG-13",
+    "comment_count": 201,
+    "during_credits": true,
+    "original_title": "Guardians of the Galaxy Vol. 3",
+    "available_translations": [
+      "ar",
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "eo",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hi",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "ko",
+      "lt",
+      "lv",
+      "my",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "vi",
+      "zh"
+    ]
+  },
+  {
+    "ids": {
+      "imdb": "tt3896198",
+      "plex": {
+        "guid": "5d776b057a53e9001e71734b",
+        "slug": "guardians-of-the-galaxy-vol-2"
+      },
+      "slug": "guardians-of-the-galaxy-vol-2-2017",
+      "tmdb": 283995,
+      "trakt": 181256
+    },
+    "year": 2017,
+    "title": "Guardians of the Galaxy Vol. 2",
+    "votes": 48918,
+    "colors": {
+      "poster": [
+        "#B5796E",
+        "#331E37"
+      ]
+    },
+    "genres": [
+      "action",
+      "superhero",
+      "adventure",
+      "science-fiction"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/movies/000/181/256/logos/medium/0f0aab352a.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/movies/000/181/256/thumbs/medium/9fad5438c4.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/movies/000/181/256/banners/medium/42dae04f78.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/movies/000/181/256/fanarts/medium/2f3d4d57c0.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/movies/000/181/256/posters/medium/7e5624f875.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/movies/000/181/256/cleararts/medium/131bafbd8b.png.webp"
+      ]
+    },
+    "rating": 7.92379093170166,
+    "status": "released",
+    "country": "us",
+    "runtime": 137,
+    "tagline": "Anyone can save the galaxy once.",
+    "trailer": "https://youtube.com/watch?v=wUn05hdkhjM",
+    "homepage": "https://www.marvel.com/movies/guardians-of-the-galaxy-vol-2",
+    "language": "en",
+    "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+    "released": "2017-05-05",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "hero",
+      "father-son-relationship",
+      "alien",
+      "space",
+      "based-on-comic",
+      "marvel-cinematic-universe-mcu"
+    ],
+    "social_ids": {
+      "twitter": "Guardians",
+      "facebook": "guardiansofthegalaxy",
+      "instagram": "guardiansofthegalaxy",
+      "wikipedia": "Guardians_of_the_Galaxy_Vol._2"
+    },
+    "updated_at": "2026-09-03T08:25:04.000Z",
+    "after_credits": true,
+    "certification": "PG-13",
+    "comment_count": 160,
+    "during_credits": true,
+    "original_title": "Guardians of the Galaxy Vol. 2",
+    "available_translations": [
+      "ar",
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "it",
+      "ja",
+      "ka",
+      "kk",
+      "ko",
+      "lt",
+      "lv",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "uz",
+      "vi",
+      "zh"
+    ]
+  },
+  {
+    "ids": {
+      "imdb": "tt4154664",
+      "plex": {
+        "guid": "5d9f3c7c9dd5f4001e84c1a7",
+        "slug": "captain-marvel"
+      },
+      "slug": "captain-marvel-2019",
+      "tmdb": 299537,
+      "trakt": 193963
+    },
+    "year": 2019,
+    "title": "Captain Marvel",
+    "votes": 39970,
+    "colors": {
+      "poster": [
+        "#BD7D80",
+        "#271327"
+      ]
+    },
+    "genres": [
+      "science-fiction",
+      "action",
+      "adventure",
+      "superhero"
+    ],
+    "images": {
+      "logo": [
+        "media.trakt.tv/images/movies/000/193/963/logos/medium/5116a8bde7.png.webp"
+      ],
+      "thumb": [
+        "media.trakt.tv/images/movies/000/193/963/thumbs/medium/e699d07999.jpg.webp"
+      ],
+      "banner": [
+        "media.trakt.tv/images/movies/000/193/963/banners/medium/6991fc0a4b.jpg.webp"
+      ],
+      "fanart": [
+        "media.trakt.tv/images/movies/000/193/963/fanarts/medium/b517d1f7bf.jpg.webp"
+      ],
+      "poster": [
+        "media.trakt.tv/images/movies/000/193/963/posters/medium/686e39e597.jpg.webp"
+      ],
+      "clearart": [
+        "media.trakt.tv/images/movies/000/193/963/cleararts/medium/07f2a867cb.png.webp"
+      ]
+    },
+    "rating": 7.107705593109131,
+    "status": "released",
+    "country": "us",
+    "runtime": 124,
+    "tagline": "Higher. Further. Faster.",
+    "trailer": "https://youtube.com/watch?v=GX33bIOA5aA",
+    "homepage": "https://www.marvel.com/movies/captain-marvel",
+    "language": "en",
+    "overview": "The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.",
+    "released": "2019-03-08",
+    "languages": [
+      "en"
+    ],
+    "subgenres": [
+      "intense",
+      "super-power",
+      "joyful",
+      "female-protagonist",
+      "1990s",
+      "alien",
+      "alien-invasion",
+      "based-on-comic",
+      "marvel-cinematic-universe-mcu"
+    ],
+    "social_ids": {
+      "twitter": "captainmarvel",
+      "facebook": "CaptainMarvelOfficial",
+      "instagram": "captainmarvelofficial",
+      "wikipedia": "Captain_Marvel_(film)"
+    },
+    "updated_at": "2026-09-11T08:22:05.000Z",
+    "after_credits": true,
+    "certification": "PG-13",
+    "comment_count": 187,
+    "during_credits": true,
+    "original_title": "Captain Marvel",
+    "available_translations": [
+      "ar",
+      "az",
+      "be",
+      "bg",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "en",
+      "es",
+      "et",
+      "fa",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ka",
+      "ko",
+      "lt",
+      "lv",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "ru",
+      "sk",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "uk",
+      "uz",
+      "vi",
+      "zh"
+    ]
+  }
+]
