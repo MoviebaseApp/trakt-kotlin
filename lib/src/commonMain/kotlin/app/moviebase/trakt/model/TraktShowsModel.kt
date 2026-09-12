@@ -52,6 +52,21 @@ enum class TraktShowStatus(
 }
 
 @Serializable
+data class TraktShowCounts(
+    @SerialName("watcher_count") val watcherCount: Int? = null,
+    @SerialName("play_count") val playCount: Int? = null,
+    @SerialName("collected_count") val collectedCount: Int? = null,
+    @SerialName("collector_count") val collectorCount: Int? = null,
+    @SerialName("show") val show: TraktShow? = null,
+)
+
+@Serializable
+data class TraktShowCertification(
+    @SerialName("certification") val certification: String? = null,
+    @SerialName("country") val country: String? = null,
+)
+
+@Serializable
 data class TraktTrendingShow(
     @SerialName("show") val show: TraktShow? = null,
     @SerialName("watchers") val watchers: Int? = null,

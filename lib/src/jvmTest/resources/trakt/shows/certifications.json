@@ -1,7 +1,86 @@
 [
   {
-    "name": "TV-14",
-    "slug": "tv-14",
-    "description": "Parents Strongly Cautioned"
+    "certification": "16",
+    "country": "at"
+  },
+  {
+    "certification": "MA15+",
+    "country": "au"
+  },
+  {
+    "certification": "16",
+    "country": "be"
+  },
+  {
+    "certification": "16",
+    "country": "br"
+  },
+  {
+    "certification": "14+",
+    "country": "ca"
+  },
+  {
+    "certification": "16",
+    "country": "ch"
+  },
+  {
+    "certification": "16",
+    "country": "de"
+  },
+  {
+    "certification": "15",
+    "country": "dk"
+  },
+  {
+    "certification": "12",
+    "country": "es"
+  },
+  {
+    "certification": "K16",
+    "country": "fi"
+  },
+  {
+    "certification": "12",
+    "country": "fr"
+  },
+  {
+    "certification": "15",
+    "country": "gb"
+  },
+  {
+    "certification": "15",
+    "country": "ie"
+  },
+  {
+    "certification": "15",
+    "country": "kr"
+  },
+  {
+    "certification": "B",
+    "country": "mx"
+  },
+  {
+    "certification": "12",
+    "country": "nl"
+  },
+  {
+    "certification": "AP",
+    "country": "ro"
+  },
+  {
+    "certification": "16+",
+    "country": "ru"
+  },
+  {
+    "certification": "Fr\u00e5n 15 \u00e5r",
+    "country": "se"
+  },
+  {
+    "certification": "M18",
+    "country": "sg"
+  },
+  {
+    "certification": "TV-14",
+    "country": "us"
   }
 ]

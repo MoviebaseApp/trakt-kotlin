@@ -26,6 +26,14 @@ data class TraktMovie(
 )
 
 @Serializable
+data class TraktMovieCounts(
+    @SerialName("watcher_count") val watcherCount: Int? = null,
+    @SerialName("play_count") val playCount: Int? = null,
+    @SerialName("collected_count") val collectedCount: Int? = null,
+    @SerialName("movie") val movie: TraktMovie? = null,
+)
+
+@Serializable
 data class TraktTrendingMovie(
     @SerialName("watchers") val watchers: Int,
     @SerialName("movie") val movie: TraktMovie,

@@ -1,0 +1,271 @@
+[
+  {
+    "watcher_count": 8534,
+    "play_count": 302513,
+    "collected_count": 490,
+    "collector_count": 589,
+    "show": {
+      "ids": {
+        "imdb": "tt0388629",
+        "plex": {
+          "guid": "5d9c084fec357c001f9ab4d8",
+          "slug": "one-piece"
+        },
+        "slug": "one-piece",
+        "tmdb": 37854,
+        "tvdb": 81797,
+        "trakt": 37696
+      },
+      "airs": {
+        "day": "Sunday",
+        "time": "23:15",
+        "timezone": "Asia/Tokyo"
+      },
+      "year": 1999,
+      "title": "One Piece",
+      "votes": 9365,
+      "colors": {
+        "poster": [
+          "#B49683",
+          "#342520"
+        ]
+      },
+      "genres": [
+        "comedy",
+        "action",
+        "adventure",
+        "anime"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/shows/000/037/696/logos/medium/3f0f617d7e.png.webp"
+        ],
+        "thumb": [
+          "media.trakt.tv/images/shows/000/037/696/thumbs/medium/eec61db76b.jpg.webp"
+        ],
+        "banner": [
+          "media.trakt.tv/images/shows/000/037/696/banners/medium/17e283bc8a.jpg.webp"
+        ],
+        "fanart": [
+          "media.trakt.tv/images/shows/000/037/696/fanarts/medium/ea70dc8e5c.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/shows/000/037/696/posters/medium/e1e7375199.jpg.webp"
+        ],
+        "clearart": [
+          "media.trakt.tv/images/shows/000/037/696/cleararts/medium/0b7b5e8754.png.webp"
+        ]
+      },
+      "rating": 9.005659103393555,
+      "status": "returning series",
+      "country": "jp",
+      "network": "Tokai Television Broadcasting",
+      "runtime": 24,
+      "tagline": "Set sail for One Piece!",
+      "trailer": "https://youtube.com/watch?v=1KMcoJBMWE4",
+      "homepage": "https://www.toei-anim.co.jp/tv/onep",
+      "language": "ja",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "languages": [
+        "ja"
+      ],
+      "subgenres": [
+        "based-on-manga",
+        "fight",
+        "friendship",
+        "pirate",
+        "treasure",
+        "friends",
+        "super-power",
+        "defiant",
+        "shounen",
+        "ocean"
+      ],
+      "last_aired": "2026-09-06T14:15:00.000Z",
+      "social_ids": {
+        "twitter": "OPcom_info",
+        "facebook": "onepieceofficial",
+        "instagram": "onepiece_staff",
+        "wikipedia": "One_Piece_(1999_TV_series)"
+      },
+      "updated_at": "2026-09-11T16:00:59.000Z",
+      "first_aired": "1999-10-20T14:15:00.000Z",
+      "certification": "TV-14",
+      "comment_count": 121,
+      "total_runtime": 28304,
+      "aired_episodes": 1177,
+      "original_title": "\u30ef\u30f3\u30d4\u30fc\u30b9",
+      "available_translations": [
+        "ar",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sr",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh"
+      ]
+    }
+  },
+  {
+    "watcher_count": 46685,
+    "play_count": 169860,
+    "collected_count": 906,
+    "collector_count": 6861,
+    "show": {
+      "ids": {
+        "imdb": "tt14688458",
+        "plex": {
+          "guid": "61b180686bfb4feb48515e07",
+          "slug": "silo"
+        },
+        "slug": "silo",
+        "tmdb": 125988,
+        "tvdb": 403245,
+        "trakt": 180770
+      },
+      "airs": {
+        "day": "Thursday",
+        "time": "21:00",
+        "timezone": "America/New_York"
+      },
+      "year": 2023,
+      "title": "Silo",
+      "votes": 20471,
+      "colors": {
+        "poster": [
+          "#829454",
+          "#282E25"
+        ]
+      },
+      "genres": [
+        "drama",
+        "science-fiction"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/shows/000/180/770/logos/medium/b0c9a10541.png.webp"
+        ],
+        "thumb": [
+          "media.trakt.tv/images/shows/000/180/770/thumbs/medium/dddaaead2f.jpg.webp"
+        ],
+        "banner": [
+          "media.trakt.tv/images/shows/000/180/770/banners/medium/24d0a4847e.jpg.webp"
+        ],
+        "fanart": [
+          "media.trakt.tv/images/shows/000/180/770/fanarts/medium/b36cbd9e8a.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/shows/000/180/770/posters/medium/279e86a7d7.jpg.webp"
+        ],
+        "clearart": [
+          "media.trakt.tv/images/shows/000/180/770/cleararts/medium/924d053dc2.png.webp"
+        ]
+      },
+      "rating": 8.4105806350708,
+      "status": "returning series",
+      "country": "us",
+      "network": "Apple TV",
+      "runtime": 60,
+      "tagline": "The key to the future lies in the past.",
+      "trailer": "https://youtube.com/watch?v=8ZYhuvIv1pA",
+      "homepage": "https://tv.apple.com/show/umc.cmc.3yksgc857px0k0rqe5zd4jice",
+      "language": "en",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "languages": [
+        "en"
+      ],
+      "subgenres": [
+        "corruption",
+        "dystopia",
+        "post-apocalyptic-future",
+        "politics",
+        "disaster"
+      ],
+      "last_aired": "2026-09-04T01:00:00.000Z",
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": "Silo_(TV_series)"
+      },
+      "updated_at": "2026-09-12T02:12:55.000Z",
+      "first_aired": "2023-05-05T01:00:00.000Z",
+      "certification": "TV-MA",
+      "comment_count": 185,
+      "total_runtime": 1581,
+      "aired_episodes": 30,
+      "original_title": "Silo",
+      "available_translations": [
+        "ar",
+        "be",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "lt",
+        "mk",
+        "my",
+        "nl",
+        "no",
+        "pa",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "si",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ]
+    }
+  }
+]

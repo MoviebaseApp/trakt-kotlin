@@ -15,6 +15,7 @@ import app.moviebase.trakt.model.TraktCommentSort
 import app.moviebase.trakt.model.TraktCredits
 import app.moviebase.trakt.model.TraktList
 import app.moviebase.trakt.model.TraktMovie
+import app.moviebase.trakt.model.TraktMovieCounts
 import app.moviebase.trakt.model.TraktMovieUpdate
 import app.moviebase.trakt.model.TraktRating
 import app.moviebase.trakt.model.TraktRelease
@@ -70,7 +71,7 @@ class TraktMoviesApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktMovie> = client.get {
+    ): List<TraktMovieCounts> = client.get {
         endPointMovies("played")
         parameterPage(page)
         parameterLimit(limit)
@@ -81,7 +82,7 @@ class TraktMoviesApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktMovie> = client.get {
+    ): List<TraktMovieCounts> = client.get {
         endPointMovies("watched")
         parameterPage(page)
         parameterLimit(limit)
@@ -92,7 +93,7 @@ class TraktMoviesApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktMovie> = client.get {
+    ): List<TraktMovieCounts> = client.get {
         endPointMovies("collected")
         parameterPage(page)
         parameterLimit(limit)

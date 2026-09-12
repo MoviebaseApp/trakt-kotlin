@@ -9,7 +9,7 @@ import app.moviebase.trakt.core.parameterLimit
 import app.moviebase.trakt.core.parameterPage
 import app.moviebase.trakt.model.TraktAlias
 import app.moviebase.trakt.model.TraktAnticipatedShow
-import app.moviebase.trakt.model.TraktCertification
+import app.moviebase.trakt.model.TraktShowCertification
 import app.moviebase.trakt.model.TraktComment
 import app.moviebase.trakt.model.TraktCommentSort
 import app.moviebase.trakt.model.TraktCredits
@@ -18,6 +18,7 @@ import app.moviebase.trakt.model.TraktList
 import app.moviebase.trakt.model.TraktRating
 import app.moviebase.trakt.model.TraktStats
 import app.moviebase.trakt.model.TraktShow
+import app.moviebase.trakt.model.TraktShowCounts
 import app.moviebase.trakt.model.TraktShowProgress
 import app.moviebase.trakt.model.TraktShowUpdate
 import app.moviebase.trakt.model.TraktStudio
@@ -71,7 +72,7 @@ class TraktShowsApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktShow> = client.get {
+    ): List<TraktShowCounts> = client.get {
         endPointShows("played")
         parameterPage(page)
         parameterLimit(limit)
@@ -82,7 +83,7 @@ class TraktShowsApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktShow> = client.get {
+    ): List<TraktShowCounts> = client.get {
         endPointShows("watched")
         parameterPage(page)
         parameterLimit(limit)
@@ -93,7 +94,7 @@ class TraktShowsApi(
         page: Int,
         limit: Int,
         extended: TraktExtended? = null,
-    ): List<TraktShow> = client.get {
+    ): List<TraktShowCounts> = client.get {
         endPointShows("collected")
         parameterPage(page)
         parameterLimit(limit)
@@ -188,7 +189,7 @@ class TraktShowsApi(
         endPointShow(showId, "aliases")
     }.body()
 
-    suspend fun getCertifications(showId: String): List<TraktCertification> = client.get {
+    suspend fun getCertifications(showId: String): List<TraktShowCertification> = client.get {
         endPointShow(showId, "certifications")
     }.body()
 

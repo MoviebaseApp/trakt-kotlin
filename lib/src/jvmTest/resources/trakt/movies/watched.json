@@ -1,0 +1,225 @@
+[
+  {
+    "watcher_count": 19141,
+    "play_count": 20774,
+    "collected_count": 3022,
+    "movie": {
+      "ids": {
+        "imdb": "tt28014327",
+        "plex": {
+          "guid": "6488a8b8f542e5c273e5ae08",
+          "slug": "mayday-2026"
+        },
+        "slug": "mayday-2026",
+        "tmdb": 1137844,
+        "trakt": 916057
+      },
+      "year": 2026,
+      "title": "Mayday",
+      "votes": 3502,
+      "colors": {
+        "poster": [
+          "#C1B299",
+          "#363224"
+        ]
+      },
+      "genres": [
+        "action",
+        "comedy"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/movies/000/916/057/logos/medium/4235121982.png.webp"
+        ],
+        "thumb": [],
+        "banner": [],
+        "fanart": [
+          "media.trakt.tv/images/movies/000/916/057/fanarts/medium/f59a07bccd.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/movies/000/916/057/posters/medium/5179d5825e.jpg.webp"
+        ],
+        "clearart": []
+      },
+      "rating": 7.629354476928711,
+      "status": "released",
+      "country": "us",
+      "runtime": 111,
+      "tagline": "A friendship with major red flags.",
+      "trailer": "https://youtube.com/watch?v=om5Un9X720M",
+      "homepage": "https://tv.apple.com/movie/umc.cmc.shin43vzfoz3h4ggx41z8rf",
+      "language": "en",
+      "overview": "When a U.S. Navy pilot on a top-secret mission during the Cold War gets trapped behind enemy lines, his only chance at survival is to form an alliance with an eccentric ex-KGB agent.",
+      "released": "2026-09-03",
+      "languages": [
+        "en",
+        "ru"
+      ],
+      "subgenres": [
+        "cold-war"
+      ],
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": "Mayday_(2026_film)"
+      },
+      "updated_at": "2026-09-12T08:15:28.000Z",
+      "after_credits": false,
+      "certification": "PG-13",
+      "comment_count": 47,
+      "during_credits": false,
+      "original_title": "Mayday",
+      "available_translations": [
+        "ar",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "lt",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ]
+    }
+  },
+  {
+    "watcher_count": 7176,
+    "play_count": 7729,
+    "collected_count": 349,
+    "movie": {
+      "ids": {
+        "imdb": "tt11561116",
+        "plex": {
+          "guid": "5f40987e1ae710004115f516",
+          "slug": "the-whisper-man"
+        },
+        "slug": "the-whisper-man-2026",
+        "tmdb": 860508,
+        "trakt": 688185
+      },
+      "year": 2026,
+      "title": "The Whisper Man",
+      "votes": 4461,
+      "colors": {
+        "poster": [
+          "#A1B4C2",
+          "#191E27"
+        ]
+      },
+      "genres": [
+        "crime",
+        "thriller",
+        "drama"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/movies/000/688/185/logos/medium/f32c15c1f7.png.webp"
+        ],
+        "thumb": [],
+        "banner": [],
+        "fanart": [
+          "media.trakt.tv/images/movies/000/688/185/fanarts/medium/d433c69628.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/movies/000/688/185/posters/medium/e213879747.jpg.webp"
+        ],
+        "clearart": []
+      },
+      "rating": 6.9997758865356445,
+      "status": "released",
+      "country": "us",
+      "runtime": 111,
+      "tagline": "If you leave a door half open, soon you'll hear the whispers spoken.",
+      "trailer": "https://youtube.com/watch?v=ZHRR-1CKYIQ",
+      "homepage": "https://www.netflix.com/title/81278442",
+      "language": "en",
+      "overview": "When his young son vanishes, a widower enlists help from his estranged father, a retired detective who put away the serial killer now linked to the case.",
+      "released": "2026-08-28",
+      "languages": [
+        "en"
+      ],
+      "subgenres": [
+        "serial-killer",
+        "father-son-relationship",
+        "writer"
+      ],
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": "The_Whisper_Man"
+      },
+      "updated_at": "2026-09-12T08:12:24.000Z",
+      "after_credits": false,
+      "certification": "R",
+      "comment_count": 78,
+      "during_credits": false,
+      "original_title": "The Whisper Man",
+      "available_translations": [
+        "ar",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "ms",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sl",
+        "sv",
+        "th",
+        "tl",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ]
+    }
+  }
+]

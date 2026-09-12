@@ -19,6 +19,9 @@ class TraktMoviesApiTest {
             responses =
                 mapOf(
                     "movies/boxoffice" to "movies/boxoffice.json",
+                    "movies/played?page=1&limit=10" to "movies/played.json",
+                    "movies/watched?page=1&limit=10" to "movies/watched.json",
+                    "movies/collected?page=1&limit=10" to "movies/collected.json",
                     "movies/dune-part-two-2024/aliases" to "movies/aliases.json",
                     "movies/dune-part-two-2024/releases" to "movies/releases.json",
                     "movies/dune-part-two-2024/releases/us" to "movies/releases.json",
@@ -175,5 +178,20 @@ class TraktMoviesApiTest {
             val first = studios.first()
             assertThat(first.name).isEqualTo("Legendary Pictures")
             assertThat(first.country).isEqualTo("us")
+        }
+
+    @Test
+    fun `it reads the counts and movie of the most played watched and collected movies`() =
+        runTest {
+            val played = classToTest.getPlayed(page = 1, limit = 10)
+            val watched = classToTest.getWatched(page = 1, limit = 10)
+            val collected = classToTest.getCollected(page = 1, limit = 10)
+
+            assertThat(played).hasSize(2)
+            assertThat(played.first().movie?.title).isEqualTo("Mayday")
+            assertThat(played.first().playCount).isEqualTo(20774)
+            assertThat(watched.first().watcherCount).isEqualTo(19141)
+            assertThat(collected.first().movie?.ids?.trakt).isEqualTo(916057)
+            assertThat(collected.first().collectedCount).isEqualTo(3022)
         }
 }

@@ -18,6 +18,9 @@ class TraktShowsApiTest {
                     "shows/the-expanse/people" to "shows/people.json",
                     "shows/the-expanse/studios" to "shows/studios.json",
                     "shows/breaking-bad/ratings?extended=all" to "shows/rating_extended.json",
+                    "shows/played?page=1&limit=10" to "shows/played.json",
+                    "shows/watched?page=1&limit=10" to "shows/watched.json",
+                    "shows/collected?page=1&limit=10" to "shows/collected.json",
                 ),
         )
 
@@ -71,10 +74,25 @@ class TraktShowsApiTest {
         runTest {
             val certifications = classToTest.getCertifications("the-expanse")
 
-            assertThat(certifications).isNotEmpty()
-            val first = certifications.first()
-            assertThat(first.name).isEqualTo("TV-14")
-            assertThat(first.slug).isEqualTo("tv-14")
+            assertThat(certifications).hasSize(21)
+            assertThat(certifications.first().country).isEqualTo("at")
+            assertThat(certifications.single { it.country == "us" }.certification).isEqualTo("TV-14")
+        }
+
+    @Test
+    fun `it reads the counts and show of the most played watched and collected shows`() =
+        runTest {
+            val played = classToTest.getPlayed(page = 1, limit = 10)
+            val watched = classToTest.getWatched(page = 1, limit = 10)
+            val collected = classToTest.getCollected(page = 1, limit = 10)
+
+            assertThat(played.first().show?.title).isEqualTo("One Piece")
+            assertThat(played.first().playCount).isEqualTo(302513)
+            assertThat(played.first().collectorCount).isEqualTo(589)
+            assertThat(watched.first().show?.ids?.trakt).isEqualTo(157599)
+            assertThat(watched.first().watcherCount).isEqualTo(48059)
+            assertThat(collected.first().show?.title).isEqualTo("Jimmy Kimmel Live")
+            assertThat(collected.first().collectedCount).isEqualTo(7)
         }
 
     @Test

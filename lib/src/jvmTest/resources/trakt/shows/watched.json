@@ -1,0 +1,263 @@
+[
+  {
+    "watcher_count": 48059,
+    "play_count": 71980,
+    "collected_count": 4148,
+    "collector_count": 0,
+    "show": {
+      "ids": {
+        "imdb": "tt26545992",
+        "plex": {
+          "guid": "6475f4e274668225adb2c0e0",
+          "slug": "lanterns-1"
+        },
+        "slug": "lanterns",
+        "tmdb": 95350,
+        "tvdb": 376098,
+        "trakt": 157599
+      },
+      "airs": {
+        "day": "Sunday",
+        "time": "21:00",
+        "timezone": "America/New_York"
+      },
+      "year": 2026,
+      "title": "Lanterns",
+      "votes": 1371,
+      "colors": {
+        "poster": [
+          "#9FAF90",
+          "#2E362F"
+        ]
+      },
+      "genres": [
+        "science-fiction",
+        "fantasy",
+        "mystery",
+        "superhero",
+        "drama"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/shows/000/157/599/logos/medium/ab0874341d.png.webp"
+        ],
+        "thumb": [],
+        "banner": [],
+        "fanart": [
+          "media.trakt.tv/images/shows/000/157/599/fanarts/medium/c81ea6cf4d.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/shows/000/157/599/posters/medium/1fdc413e93.jpg.webp"
+        ],
+        "clearart": []
+      },
+      "rating": 8.247994422912598,
+      "status": "returning series",
+      "country": "us",
+      "network": "HBO",
+      "runtime": 55,
+      "tagline": "Only one can wear the ring.",
+      "trailer": "https://youtube.com/watch?v=7UIBOsuUwc4",
+      "homepage": "https://www.hbo.com/content/lanterns",
+      "language": "en",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "languages": [
+        "en"
+      ],
+      "subgenres": [
+        "parent-child-relationship",
+        "small-town",
+        "murder-investigation",
+        "super-power",
+        "based-on-comic"
+      ],
+      "last_aired": "2026-09-07T01:00:00.000Z",
+      "social_ids": {
+        "twitter": null,
+        "facebook": "greenlantern",
+        "instagram": "greenlantern",
+        "wikipedia": "Lanterns_(TV_series)"
+      },
+      "updated_at": "2026-09-11T15:50:11.000Z",
+      "first_aired": "2026-08-17T01:00:00.000Z",
+      "certification": "TV-MA",
+      "comment_count": 24,
+      "total_runtime": 216,
+      "aired_episodes": 4,
+      "original_title": "Lanterns",
+      "available_translations": [
+        "ar",
+        "bg",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hr",
+        "hu",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "lt",
+        "mk",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "vi",
+        "zh"
+      ]
+    }
+  },
+  {
+    "watcher_count": 46685,
+    "play_count": 169860,
+    "collected_count": 906,
+    "collector_count": 6861,
+    "show": {
+      "ids": {
+        "imdb": "tt14688458",
+        "plex": {
+          "guid": "61b180686bfb4feb48515e07",
+          "slug": "silo"
+        },
+        "slug": "silo",
+        "tmdb": 125988,
+        "tvdb": 403245,
+        "trakt": 180770
+      },
+      "airs": {
+        "day": "Thursday",
+        "time": "21:00",
+        "timezone": "America/New_York"
+      },
+      "year": 2023,
+      "title": "Silo",
+      "votes": 20471,
+      "colors": {
+        "poster": [
+          "#829454",
+          "#282E25"
+        ]
+      },
+      "genres": [
+        "drama",
+        "science-fiction"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/shows/000/180/770/logos/medium/b0c9a10541.png.webp"
+        ],
+        "thumb": [
+          "media.trakt.tv/images/shows/000/180/770/thumbs/medium/dddaaead2f.jpg.webp"
+        ],
+        "banner": [
+          "media.trakt.tv/images/shows/000/180/770/banners/medium/24d0a4847e.jpg.webp"
+        ],
+        "fanart": [
+          "media.trakt.tv/images/shows/000/180/770/fanarts/medium/b36cbd9e8a.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/shows/000/180/770/posters/medium/279e86a7d7.jpg.webp"
+        ],
+        "clearart": [
+          "media.trakt.tv/images/shows/000/180/770/cleararts/medium/924d053dc2.png.webp"
+        ]
+      },
+      "rating": 8.4105806350708,
+      "status": "returning series",
+      "country": "us",
+      "network": "Apple TV",
+      "runtime": 60,
+      "tagline": "The key to the future lies in the past.",
+      "trailer": "https://youtube.com/watch?v=8ZYhuvIv1pA",
+      "homepage": "https://tv.apple.com/show/umc.cmc.3yksgc857px0k0rqe5zd4jice",
+      "language": "en",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "languages": [
+        "en"
+      ],
+      "subgenres": [
+        "corruption",
+        "dystopia",
+        "post-apocalyptic-future",
+        "politics",
+        "disaster"
+      ],
+      "last_aired": "2026-09-04T01:00:00.000Z",
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": "Silo_(TV_series)"
+      },
+      "updated_at": "2026-09-12T02:12:55.000Z",
+      "first_aired": "2023-05-05T01:00:00.000Z",
+      "certification": "TV-MA",
+      "comment_count": 185,
+      "total_runtime": 1581,
+      "aired_episodes": 30,
+      "original_title": "Silo",
+      "available_translations": [
+        "ar",
+        "be",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ka",
+        "ko",
+        "lt",
+        "mk",
+        "my",
+        "nl",
+        "no",
+        "pa",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "si",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ]
+    }
+  }
+]

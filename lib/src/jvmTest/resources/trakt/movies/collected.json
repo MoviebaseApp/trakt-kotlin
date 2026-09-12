@@ -1,0 +1,255 @@
+[
+  {
+    "watcher_count": 19141,
+    "play_count": 20774,
+    "collected_count": 3022,
+    "movie": {
+      "ids": {
+        "imdb": "tt28014327",
+        "plex": {
+          "guid": "6488a8b8f542e5c273e5ae08",
+          "slug": "mayday-2026"
+        },
+        "slug": "mayday-2026",
+        "tmdb": 1137844,
+        "trakt": 916057
+      },
+      "year": 2026,
+      "title": "Mayday",
+      "votes": 3502,
+      "colors": {
+        "poster": [
+          "#C1B299",
+          "#363224"
+        ]
+      },
+      "genres": [
+        "action",
+        "comedy"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/movies/000/916/057/logos/medium/4235121982.png.webp"
+        ],
+        "thumb": [],
+        "banner": [],
+        "fanart": [
+          "media.trakt.tv/images/movies/000/916/057/fanarts/medium/f59a07bccd.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/movies/000/916/057/posters/medium/5179d5825e.jpg.webp"
+        ],
+        "clearart": []
+      },
+      "rating": 7.629354476928711,
+      "status": "released",
+      "country": "us",
+      "runtime": 111,
+      "tagline": "A friendship with major red flags.",
+      "trailer": "https://youtube.com/watch?v=om5Un9X720M",
+      "homepage": "https://tv.apple.com/movie/umc.cmc.shin43vzfoz3h4ggx41z8rf",
+      "language": "en",
+      "overview": "When a U.S. Navy pilot on a top-secret mission during the Cold War gets trapped behind enemy lines, his only chance at survival is to form an alliance with an eccentric ex-KGB agent.",
+      "released": "2026-09-03",
+      "languages": [
+        "en",
+        "ru"
+      ],
+      "subgenres": [
+        "cold-war"
+      ],
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": "Mayday_(2026_film)"
+      },
+      "updated_at": "2026-09-12T08:15:28.000Z",
+      "after_credits": false,
+      "certification": "PG-13",
+      "comment_count": 47,
+      "during_credits": false,
+      "original_title": "Mayday",
+      "available_translations": [
+        "ar",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hu",
+        "id",
+        "it",
+        "ja",
+        "ko",
+        "lt",
+        "nl",
+        "no",
+        "pl",
+        "pt",
+        "ru",
+        "sk",
+        "sl",
+        "sv",
+        "th",
+        "tr",
+        "uk",
+        "ur",
+        "vi",
+        "zh"
+      ]
+    }
+  },
+  {
+    "watcher_count": 4040,
+    "play_count": 4534,
+    "collected_count": 2764,
+    "movie": {
+      "ids": {
+        "imdb": "tt27419466",
+        "plex": {
+          "guid": "642d485ce8b269a4b9c8a4a8",
+          "slug": "moana-2025-1"
+        },
+        "slug": "moana-2026",
+        "tmdb": 1108427,
+        "trakt": 891793
+      },
+      "year": 2026,
+      "title": "Moana",
+      "votes": 2244,
+      "colors": {
+        "poster": [
+          "#BDCBD1",
+          "#525556"
+        ]
+      },
+      "genres": [
+        "adventure",
+        "comedy",
+        "family",
+        "fantasy",
+        "musical"
+      ],
+      "images": {
+        "logo": [
+          "media.trakt.tv/images/movies/000/891/793/logos/medium/d6ed0f1d81.png.webp"
+        ],
+        "thumb": [
+          "media.trakt.tv/images/movies/000/891/793/thumbs/medium/3df7e2a255.jpg.webp"
+        ],
+        "banner": [],
+        "fanart": [
+          "media.trakt.tv/images/movies/000/891/793/fanarts/medium/1c3fb1bda1.jpg.webp"
+        ],
+        "poster": [
+          "media.trakt.tv/images/movies/000/891/793/posters/medium/3419b134ed.jpg.webp"
+        ],
+        "clearart": [
+          "media.trakt.tv/images/movies/000/891/793/cleararts/medium/644275a6d3.png.webp"
+        ]
+      },
+      "rating": 7.241087436676025,
+      "status": "released",
+      "country": "us",
+      "runtime": 115,
+      "tagline": "The ocean chose her for a reason.",
+      "trailer": "https://youtube.com/watch?v=EEz5xbzYPKI",
+      "homepage": "https://movies.disney.com/moana-2026",
+      "language": "en",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "released": "2026-07-10",
+      "languages": [
+        "en"
+      ],
+      "subgenres": [
+        "based-on-movie",
+        "friendship",
+        "live-action-remake",
+        "curse",
+        "ocean"
+      ],
+      "social_ids": {
+        "twitter": null,
+        "facebook": null,
+        "instagram": null,
+        "wikipedia": null
+      },
+      "updated_at": "2026-09-12T08:11:31.000Z",
+      "after_credits": false,
+      "certification": "PG",
+      "comment_count": 37,
+      "during_credits": false,
+      "original_title": "Moana",
+      "available_translations": [
+        "ar",
+        "as",
+        "az",
+        "be",
+        "bg",
+        "ca",
+        "cs",
+        "da",
+        "de",
+        "el",
+        "en",
+        "es",
+        "fa",
+        "fi",
+        "fr",
+        "he",
+        "hi",
+        "hr",
+        "hu",
+        "hy",
+        "is",
+        "it",
+        "ja",
+        "ka",
+        "km",
+        "ko",
+        "ku",
+        "ky",
+        "lo",
+        "lt",
+        "lv",
+        "mk",
+        "ml",
+        "my",
+        "nb",
+        "nl",
+        "nn",
+        "os",
+        "pa",
+        "pl",
+        "pt",
+        "ro",
+        "ru",
+        "sc",
+        "sk",
+        "sl",
+        "sr",
+        "sv",
+        "ta",
+        "te",
+        "th",
+        "ti",
+        "tr",
+        "ug",
+        "uk",
+        "ur",
+        "vi",
+        "yi",
+        "zh"
+      ]
+    }
+  }
+]
