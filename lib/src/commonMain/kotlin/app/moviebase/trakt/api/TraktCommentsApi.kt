@@ -61,7 +61,7 @@ class TraktCommentsApi(
     suspend fun postCommentReplies(
         id: Int,
         comment: TraktPostComment,
-    ): List<TraktComment> = client.post {
+    ): TraktComment = client.post {
         endPoint("comments", id.toString(), "replies")
         contentType(ContentType.Application.Json)
         setBody(comment)
